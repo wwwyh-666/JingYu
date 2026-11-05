@@ -1,0 +1,161 @@
+{
+  "$defs": {
+    "Geo": {
+      "additionalProperties": false,
+      "properties": {
+        "lat": {
+          "maximum": 90,
+          "minimum": -90,
+          "title": "Lat",
+          "type": "number"
+        },
+        "lng": {
+          "maximum": 180,
+          "minimum": -180,
+          "title": "Lng",
+          "type": "number"
+        },
+        "crs": {
+          "enum": [
+            "WGS84",
+            "GCJ02"
+          ],
+          "title": "Crs",
+          "type": "string"
+        },
+        "source_url": {
+          "format": "uri",
+          "maxLength": 2083,
+          "minLength": 1,
+          "title": "Source Url",
+          "type": "string"
+        }
+      },
+      "required": [
+        "lat",
+        "lng",
+        "crs",
+        "source_url"
+      ],
+      "title": "Geo",
+      "type": "object"
+    },
+    "Position": {
+      "additionalProperties": false,
+      "properties": {
+        "x": {
+          "maximum": 1920,
+          "minimum": 0,
+          "title": "X",
+          "type": "number"
+        },
+        "y": {
+          "maximum": 1080,
+          "minimum": 0,
+          "title": "Y",
+          "type": "number"
+        }
+      },
+      "required": [
+        "x",
+        "y"
+      ],
+      "title": "Position",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "spot_id": {
+      "enum": [
+        "TT",
+        "GG",
+        "ZGL",
+        "YHY",
+        "JS",
+        "GWF",
+        "YHG",
+        "ZYM"
+      ],
+      "title": "Spot Id",
+      "type": "string"
+    },
+    "name": {
+      "title": "Name",
+      "type": "string"
+    },
+    "theme": {
+      "title": "Theme",
+      "type": "string"
+    },
+    "aesthetic_type": {
+      "title": "Aesthetic Type",
+      "type": "string"
+    },
+    "depth": {
+      "enum": [
+        "deep",
+        "basic"
+      ],
+      "title": "Depth",
+      "type": "string"
+    },
+    "map_position": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/Position"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "image_key": {
+      "title": "Image Key",
+      "type": "string"
+    },
+    "asset_status": {
+      "const": "pending_A_B",
+      "default": "pending_A_B",
+      "title": "Asset Status",
+      "type": "string"
+    },
+    "geo": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/Geo"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "name_source": {
+      "title": "Name Source",
+      "type": "string"
+    },
+    "review_status": {
+      "default": "pending_human_review",
+      "enum": [
+        "pending_human_review",
+        "approved",
+        "rejected"
+      ],
+      "title": "Review Status",
+      "type": "string"
+    }
+  },
+  "required": [
+    "spot_id",
+    "name",
+    "theme",
+    "aesthetic_type",
+    "depth",
+    "image_key",
+    "name_source"
+  ],
+  "title": "Spot",
+  "type": "object"
+}

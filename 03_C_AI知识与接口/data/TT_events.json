@@ -1,0 +1,30 @@
+[
+  {
+    "event_id": "TT_EVENT_ORDER",
+    "name": "大祀殿拆除命令",
+    "dispute_status": "disputed",
+    "review_status": "pending_human_review",
+    "selected_year": null
+  },
+  {
+    "event_id": "TT_EVENT_START",
+    "name": "大享殿兴建时间",
+    "dispute_status": "unresolved",
+    "review_status": "pending_human_review",
+    "selected_year": null
+  },
+  {
+    "event_id": "TT_EVENT_ACTIVITY",
+    "name": "原址营建活动（时间归属未明确）",
+    "dispute_status": "unresolved",
+    "review_status": "pending_human_review",
+    "selected_year": null
+  },
+  {
+    "event_id": "TT_EVENT_COMPLETE",
+    "name": "大享殿建成",
+    "dispute_status": "disputed",
+    "review_status": "pending_human_review",
+    "selected_year": null
+  }
+]

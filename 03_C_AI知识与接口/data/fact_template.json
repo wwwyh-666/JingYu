@@ -1,0 +1,14 @@
+{
+  "fact_id": null,
+  "spot_id": null,
+  "object_id": null,
+  "period": null,
+  "text": null,
+  "source_ids": [],
+  "source_locator": null,
+  "keywords": [],
+  "review_status": "pending_human_review",
+  "reviewer": null,
+  "reviewed_at": null,
+  "notes": "填写完全部必需字段后移入对应 facts_SPOTID.json；此模板不参与检索"
+}

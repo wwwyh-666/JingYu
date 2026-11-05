@@ -1,0 +1,41 @@
+# 本机配置及密钥
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+# Python 环境与缓存
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+# 临时文件与运行缓存
+tmp/
+temp/
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+~$*
+*.log
+*.pid
+.DS_Store
+Thumbs.db
+# 机器本地原始来源路径含个人账号标识，供本机追溯
+03_C_AI知识与接口/docs/inputs/manifest.json
+
+# 首次共享前保留本机审查明细及待授权原件
+/GitHub文件分类清单.tsv
+/GitHub首次上传最终审查.md
+/03_C_AI知识与接口/docs/inputs/TT_before_revision_20261105/
+/03_C_AI知识与接口/docs/inputs/TT_before_conflict_review_20261105/
+/首次上传人工确认准备.md

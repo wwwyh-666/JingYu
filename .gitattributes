@@ -1,0 +1,27 @@
+# Default: deterministic LF text; known binary and byte-exact evidence are exceptions.
+* text=auto eol=lf
+*.py text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.tsv text eol=lf
+*.ps1 text eol=lf
+*.ini text eol=lf
+*.in text eol=lf
+*.pdf -text
+*.docx -text
+
+# Preserve the original test log and its recorded hash.
+04_交互测试/11月5日/TT_conflict_pytest原始日志.txt -text
+03_C_AI知识与接口/logs/TT_revision_unchanged_before.json -text
+
+# These nine data files are checked by byte-for-byte SHA-256 tests.
+03_C_AI知识与接口/data/facts_GG.json -text
+03_C_AI知识与接口/data/facts_GWF.json -text
+03_C_AI知识与接口/data/facts_JS.json -text
+03_C_AI知识与接口/data/facts_YHG.json -text
+03_C_AI知识与接口/data/facts_YHY.json -text
+03_C_AI知识与接口/data/facts_ZGL.json -text
+03_C_AI知识与接口/data/facts_ZYM.json -text
+03_C_AI知识与接口/data/fact_template.json -text
+03_C_AI知识与接口/data/spots.json -text

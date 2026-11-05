@@ -1,0 +1,13 @@
+.venv/
+.env
+.env.*
+!.env.example
+__pycache__/
+.pytest_cache/
+.cache/
+tmp/
+logs/*
+!logs/.gitkeep
+
+# 单项测试所需的固定哈希基准；其余日志仍忽略
+!logs/TT_revision_unchanged_before.json

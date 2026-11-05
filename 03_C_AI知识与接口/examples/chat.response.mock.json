@@ -1,0 +1,12 @@
+{
+  "spot_id": "TT",
+  "session_id": "mock-session-TT",
+  "turn_id": 1,
+  "answer": "【模拟数据】接口已连通；文化内容待人工审校，尚未接入模型。",
+  "fact_ids": [],
+  "citations": [],
+  "confidence_flag": "mock",
+  "check_status": "not_checked",
+  "is_mock": true,
+  "model_called": false
+}

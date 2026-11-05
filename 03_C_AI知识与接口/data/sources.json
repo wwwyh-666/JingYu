@@ -1,0 +1,62 @@
+[
+  {
+    "source_id": "SRC_TT_OFFICIAL_QND_001",
+    "title": "祈年殿",
+    "institution": "天坛公园",
+    "url": "https://tiantanpark.cn/scenic_spot_list/detail/1254.html",
+    "accessed_on": "2026-11-05",
+    "published_on": null,
+    "locator": "页面标题“祈年殿”下的介绍段；按各事实 source_locator 定位",
+    "review_status": "pending_human_review"
+  },
+  {
+    "source_id": "SRC_TT_OFFICIAL_HISTORY_001",
+    "title": "关于我们｜大事记",
+    "institution": "天坛公园",
+    "url": "https://www.tiantanpark.cn/aboutus.html",
+    "accessed_on": "2026-11-05",
+    "published_on": null,
+    "locator": "大事记：1538年、1540年、1751年、1889年四个条目。注意1751条含次年工程；网页有“嘉请”“青死”等疑似录入错字，不原样作为规范表述。",
+    "review_status": "pending_human_review"
+  },
+  {
+    "source_id": "SRC_TT_BJ_EXPERT_001",
+    "title": "趣说北京：历经两位皇帝两次重修，现在的天坛原来是乾隆的手笔",
+    "institution": "首都之窗／北京市人民政府门户网站；讲解者李卫伟（北京市古代建筑研究所研究馆员）",
+    "url": "https://www.beijing.gov.cn/shipin/qushuobeijing/19513.html",
+    "accessed_on": "2026-11-05",
+    "published_on": "2020-04-22",
+    "locator": "网页配套文字第2段（三重檐颜色及更名）、第3段（蓝色也称青色）、倒数第2段（1889及翌年重建、今殿非乾隆原构）；仅核对网页文字，未声称观看视频。",
+    "review_status": "pending_human_review"
+  },
+  {
+    "source_id": "SRC_TT_BJWW_STUDY_001",
+    "title": "北京天坛圜丘坛建筑尺度研究",
+    "institution": "北京市文物局；作者李忠义",
+    "url": "https://wwj.beijing.gov.cn/bjww/362760/362770/436348561/index.html",
+    "accessed_on": "2026-11-05",
+    "published_on": "2024-01-31",
+    "locator": "第四节《关于圜丘坛域的“地甚隘促”问题》中引《明史》卷四十八祈谷的段落：嘉靖十年孟春上辛日于大祀殿行礼；同节有1541拆除、1545建成说，第三节另有1542建成说。仅将祈谷沿革段用于事实004背景，不将歧异年代用于确认事实002。",
+    "review_status": "pending_human_review"
+  },
+  {
+    "source_id": "SRC_TT_PARKS_QND_001",
+    "title": "祈年殿",
+    "institution": "北京市公园管理中心",
+    "url": "https://gygl.beijing.gov.cn/mlgy/mlgy_gyjg01/201912/t20191211_1048233.html",
+    "accessed_on": "2026-11-05",
+    "published_on": "2019-12-11",
+    "locator": "正文第1段第1句（祈谷坛中心建筑、清代祈谷典礼），第2句（圆形攒尖顶、三重檐、蓝色琉璃瓦）；不采用与本次任务无关的尺寸数字。",
+    "review_status": "pending_human_review"
+  },
+  {
+    "source_id": "SRC_TT_BJ_EXPERT_JIAJING_001",
+    "title": "趣说北京：建成百年后天坛被嘉靖帝重修，“花哨房顶”别有深意",
+    "institution": "北京市人民政府门户网站 首都之窗",
+    "url": "https://www.beijing.gov.cn/shipin/qushuobeijing/19453.html",
+    "accessed_on": "2026-11-05",
+    "published_on": "2020-04-10",
+    "locator": "网页正文倒数第三段：1540年下令拆除及原址修建；同句未单独说明施工开始或完工时间",
+    "review_status": "pending_human_review"
+  }
+]

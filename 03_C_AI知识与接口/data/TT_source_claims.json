@@ -1,0 +1,101 @@
+[
+  {
+    "claim_id": "TT_CLAIM_001",
+    "fact_id": "TT_QND_002",
+    "event_id": "TT_EVENT_ORDER",
+    "source_id": "SRC_TT_OFFICIAL_HISTORY_001",
+    "year": 1538,
+    "locator": "大事记1538年条目",
+    "claim": "诏令拆除大祀殿",
+    "mapping": "直接陈述",
+    "review_status": "pending_human_review"
+  },
+  {
+    "claim_id": "TT_CLAIM_002",
+    "fact_id": "TT_QND_002",
+    "event_id": "TT_EVENT_ORDER",
+    "source_id": "SRC_TT_BJ_EXPERT_JIAJING_001",
+    "year": 1540,
+    "locator": "正文倒数第三段",
+    "claim": "下令拆除大祀殿",
+    "mapping": "直接陈述",
+    "review_status": "pending_human_review"
+  },
+  {
+    "claim_id": "TT_CLAIM_003",
+    "fact_id": "TT_QND_002",
+    "event_id": "TT_EVENT_ORDER",
+    "source_id": "SRC_TT_BJWW_STUDY_001",
+    "year": 1541,
+    "locator": "第四节“关于圜丘坛域的地甚隘促问题”末段",
+    "claim": "下旨拆除大祀殿",
+    "mapping": "直接陈述",
+    "review_status": "pending_human_review"
+  },
+  {
+    "claim_id": "TT_CLAIM_004",
+    "fact_id": "TT_QND_002",
+    "event_id": "TT_EVENT_START",
+    "source_id": "SRC_TT_OFFICIAL_HISTORY_001",
+    "year": 1540,
+    "locator": "大事记1540年条目",
+    "claim": "在原址建大享殿；归入兴建时间，未明确实际开工日",
+    "mapping": "按条目语境归类",
+    "review_status": "pending_human_review"
+  },
+  {
+    "claim_id": "TT_CLAIM_005",
+    "fact_id": "TT_QND_002",
+    "event_id": "TT_EVENT_ACTIVITY",
+    "source_id": "SRC_TT_BJ_EXPERT_JIAJING_001",
+    "year": 1540,
+    "locator": "正文倒数第三段",
+    "claim": "1540下令拆除后在原址修建；句子未明确施工开始或完成年份",
+    "mapping": "语境相关，时间归属不确定",
+    "review_status": "pending_human_review"
+  },
+  {
+    "claim_id": "TT_CLAIM_006",
+    "fact_id": "TT_QND_002",
+    "event_id": "TT_EVENT_COMPLETE",
+    "source_id": "SRC_TT_OFFICIAL_HISTORY_001",
+    "year": 1545,
+    "locator": "大事记1540年条目末句",
+    "claim": "1545年八月建成",
+    "mapping": "直接陈述",
+    "review_status": "pending_human_review"
+  },
+  {
+    "claim_id": "TT_CLAIM_007",
+    "fact_id": "TT_QND_002",
+    "event_id": "TT_EVENT_COMPLETE",
+    "source_id": "SRC_TT_OFFICIAL_QND_001",
+    "year": 1545,
+    "locator": "祈年殿介绍段1545年句",
+    "claim": "1545年重建为圆殿并定名大享殿",
+    "mapping": "直接陈述",
+    "review_status": "pending_human_review"
+  },
+  {
+    "claim_id": "TT_CLAIM_008",
+    "fact_id": "TT_QND_002",
+    "event_id": "TT_EVENT_COMPLETE",
+    "source_id": "SRC_TT_BJWW_STUDY_001",
+    "year": 1542,
+    "locator": "第三节“皇穹宇的建造尺度”图三后段",
+    "claim": "大享殿1542年建成",
+    "mapping": "直接陈述",
+    "review_status": "pending_human_review"
+  },
+  {
+    "claim_id": "TT_CLAIM_009",
+    "fact_id": "TT_QND_002",
+    "event_id": "TT_EVENT_COMPLETE",
+    "source_id": "SRC_TT_BJWW_STUDY_001",
+    "year": 1545,
+    "locator": "第四节“关于圜丘坛域的地甚隘促问题”末段",
+    "claim": "大享殿1545年构建成",
+    "mapping": "直接陈述",
+    "review_status": "pending_human_review"
+  }
+]

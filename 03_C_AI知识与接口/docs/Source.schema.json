@@ -1,0 +1,65 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "source_id": {
+      "minLength": 1,
+      "title": "Source Id",
+      "type": "string"
+    },
+    "title": {
+      "title": "Title",
+      "type": "string"
+    },
+    "institution": {
+      "title": "Institution",
+      "type": "string"
+    },
+    "url": {
+      "format": "uri",
+      "maxLength": 2083,
+      "minLength": 1,
+      "title": "Url",
+      "type": "string"
+    },
+    "accessed_on": {
+      "title": "Accessed On",
+      "type": "string"
+    },
+    "published_on": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Published On"
+    },
+    "locator": {
+      "title": "Locator",
+      "type": "string"
+    },
+    "review_status": {
+      "enum": [
+        "pending_human_review",
+        "approved",
+        "rejected"
+      ],
+      "title": "Review Status",
+      "type": "string"
+    }
+  },
+  "required": [
+    "source_id",
+    "title",
+    "institution",
+    "url",
+    "accessed_on",
+    "locator",
+    "review_status"
+  ],
+  "title": "Source",
+  "type": "object"
+}

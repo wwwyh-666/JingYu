@@ -1,0 +1,74 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "spot_id": {
+      "enum": [
+        "TT",
+        "GG",
+        "ZGL",
+        "YHY",
+        "JS",
+        "GWF",
+        "YHG",
+        "ZYM"
+      ],
+      "title": "Spot Id",
+      "type": "string"
+    },
+    "title": {
+      "title": "Title",
+      "type": "string"
+    },
+    "template_id": {
+      "title": "Template Id",
+      "type": "string"
+    },
+    "paragraphs": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Paragraphs",
+      "type": "array"
+    },
+    "fact_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Fact Ids",
+      "type": "array"
+    },
+    "source_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Source Ids",
+      "type": "array"
+    },
+    "visibility": {
+      "const": "private",
+      "title": "Visibility",
+      "type": "string"
+    },
+    "is_mock": {
+      "title": "Is Mock",
+      "type": "boolean"
+    },
+    "model_called": {
+      "title": "Model Called",
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "spot_id",
+    "title",
+    "template_id",
+    "paragraphs",
+    "fact_ids",
+    "source_ids",
+    "visibility",
+    "is_mock",
+    "model_called"
+  ],
+  "title": "DraftResponse",
+  "type": "object"
+}

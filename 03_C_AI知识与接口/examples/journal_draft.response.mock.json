@@ -1,0 +1,13 @@
+{
+  "spot_id": "TT",
+  "title": "【模拟数据】文化主题手账",
+  "template_id": "journal_tpl_ritual",
+  "paragraphs": [
+    "【模拟数据】可编辑文本占位；尚未生成文化内容或个人到访叙述。"
+  ],
+  "fact_ids": [],
+  "source_ids": [],
+  "visibility": "private",
+  "is_mock": true,
+  "model_called": false
+}
