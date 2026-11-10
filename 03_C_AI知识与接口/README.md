@@ -1,48 +1,69 @@
-# 京遇 C AI后端与文化知识初始化
+# 京遇 AI 后端与可信知识增强
 
-实际工程：D:\JingYu\03_C_AI知识与接口。仅完成2026-11-05工作：本地启动、八景模板、5条天坛候选事实、最小关键词检索、模拟接口和测试。无真实模型调用、完整RAG、多轮会话、语音、数字人、手账生成。
+当前阶段：2026-11-10。项目名称与分工见[项目根README](../README.md)和[职责边界](../00_产品规范/项目现状与职责边界_20261110.md)。本文是当前运行入口，整理前README保存在[历史副本](docs/history/README_阶段整理前_20261110.md)。
 
-## 运行
+## 已完成与边界
 
-在PowerShell中：
+FastAPI + Pydantic、本地JSON知识管理、确定性关键词检索、来源关联与争议记录、人工审核过滤、模型生成、程序检查、独立模型核验、最多一次修订、来源查询已经实现。先运行普通检索，不引入LightRAG/GraphRAG。
+
+目前5条天坛候选事实中，仅 `TT_QND_003` 的收窄表述和原文 `TT_QND_003_E01` 获准发布。来源批准只覆盖明确证据和用途，其余事实/片段仍待审；不是语料库全部完成。
+
+DeepSeek Flash已在首题“祈年殿的蓝瓦是什么时候改的？”完成两次成功请求（生成、独立核验）；此前一次402失败另记。实际原文、响应、耗时与费用估算见[真实实测报告](docs/首题真实测试结果_20261110.md)。模型核验不代替人工审核、不保证绝对正确；当前没有其他问题的真实验收结论。
+
+本轮离线检查 **78 passed，1 warning**；真实厂商调用0次，详见[本地检查记录](docs/records/20261110/工程整理与同步/本地检查.json)。多轮记忆、ASR/TTS、数字人、手账生成、上传和业务存储未由本后端实现。`/journal/draft`仍为501预留接口。
+
+## 运行与跨机重建
+
+先进入本后端目录；以下均以该目录为工作目录，不依赖作者机器的固定盘符。Windows建议Python3.12，独立环境通过 `scripts/bootstrap.ps1` 重建，并安装 `requirements.lock.txt` 锁定依赖。已有 `.venv` 时无需重建。初始化脚本会定向本工程临时目录和缓存；不要复用其他项目环境。
 
 ```powershell
-Set-Location -LiteralPath 'D:\JingYu\03_C_AI知识与接口'
+# 在仓库根目录执行一次
+Set-Location -LiteralPath './03_C_AI知识与接口'
+# 首次环境初始化；已有环境请跳过
+.\scripts\bootstrap.ps1
+# 运行本机服务
 .\scripts\start.ps1
 ```
 
-若PowerShell执行策略限制脚本，可直接运行：
+启动脚本监听 `127.0.0.1:8000`；健康检查 `/health`，交互合同 `/docs`，OpenAPI `/openapi.json`。如需直接启动：
 
 ```powershell
 .\.venv\Scripts\python.exe -m uvicorn app.main:app --host 127.0.0.1 --port 8000
 ```
 
-健康检查 http://127.0.0.1:8000/health；八景表 /spots；接口说明 /docs；停止按Ctrl+C。仅本机访问。普通启动日志输出至终端；验收运行日志保存在logs，若需要落盘可用PowerShell重定向到本工程logs。切勿用系统python别名，它当前指向Windows商店。
+模型配置由 `.env.example` 复制至本机 `.env` 后填写。不要覆盖已有 `.env`，不要输出文件全文或提交密钥。环境变量优先于 `.env`，修改后重启服务。`model_ready`只表示配置齐全，不代表已真实调用。真实问答会消耗厂商额度，需要按本次约定范围执行，历史未用额度不自动授权新测试。
 
-## 测试与检索
+## 离线测试与检索
 
 ```powershell
-$env:TEMP = "$PWD\tmp"
-$env:TMP = $env:TEMP
 $env:PYTHONIOENCODING = 'utf-8'
-.\.venv\Scripts\python.exe -m pytest -q --basetemp=tmp\pytest
+$env:MODEL_PROVIDER = 'disabled'
+$env:MODEL_API_KEY = ''
+.\.venv\Scripts\python.exe -m pytest -q -p no:cacheprovider
+.\.venv\Scripts\python.exe scripts\search_sample.py 蓝瓦
+# 仅用于资料整理，不能用于正式回答放行
 .\.venv\Scripts\python.exe scripts\search_sample.py 蓝瓦 --include-unreviewed
 ```
 
-候选检索返回TT_QND_003及真实登记来源ID；这只是离线检索，不是模型回答。去掉--include-unreviewed返回空列表，因为当前5条均待人工审校。未知问题返回空列表，不伪造记录。
+测试使用ScriptedModel/httpx.MockTransport及本机HTTP，网络保护禁止模型厂商访问；不将离线fixture批准当正式批准。上述环境变量关闭当前终端模型配置；如之后需要真实服务，请在新的终端按本机 `.env` 启动，不要将禁用配置误认为模型失效。
 
 ## 目录
 
-app/ 数据模型、数据读取、最小接口；data/ 八景表、来源表、facts_SPOTID.json与空白事实模板；docs/ 合同、选型、验收、原文提取；examples/ 明确标记的模拟JSON；tests/ 自动化测试；scripts/ 启动及离线检索；logs/ 真实运行记录；tmp/ 临时数据；.cache/ D盘pip缓存；.venv/ D盘虚拟环境。
+| 路径 | 内容 |
+|---|---|
+| app/ | 接口、模型结构、JSON读取、问答流程与模型适配 |
+| data/ | 八景模板、事实/来源/原文、审核记录、事件与争议关系；不得自动回写模型纠错 |
+| docs/ | [统一索引](docs/README.md)、当前合同、schema及技术说明 |
+| docs/reviews/ | 人工审读稿、证据整理和必要历史，当前审核以正式数据与明确批准范围为准 |
+| docs/integration/ | [数字人对接说明](docs/integration/京遇%20AI%20后端—数字人接口对接说明.md)、fetch、独立页面与脱敏历史快照 |
+| docs/records/ | 精选离线/真实测试证据、费用说明，见[索引](docs/records/README.md) |
+| docs/history/ | 旧接口合同与整理前README；不是当前行为说明 |
+| examples/ | 明确标记mock的旧前端fixture，不是当前真实响应 |
+| tests/、scripts/ | 自动测试、启动、离线检索和需要明确范围的真实验收脚本 |
+| logs/、tmp/、.cache/、.venv/ | 本机产物，除既有固定测试基准外不提交 |
 
-项目根目录按v6建00_产品规范、01_A_视觉资产、02_B_前端代码、03_C_AI知识与接口、04_交互测试、05_最终提交；A/B目录仅为空目录，未写入代码或视觉资产。共享规范目录仅保存两份原始文件副本。PDF中C目录的排版空格按用户给定精确路径处理，不另建带空格目录。
+## 接口与下一步
 
-## 重建环境
+复用 `GET /health`、`GET /spots`、`POST /chat`、`GET /sources/{source_id}`，详见[合同0.2](docs/接口合同_0.2.md)。知识接口没有用户鉴权；默认仅允许localhost/127.0.0.1的5173前端跨域来源。分机监听、精确前端origin和网络可达性先按[对接说明](docs/integration/京遇%20AI%20后端—数字人接口对接说明.md)确认。
 
-使用已核实的Python3.12安装器命令py -3.12；在本工程下创建.venv。安装前将TEMP、TMP设为本工程tmp，PIP_CACHE_DIR设为本工程.cache\pip。以 requirements.lock.txt 安装本次确切版本（含测试依赖）。requirements.in与requirements-dev.in记录依赖意图。D盘环境依赖电脑上的Python3.12基础解释器；不声称已经复制为可跨机运行的Python发行包。跨机需按文档重建虚拟环境。
-
-.env.example仅示例；可复制为.env，但当前版本忽略模型配置且始终不调用模型。密钥不得进入代码、日志、示例或版本库；.gitignore已排除.env、虚拟环境、日志和缓存。今天未建立团队Git仓库、未创建远程仓库、未提交任何密钥。不要在聊天中发送密钥。
-
-文件依据、版本差异、实测记录与后续建议见docs/初始化验收.md；技术路线与付费服务尚待用户确认。
-
-首次或跨机重建可运行 `.\scripts\bootstrap.ps1`，它会将临时目录与pip缓存定向D盘并按锁文件安装。当前初始化机器已完成安装，无需重复。
+数字人显示与播报可复用通过全部检查后的 `answer`；失败不播放候选。数字人成员负责其实际SDK、语音和播放接口，前端集成来源展示、停止旧播报和新问题状态。下一批天坛知识见[最多五项补充草案](docs/天坛下一批语料任务_20261110.md)，不自动标为已审。

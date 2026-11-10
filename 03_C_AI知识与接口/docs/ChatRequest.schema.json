@@ -1,0 +1,91 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "spot_id": {
+      "enum": [
+        "TT",
+        "GG",
+        "ZGL",
+        "YHY",
+        "JS",
+        "GWF",
+        "YHG",
+        "ZYM"
+      ],
+      "title": "Spot Id",
+      "type": "string"
+    },
+    "question": {
+      "maxLength": 2000,
+      "minLength": 1,
+      "title": "Question",
+      "type": "string"
+    },
+    "session_id": {
+      "anyOf": [
+        {
+          "maxLength": 100,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Session Id"
+    },
+    "turn_id": {
+      "default": 1,
+      "maximum": 1000,
+      "minimum": 1,
+      "title": "Turn Id",
+      "type": "integer"
+    },
+    "object_id": {
+      "anyOf": [
+        {
+          "maxLength": 100,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Object Id"
+    },
+    "period": {
+      "anyOf": [
+        {
+          "maxLength": 200,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Period"
+    },
+    "request_id": {
+      "anyOf": [
+        {
+          "maxLength": 100,
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Request Id"
+    }
+  },
+  "required": [
+    "spot_id",
+    "question"
+  ],
+  "title": "ChatRequest",
+  "type": "object"
+}

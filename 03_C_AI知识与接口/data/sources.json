@@ -7,7 +7,12 @@
     "accessed_on": "2026-11-05",
     "published_on": null,
     "locator": "页面标题“祈年殿”下的介绍段；按各事实 source_locator 定位",
-    "review_status": "pending_human_review"
+    "review_status": "approved",
+    "reviewer": "王宇涵",
+    "reviewed_at": "2026-11-10",
+    "approved_evidence_ids": [
+      "TT_QND_003_E01"
+    ]
   },
   {
     "source_id": "SRC_TT_OFFICIAL_HISTORY_001",

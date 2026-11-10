@@ -3,13 +3,15 @@ from pathlib import Path
 import httpx,pytest
 from fastapi.testclient import TestClient
 from pydantic import ValidationError
-from app.main import app
+from app.main import create_app
+from app.model_client import ChatModel, ModelConfig
 from app.models import ChatResponse,DraftResponse,Fact
 from app.repository import Repository,DATA
 ROOT=DATA.parent
 @pytest.fixture
 def client():
-    with TestClient(app) as c: yield c
+    # Always disable the real adapter in offline tests, regardless of local .env.
+    with TestClient(create_app(model=ChatModel(ModelConfig()))) as c: yield c
 
 def test_health_and_spots(client):
     h=client.get('/health')
@@ -19,12 +21,13 @@ def test_health_and_spots(client):
     assert {x['spot_id'] for x in r.json()['items']}=={'TT','GG','ZGL','YHY','JS','GWF','YHG','ZYM'}
     assert all(x['geo'] is None and x['map_position'] is None for x in r.json()['items'])
 
-def test_mock_does_not_claim_real_model(client):
+def test_chat_does_not_disguise_disabled_model_as_real_answer(client):
     body={'spot_id':'TT','question':'祈年殿的蓝瓦是什么时候改的？','turn_id':1}
     r=client.post('/chat',json=body)
     v=ChatResponse.model_validate(r.json())
-    assert r.status_code==200 and v.is_mock and not v.model_called
-    assert v.confidence_flag=='mock' and not v.citations and not v.fact_ids
+    assert r.status_code==503 and not v.is_mock and not v.model_called
+    assert v.confidence_flag=='insufficient_evidence' and not v.citations and not v.fact_ids
+    assert v.error_code=='MODEL_NOT_CONFIGURED'
 
 @pytest.mark.parametrize('payload',[{'spot_id':'BAD','question':'问题'},
  {'spot_id':'TT','question':'  '},{'spot_id':'TT','question':'问题','turn_id':0},
@@ -42,7 +45,8 @@ def test_real_records_and_review_gate():
     found=repo.search('TT','蓝瓦',include_unreviewed=True)
     assert [x.fact_id for x in found]==['TT_QND_003']
     assert all(x in repo.facts and set(x.source_ids)<={s.source_id for s in repo.sources} for x in found)
-    assert repo.search('TT','蓝瓦')==[]
+    assert [f.fact_id for f in repo.search('TT','蓝瓦')]==['TT_QND_003']
+    assert repo.search('TT','1420')==[]
     assert repo.search('GG','蓝瓦',include_unreviewed=True)==[]
     assert repo.search('TT','蓝瓦',period='明·嘉靖二十四年（1545）',include_unreviewed=True)==[]
     assert repo.search('TT','蓝瓦',object_id='TT_OTHER',include_unreviewed=True)==[]
@@ -69,7 +73,11 @@ def test_examples_match_contract(client):
     fixtures=ROOT/'examples'
     assert client.get('/spots').json()==json.loads((fixtures/'spots.response.mock.json').read_text('utf-8'))
     req=json.loads((fixtures/'chat.request.mock.json').read_text('utf-8'))
-    assert client.post('/chat',json=req).json()==json.loads((fixtures/'chat.response.mock.json').read_text('utf-8'))
+    # Keep the legacy 0.1 mock as a typed UI fixture; /chat is now the real pipeline.
+    mock=ChatResponse.model_validate_json((fixtures/'chat.response.mock.json').read_text('utf-8'))
+    assert mock.is_mock and not mock.model_called
+    live=ChatResponse.model_validate(client.post('/chat',json=req).json())
+    assert not live.is_mock and live.error_code=='MODEL_NOT_CONFIGURED'
     DraftResponse.model_validate_json((fixtures/'journal_draft.response.mock.json').read_text('utf-8'))
 
 def test_uvicorn_starts_from_specified_directory():

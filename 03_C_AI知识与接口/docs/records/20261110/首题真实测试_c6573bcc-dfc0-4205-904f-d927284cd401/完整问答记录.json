@@ -1,0 +1,198 @@
+{
+  "run_id": "9499f650-18d8-421f-97c8-acf6abb4eced",
+  "started_at": "2026-11-10T19:36:28.775418+08:00",
+  "execution_mode": "formal_local_http",
+  "configured_model": "deepseek-flash",
+  "provider": "deepseek",
+  "configuration_missing": [],
+  "cases": [
+    {
+      "case": "normal",
+      "request": {
+        "spot_id": "TT",
+        "object_id": "TT_QND",
+        "question": "祈年殿的蓝瓦是什么时候改的？",
+        "request_id": "9499f650-18d8-421f-97c8-acf6abb4eced-normal"
+      },
+      "http_status": 502,
+      "http_elapsed_ms": 1857.523,
+      "response": {
+        "spot_id": "TT",
+        "session_id": null,
+        "turn_id": 1,
+        "answer": "模型生成或核验未完成，本次不发布候选回答，请稍后重试。",
+        "fact_ids": [],
+        "citations": [],
+        "confidence_flag": "insufficient_evidence",
+        "check_status": "failed",
+        "is_mock": false,
+        "model_called": true,
+        "request_id": "9499f650-18d8-421f-97c8-acf6abb4eced-normal",
+        "answer_id": "9f7f2a2b-b0b6-480c-9e6b-b99fab95935b",
+        "evidence": [],
+        "claims": [],
+        "verification": {
+          "status": "failed",
+          "judgments": [],
+          "revision_count": 0
+        },
+        "evidence_review_status": "approved",
+        "error_code": "MODEL_HTTP_402",
+        "metrics": {
+          "elapsed_ms": 1852.849,
+          "retrieval_ms": 0.142,
+          "calls": [
+            {
+              "phase": "generate",
+              "started_at": "2026-11-10T19:36:29.088891+08:00",
+              "elapsed_ms": 1849.971,
+              "configured_model": "deepseek-flash",
+              "actual_model": null,
+              "status": "failed",
+              "usage": {},
+              "error_code": "MODEL_HTTP_402"
+            }
+          ]
+        }
+      },
+      "pipeline_trace": {
+        "trace_schema": "qa-0.2",
+        "started_at": "2026-11-10T19:36:29.085890+08:00",
+        "execution_mode": "application",
+        "request": {
+          "spot_id": "TT",
+          "question": "祈年殿的蓝瓦是什么时候改的？",
+          "session_id": null,
+          "turn_id": 1,
+          "object_id": "TT_QND",
+          "period": null,
+          "request_id": "9499f650-18d8-421f-97c8-acf6abb4eced-normal"
+        },
+        "request_id": "9499f650-18d8-421f-97c8-acf6abb4eced-normal",
+        "answer_id": "9f7f2a2b-b0b6-480c-9e6b-b99fab95935b",
+        "retrieved_evidence": [
+          {
+            "evidence_id": "TT_QND_003_E01",
+            "fact_id": "TT_QND_003",
+            "spot_id": "TT",
+            "object_id": "TT_QND",
+            "period": "清·乾隆十六年（1751）",
+            "source_id": "SRC_TT_OFFICIAL_QND_001",
+            "url": "https://tiantanpark.cn/scenic_spot_list/detail/1254.html",
+            "quote": "1751年 (清·乾隆十六年)，统一改为蓝瓦，并更名“祈年殿”",
+            "locator": "页面标题祈年殿下的建筑介绍段；搜索1751年；段中由该年份开始、至更名的分句",
+            "quote_sha256": "21c5e0f8df59c3d760d744595dec95dede2ba229bdffc0f4929b45b6040cd608",
+            "usage": "answer",
+            "note": "直接表述年份、改瓦和更名；主证据",
+            "review_status": "approved",
+            "reviewer": "王宇涵",
+            "reviewed_at": "2026-11-10"
+          }
+        ],
+        "approved_facts": [
+          {
+            "fact_id": "TT_QND_003",
+            "spot_id": "TT",
+            "object_id": "TT_QND",
+            "period": "清·乾隆十六年（1751）",
+            "text": "据天坛公园《祈年殿》介绍，1751年（清乾隆十六年），大享殿统一改为蓝瓦，并更名为祈年殿。",
+            "source_ids": [
+              "SRC_TT_OFFICIAL_QND_001"
+            ],
+            "source_locator": "SRC_TT_OFFICIAL_QND_001：祈年殿介绍段1751年句；原文片段TT_QND_003_E01",
+            "keywords": [
+              "1751",
+              "乾隆",
+              "蓝瓦",
+              "蓝色",
+              "更名",
+              "改瓦"
+            ],
+            "query_aliases": [],
+            "review_status": "approved",
+            "reviewer": "王宇涵",
+            "reviewed_at": "2026-11-10",
+            "notes": "2026-11-10王宇涵明确批准的收窄表述。仅关联S1/E01；不扩大为全坛全部或仅此一殿改瓦，不把记述年份等同所有工程完工年份。其他原多来源内容保留在审读历史中，未随本条自动发布。",
+            "dispute_status": "not_assessed",
+            "statement_type": "direct_source_paraphrase",
+            "source_evidence": [
+              {
+                "source_id": "SRC_TT_OFFICIAL_QND_001",
+                "locator": "祈年殿介绍段1751年句；TT_QND_003_E01",
+                "supports": "仅支持本条获批的1751年统一改蓝瓦及更名表述",
+                "relation": "supports"
+              }
+            ]
+          }
+        ],
+        "attempts": [
+          {
+            "revision": 0,
+            "candidate": null,
+            "program_issues": [],
+            "verification": null,
+            "verification_program_issues": []
+          }
+        ],
+        "price_verified": false,
+        "cost": null,
+        "final_response": {
+          "spot_id": "TT",
+          "session_id": null,
+          "turn_id": 1,
+          "answer": "模型生成或核验未完成，本次不发布候选回答，请稍后重试。",
+          "fact_ids": [],
+          "citations": [],
+          "confidence_flag": "insufficient_evidence",
+          "check_status": "failed",
+          "is_mock": false,
+          "model_called": true,
+          "request_id": "9499f650-18d8-421f-97c8-acf6abb4eced-normal",
+          "answer_id": "9f7f2a2b-b0b6-480c-9e6b-b99fab95935b",
+          "evidence": [],
+          "claims": [],
+          "verification": {
+            "status": "failed",
+            "judgments": [],
+            "revision_count": 0
+          },
+          "evidence_review_status": "approved",
+          "error_code": "MODEL_HTTP_402",
+          "metrics": {
+            "elapsed_ms": 1852.849,
+            "retrieval_ms": 0.142,
+            "calls": [
+              {
+                "phase": "generate",
+                "started_at": "2026-11-10T19:36:29.088891+08:00",
+                "elapsed_ms": 1849.971,
+                "configured_model": "deepseek-flash",
+                "actual_model": null,
+                "status": "failed",
+                "usage": {},
+                "error_code": "MODEL_HTTP_402"
+              }
+            ]
+          }
+        }
+      },
+      "assessment": "not_completed"
+    }
+  ],
+  "real_model_run_complete": false,
+  "real_model_acceptance_complete": false,
+  "cost_estimate": null,
+  "note": "无模拟、无临时批准。耗时与用量只取实际运行；模型核验不是绝对正确性保证。",
+  "health": {
+    "status": "ok",
+    "stage": "2026-11-09-single-turn-evidence-pipeline",
+    "model_provider": "deepseek",
+    "model_ready": true,
+    "model_called": false,
+    "spot_count": 8,
+    "candidate_fact_count": 5,
+    "publishable_fact_count": 1
+  },
+  "remaining_cases": "not_run_because_normal_question_not_passed",
+  "human_content_acceptance_complete": false
+}

@@ -1,0 +1,15 @@
+{
+  "checked_at": "2026-11-10T18:41:35.152623+08:00",
+  "kind": "provider_model_list_authentication_only",
+  "endpoint": "GET /models",
+  "configured_model": "deepseek-flash",
+  "generation_requests": 0,
+  "verification_requests": 0,
+  "http_status": 200,
+  "configured_model_listed": true,
+  "returned_model_ids": [
+    "deepseek-flash",
+    "deepseek-v4-pro"
+  ],
+  "elapsed_ms": 2426.442
+}

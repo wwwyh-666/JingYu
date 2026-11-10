@@ -1,0 +1,21 @@
+{
+  "recorded_at": "2026-11-10T19:38:30.330182+08:00",
+  "run_id": "c6573bcc-dfc0-4205-904f-d927284cd401",
+  "authorization_scope": "仅祈年殿的蓝瓦是什么时候改的？；本轮最多4次模型请求，1600输出token/次",
+  "requests_used": 1,
+  "requests_remaining_in_same_authorization": 3,
+  "generation_requests": 1,
+  "verification_requests": 0,
+  "revision_requests": 0,
+  "retry_requests": 0,
+  "stop_reason": "DeepSeek HTTP 402；按官方错误文档表示余额不足。未自动充值、换模型或重试。",
+  "error_reference": "https://api-docs.deepseek.com/quick_start/error_codes/",
+  "actual_usage_returned": null,
+  "usage_based_cost_estimate": null,
+  "usage_based_cost_estimate_note": "未返回token用量，无法按实际用量计算；不沿用调用前估算冒充实测费用。",
+  "platform_actual_bill": null,
+  "platform_actual_bill_note": "未查询平台实际账单，不能断言实际扣费金额或零费用。",
+  "formal_data_unchanged": true,
+  "server_stopped": true,
+  "resume_policy": "处理账户可用余额/额度后，同一授权仅余3次请求；不得重新自动分配4次。"
+}

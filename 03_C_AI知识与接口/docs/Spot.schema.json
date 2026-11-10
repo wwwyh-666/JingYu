@@ -141,7 +141,8 @@
       "enum": [
         "pending_human_review",
         "approved",
-        "rejected"
+        "rejected",
+        "disabled"
       ],
       "title": "Review Status",
       "type": "string"

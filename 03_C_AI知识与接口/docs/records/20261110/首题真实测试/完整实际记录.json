@@ -1,0 +1,522 @@
+{
+  "run_id": "058101f1-4408-4eca-b8ed-7816b61d8b09",
+  "started_at": "2026-11-10T21:09:19.303676+08:00",
+  "execution_mode": "formal_local_http",
+  "configured_model": "deepseek-flash",
+  "provider": "deepseek",
+  "configuration_missing": [],
+  "cases": [
+    {
+      "case": "normal",
+      "request": {
+        "spot_id": "TT",
+        "object_id": "TT_QND",
+        "question": "祈年殿的蓝瓦是什么时候改的？",
+        "request_id": "058101f1-4408-4eca-b8ed-7816b61d8b09-normal"
+      },
+      "http_status": 200,
+      "http_elapsed_ms": 4740.989,
+      "response": {
+        "spot_id": "TT",
+        "session_id": null,
+        "turn_id": 1,
+        "answer": "据天坛公园《祈年殿》介绍，1751年（清乾隆十六年），大享殿统一改为蓝瓦，并更名为祈年殿。",
+        "fact_ids": [
+          "TT_QND_003"
+        ],
+        "citations": [
+          {
+            "source_id": "SRC_TT_OFFICIAL_QND_001",
+            "title": "祈年殿",
+            "url": "https://tiantanpark.cn/scenic_spot_list/detail/1254.html",
+            "evidence_ids": [
+              "TT_QND_003_E01"
+            ]
+          }
+        ],
+        "confidence_flag": "supported",
+        "check_status": "passed",
+        "is_mock": false,
+        "model_called": true,
+        "request_id": "058101f1-4408-4eca-b8ed-7816b61d8b09-normal",
+        "answer_id": "589e70da-bc84-4a07-a0ce-7be59da6b378",
+        "evidence": [
+          {
+            "evidence_id": "TT_QND_003_E01",
+            "fact_id": "TT_QND_003",
+            "spot_id": "TT",
+            "object_id": "TT_QND",
+            "period": "清·乾隆十六年（1751）",
+            "source_id": "SRC_TT_OFFICIAL_QND_001",
+            "url": "https://tiantanpark.cn/scenic_spot_list/detail/1254.html",
+            "quote": "1751年 (清·乾隆十六年)，统一改为蓝瓦，并更名“祈年殿”",
+            "locator": "页面标题祈年殿下的建筑介绍段；搜索1751年；段中由该年份开始、至更名的分句",
+            "quote_sha256": "21c5e0f8df59c3d760d744595dec95dede2ba229bdffc0f4929b45b6040cd608",
+            "usage": "answer",
+            "note": "直接表述年份、改瓦和更名；主证据",
+            "review_status": "approved",
+            "reviewer": "王宇涵",
+            "reviewed_at": "2026-11-10"
+          }
+        ],
+        "claims": [
+          {
+            "claim_id": "c1",
+            "text": "据天坛公园《祈年殿》介绍，1751年（清乾隆十六年），大享殿统一改为蓝瓦，并更名为祈年殿。",
+            "fact_id": "TT_QND_003",
+            "spot_id": "TT",
+            "object_id": "TT_QND",
+            "period": "清·乾隆十六年（1751）",
+            "evidence_ids": [
+              "TT_QND_003_E01"
+            ]
+          }
+        ],
+        "verification": {
+          "status": "supported",
+          "judgments": [
+            {
+              "claim_id": "c1",
+              "verdict": "supports",
+              "evidence_ids": [
+                "TT_QND_003_E01"
+              ],
+              "explanation": "证据原文明确记载1751年（清乾隆十六年）统一改为蓝瓦并更名“祈年殿”，与claim的年份、改瓦、更名内容一致，且对象为祈年殿/大享殿，未扩大范围。"
+            }
+          ],
+          "revision_count": 0
+        },
+        "evidence_review_status": "approved",
+        "error_code": null,
+        "metrics": {
+          "elapsed_ms": 4736.675,
+          "retrieval_ms": 0.141,
+          "calls": [
+            {
+              "phase": "generate",
+              "started_at": "2026-11-10T21:09:19.617572+08:00",
+              "elapsed_ms": 2143.161,
+              "configured_model": "deepseek-flash",
+              "actual_model": "deepseek-flash",
+              "status": "success",
+              "usage": {
+                "prompt_tokens": 731,
+                "completion_tokens": 94,
+                "total_tokens": 825,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0
+                },
+                "prompt_cache_hit_tokens": 0,
+                "prompt_cache_miss_tokens": 731
+              },
+              "error_code": null
+            },
+            {
+              "phase": "verify",
+              "started_at": "2026-11-10T21:09:21.762378+08:00",
+              "elapsed_ms": 2584.357,
+              "configured_model": "deepseek-flash",
+              "actual_model": "deepseek-flash",
+              "status": "success",
+              "usage": {
+                "prompt_tokens": 845,
+                "completion_tokens": 88,
+                "total_tokens": 933,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0
+                },
+                "prompt_cache_hit_tokens": 0,
+                "prompt_cache_miss_tokens": 845
+              },
+              "error_code": null
+            }
+          ]
+        }
+      },
+      "pipeline_trace": {
+        "trace_schema": "qa-0.2",
+        "started_at": "2026-11-10T21:09:19.614572+08:00",
+        "execution_mode": "application",
+        "request": {
+          "spot_id": "TT",
+          "question": "祈年殿的蓝瓦是什么时候改的？",
+          "session_id": null,
+          "turn_id": 1,
+          "object_id": "TT_QND",
+          "period": null,
+          "request_id": "058101f1-4408-4eca-b8ed-7816b61d8b09-normal"
+        },
+        "request_id": "058101f1-4408-4eca-b8ed-7816b61d8b09-normal",
+        "answer_id": "589e70da-bc84-4a07-a0ce-7be59da6b378",
+        "retrieved_evidence": [
+          {
+            "evidence_id": "TT_QND_003_E01",
+            "fact_id": "TT_QND_003",
+            "spot_id": "TT",
+            "object_id": "TT_QND",
+            "period": "清·乾隆十六年（1751）",
+            "source_id": "SRC_TT_OFFICIAL_QND_001",
+            "url": "https://tiantanpark.cn/scenic_spot_list/detail/1254.html",
+            "quote": "1751年 (清·乾隆十六年)，统一改为蓝瓦，并更名“祈年殿”",
+            "locator": "页面标题祈年殿下的建筑介绍段；搜索1751年；段中由该年份开始、至更名的分句",
+            "quote_sha256": "21c5e0f8df59c3d760d744595dec95dede2ba229bdffc0f4929b45b6040cd608",
+            "usage": "answer",
+            "note": "直接表述年份、改瓦和更名；主证据",
+            "review_status": "approved",
+            "reviewer": "王宇涵",
+            "reviewed_at": "2026-11-10"
+          }
+        ],
+        "approved_facts": [
+          {
+            "fact_id": "TT_QND_003",
+            "spot_id": "TT",
+            "object_id": "TT_QND",
+            "period": "清·乾隆十六年（1751）",
+            "text": "据天坛公园《祈年殿》介绍，1751年（清乾隆十六年），大享殿统一改为蓝瓦，并更名为祈年殿。",
+            "source_ids": [
+              "SRC_TT_OFFICIAL_QND_001"
+            ],
+            "source_locator": "SRC_TT_OFFICIAL_QND_001：祈年殿介绍段1751年句；原文片段TT_QND_003_E01",
+            "keywords": [
+              "1751",
+              "乾隆",
+              "蓝瓦",
+              "蓝色",
+              "更名",
+              "改瓦"
+            ],
+            "query_aliases": [],
+            "review_status": "approved",
+            "reviewer": "王宇涵",
+            "reviewed_at": "2026-11-10",
+            "notes": "2026-11-10王宇涵明确批准的收窄表述。仅关联S1/E01；不扩大为全坛全部或仅此一殿改瓦，不把记述年份等同所有工程完工年份。其他原多来源内容保留在审读历史中，未随本条自动发布。",
+            "dispute_status": "not_assessed",
+            "statement_type": "direct_source_paraphrase",
+            "source_evidence": [
+              {
+                "source_id": "SRC_TT_OFFICIAL_QND_001",
+                "locator": "祈年殿介绍段1751年句；TT_QND_003_E01",
+                "supports": "仅支持本条获批的1751年统一改蓝瓦及更名表述",
+                "relation": "supports"
+              }
+            ]
+          }
+        ],
+        "attempts": [
+          {
+            "revision": 0,
+            "candidate": {
+              "claims": [
+                {
+                  "claim_id": "c1",
+                  "text": "据天坛公园《祈年殿》介绍，1751年（清乾隆十六年），大享殿统一改为蓝瓦，并更名为祈年殿。",
+                  "fact_id": "TT_QND_003",
+                  "spot_id": "TT",
+                  "object_id": "TT_QND",
+                  "period": "清·乾隆十六年（1751）",
+                  "evidence_ids": [
+                    "TT_QND_003_E01"
+                  ]
+                }
+              ]
+            },
+            "program_issues": [],
+            "verification": {
+              "judgments": [
+                {
+                  "claim_id": "c1",
+                  "verdict": "supports",
+                  "evidence_ids": [
+                    "TT_QND_003_E01"
+                  ],
+                  "explanation": "证据原文明确记载1751年（清乾隆十六年）统一改为蓝瓦并更名“祈年殿”，与claim的年份、改瓦、更名内容一致，且对象为祈年殿/大享殿，未扩大范围。"
+                }
+              ]
+            },
+            "verification_program_issues": []
+          }
+        ],
+        "price_verified": false,
+        "cost": null,
+        "final_response": {
+          "spot_id": "TT",
+          "session_id": null,
+          "turn_id": 1,
+          "answer": "据天坛公园《祈年殿》介绍，1751年（清乾隆十六年），大享殿统一改为蓝瓦，并更名为祈年殿。",
+          "fact_ids": [
+            "TT_QND_003"
+          ],
+          "citations": [
+            {
+              "source_id": "SRC_TT_OFFICIAL_QND_001",
+              "title": "祈年殿",
+              "url": "https://tiantanpark.cn/scenic_spot_list/detail/1254.html",
+              "evidence_ids": [
+                "TT_QND_003_E01"
+              ]
+            }
+          ],
+          "confidence_flag": "supported",
+          "check_status": "passed",
+          "is_mock": false,
+          "model_called": true,
+          "request_id": "058101f1-4408-4eca-b8ed-7816b61d8b09-normal",
+          "answer_id": "589e70da-bc84-4a07-a0ce-7be59da6b378",
+          "evidence": [
+            {
+              "evidence_id": "TT_QND_003_E01",
+              "fact_id": "TT_QND_003",
+              "spot_id": "TT",
+              "object_id": "TT_QND",
+              "period": "清·乾隆十六年（1751）",
+              "source_id": "SRC_TT_OFFICIAL_QND_001",
+              "url": "https://tiantanpark.cn/scenic_spot_list/detail/1254.html",
+              "quote": "1751年 (清·乾隆十六年)，统一改为蓝瓦，并更名“祈年殿”",
+              "locator": "页面标题祈年殿下的建筑介绍段；搜索1751年；段中由该年份开始、至更名的分句",
+              "quote_sha256": "21c5e0f8df59c3d760d744595dec95dede2ba229bdffc0f4929b45b6040cd608",
+              "usage": "answer",
+              "note": "直接表述年份、改瓦和更名；主证据",
+              "review_status": "approved",
+              "reviewer": "王宇涵",
+              "reviewed_at": "2026-11-10"
+            }
+          ],
+          "claims": [
+            {
+              "claim_id": "c1",
+              "text": "据天坛公园《祈年殿》介绍，1751年（清乾隆十六年），大享殿统一改为蓝瓦，并更名为祈年殿。",
+              "fact_id": "TT_QND_003",
+              "spot_id": "TT",
+              "object_id": "TT_QND",
+              "period": "清·乾隆十六年（1751）",
+              "evidence_ids": [
+                "TT_QND_003_E01"
+              ]
+            }
+          ],
+          "verification": {
+            "status": "supported",
+            "judgments": [
+              {
+                "claim_id": "c1",
+                "verdict": "supports",
+                "evidence_ids": [
+                  "TT_QND_003_E01"
+                ],
+                "explanation": "证据原文明确记载1751年（清乾隆十六年）统一改为蓝瓦并更名“祈年殿”，与claim的年份、改瓦、更名内容一致，且对象为祈年殿/大享殿，未扩大范围。"
+              }
+            ],
+            "revision_count": 0
+          },
+          "evidence_review_status": "approved",
+          "error_code": null,
+          "metrics": {
+            "elapsed_ms": 4736.675,
+            "retrieval_ms": 0.141,
+            "calls": [
+              {
+                "phase": "generate",
+                "started_at": "2026-11-10T21:09:19.617572+08:00",
+                "elapsed_ms": 2143.161,
+                "configured_model": "deepseek-flash",
+                "actual_model": "deepseek-flash",
+                "status": "success",
+                "usage": {
+                  "prompt_tokens": 731,
+                  "completion_tokens": 94,
+                  "total_tokens": 825,
+                  "prompt_tokens_details": {
+                    "cached_tokens": 0
+                  },
+                  "prompt_cache_hit_tokens": 0,
+                  "prompt_cache_miss_tokens": 731
+                },
+                "error_code": null
+              },
+              {
+                "phase": "verify",
+                "started_at": "2026-11-10T21:09:21.762378+08:00",
+                "elapsed_ms": 2584.357,
+                "configured_model": "deepseek-flash",
+                "actual_model": "deepseek-flash",
+                "status": "success",
+                "usage": {
+                  "prompt_tokens": 845,
+                  "completion_tokens": 88,
+                  "total_tokens": 933,
+                  "prompt_tokens_details": {
+                    "cached_tokens": 0
+                  },
+                  "prompt_cache_hit_tokens": 0,
+                  "prompt_cache_miss_tokens": 845
+                },
+                "error_code": null
+              }
+            ]
+          }
+        }
+      },
+      "source_queries": [
+        {
+          "source_id": "SRC_TT_OFFICIAL_QND_001",
+          "status": 200,
+          "body": {
+            "source": {
+              "source_id": "SRC_TT_OFFICIAL_QND_001",
+              "title": "祈年殿",
+              "institution": "天坛公园",
+              "url": "https://tiantanpark.cn/scenic_spot_list/detail/1254.html",
+              "accessed_on": "2026-11-05",
+              "published_on": null,
+              "locator": "页面标题“祈年殿”下的介绍段；按各事实 source_locator 定位",
+              "review_status": "approved",
+              "reviewer": "王宇涵",
+              "reviewed_at": "2026-11-10",
+              "approved_evidence_ids": [
+                "TT_QND_003_E01"
+              ]
+            },
+            "evidence": [
+              {
+                "evidence_id": "TT_QND_003_E01",
+                "fact_id": "TT_QND_003",
+                "spot_id": "TT",
+                "object_id": "TT_QND",
+                "period": "清·乾隆十六年（1751）",
+                "source_id": "SRC_TT_OFFICIAL_QND_001",
+                "url": "https://tiantanpark.cn/scenic_spot_list/detail/1254.html",
+                "quote": "1751年 (清·乾隆十六年)，统一改为蓝瓦，并更名“祈年殿”",
+                "locator": "页面标题祈年殿下的建筑介绍段；搜索1751年；段中由该年份开始、至更名的分句",
+                "quote_sha256": "21c5e0f8df59c3d760d744595dec95dede2ba229bdffc0f4929b45b6040cd608",
+                "usage": "answer",
+                "note": "直接表述年份、改瓦和更名；主证据",
+                "review_status": "approved",
+                "reviewer": "王宇涵",
+                "reviewed_at": "2026-11-10"
+              }
+            ]
+          }
+        }
+      ],
+      "assessment": "real_pipeline_supported"
+    }
+  ],
+  "real_model_run_complete": false,
+  "real_model_acceptance_complete": false,
+  "cost_estimate": null,
+  "note": "无模拟、无临时批准。耗时与用量只取实际运行；模型核验不是绝对正确性保证。",
+  "health": {
+    "status": "ok",
+    "stage": "2026-11-09-single-turn-evidence-pipeline",
+    "model_provider": "deepseek",
+    "model_ready": true,
+    "model_called": false,
+    "spot_count": 8,
+    "candidate_fact_count": 5,
+    "publishable_fact_count": 1
+  },
+  "human_content_acceptance_complete": false,
+  "run_limits": {
+    "authorized_max_model_requests": 4,
+    "actual_requests": 2,
+    "max_output_tokens_per_request": 1600,
+    "data_unchanged": true,
+    "other_questions_run": false,
+    "actual_requests_this_execution": 2,
+    "prior_requests_in_same_authorization": 1,
+    "cumulative_requests_in_authorization": 3,
+    "unused_requests": 1,
+    "no_further_requests": true
+  },
+  "real_model_request_ledger": {
+    "kind": "real_deepseek_single_question_run",
+    "authorized_max_requests": 4,
+    "requests_sent": 2,
+    "max_output_tokens_per_request": 1600,
+    "events": [
+      {
+        "phase": "generate",
+        "prepared_at": "2026-11-10T21:09:19.617572+08:00",
+        "prompt_utf8_bytes": 2519,
+        "local_size_check_note": "UTF-8 bytes plus 128 template reserve, a conservative local size guard; not provider token measurement.",
+        "attempted": true,
+        "request_number": 1,
+        "provider_record": {
+          "phase": "generate",
+          "started_at": "2026-11-10T21:09:19.617572+08:00",
+          "elapsed_ms": 2143.161,
+          "configured_model": "deepseek-flash",
+          "actual_model": "deepseek-flash",
+          "status": "success",
+          "usage": {
+            "prompt_tokens": 731,
+            "completion_tokens": 94,
+            "total_tokens": 825,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 731
+          },
+          "error_code": null
+        },
+        "parsed_output": {
+          "claims": [
+            {
+              "claim_id": "c1",
+              "text": "据天坛公园《祈年殿》介绍，1751年（清乾隆十六年），大享殿统一改为蓝瓦，并更名为祈年殿。",
+              "fact_id": "TT_QND_003",
+              "spot_id": "TT",
+              "object_id": "TT_QND",
+              "period": "清·乾隆十六年（1751）",
+              "evidence_ids": [
+                "TT_QND_003_E01"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "phase": "verify",
+        "prepared_at": "2026-11-10T21:09:21.762378+08:00",
+        "prompt_utf8_bytes": 2873,
+        "local_size_check_note": "UTF-8 bytes plus 128 template reserve, a conservative local size guard; not provider token measurement.",
+        "attempted": true,
+        "request_number": 2,
+        "provider_record": {
+          "phase": "verify",
+          "started_at": "2026-11-10T21:09:21.762378+08:00",
+          "elapsed_ms": 2584.357,
+          "configured_model": "deepseek-flash",
+          "actual_model": "deepseek-flash",
+          "status": "success",
+          "usage": {
+            "prompt_tokens": 845,
+            "completion_tokens": 88,
+            "total_tokens": 933,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 845
+          },
+          "error_code": null
+        },
+        "parsed_output": {
+          "judgments": [
+            {
+              "claim_id": "c1",
+              "verdict": "supports",
+              "evidence_ids": [
+                "TT_QND_003_E01"
+              ],
+              "explanation": "证据原文明确记载1751年（清乾隆十六年）统一改为蓝瓦并更名“祈年殿”，与claim的年份、改瓦、更名内容一致，且对象为祈年殿/大享殿，未扩大范围。"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "prior_attempt_reference": "首题真实测试_c6573bcc-dfc0-4205-904f-d927284cd401/运行摘要.json"
+}

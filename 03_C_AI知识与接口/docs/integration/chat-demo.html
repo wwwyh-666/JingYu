@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>京遇问答接口联调示例</title>
+<style>body{font:16px/1.6 system-ui;max-width:900px;margin:32px auto;padding:0 16px}input{width:100%;box-sizing:border-box;padding:8px}button{margin:12px 8px 0 0;padding:8px}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f4f4f4;padding:16px}</style>
+<h1>京遇问答接口联调示例</h1>
+<p>页面加载不发送问答。点击发送后会调用真实后端，可能产生模型用量；本页不接入语音服务。</p>
+<label>知识后端地址<input id="base" value="http://127.0.0.1:8000"></label>
+<label>问题<input id="question" value="祈年殿的蓝瓦是什么时候改的？"></label>
+<button id="send">发送到真实问答接口</button><button id="cancel" disabled>取消等待</button>
+<p id="status" role="status">尚未发送</p>
+<h2>回答</h2><pre id="answer"></pre>
+<h2>可交给数字人组件的播报文本</h2><pre id="speech"></pre>
+<h2>完整返回</h2><pre id="raw"></pre>
+<script type="module">
+import { askJingyu } from './chat-client.mjs';
+const el = id => document.getElementById(id);
+let controller, sequence = 0;
+el('send').onclick = async () => {
+  const current = ++sequence;
+  controller?.abort(); controller = new AbortController();
+  el('send').disabled = true; el('cancel').disabled = false;
+  for (const id of ['answer', 'speech', 'raw']) el(id).textContent = '';
+  el('status').textContent = '正在等待检索、生成与独立核验……';
+  try {
+    const result = await askJingyu({ baseUrl: el('base').value.trim(),
+      question: el('question').value, signal: controller.signal });
+    if (current !== sequence) return;
+    el('answer').textContent = result.displayText;
+    el('speech').textContent = result.speechText ?? '本次不触发数字人播报';
+    el('raw').textContent = JSON.stringify(result.response, null, 2);
+    el('status').textContent = result.canSpeak ? '已通过，可交给播报组件' : '后端已返回边界说明，未触发播报';
+  } catch (error) {
+    if (current !== sequence) return;
+    el('status').textContent = error.name === 'AbortError' ? '已取消等待；后端调用可能仍在执行'
+      : `请求未完成：${error.code ?? 'NETWORK_OR_CORS'}；${error.message}`;
+  } finally {
+    if (current === sequence) { el('send').disabled = false; el('cancel').disabled = true; }
+  }
+};
+el('cancel').onclick = () => controller?.abort();
+</script>
+</html>

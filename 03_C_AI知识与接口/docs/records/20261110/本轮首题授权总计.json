@@ -1,0 +1,18 @@
+{
+  "scope": "仅祈年殿的蓝瓦是什么时候改的？",
+  "authorized_max_requests": 4,
+  "prior_failed_generation_requests": 1,
+  "successful_execution_requests": 2,
+  "cumulative_requests_used": 3,
+  "unused_requests": 1,
+  "will_not_use_remaining_requests": true,
+  "generation_requests": 2,
+  "verification_requests": 1,
+  "revision_requests": 0,
+  "earlier_attempt": "首题真实测试_c6573bcc-dfc0-4205-904f-d927284cd401/运行摘要.json",
+  "earlier_failure_code": "MODEL_HTTP_402",
+  "earlier_usage_returned": false,
+  "successful_attempt": "首题真实测试/完整实际记录.json",
+  "successful_answer": "据天坛公园《祈年殿》介绍，1751年（清乾隆十六年），大享殿统一改为蓝瓦，并更名为祈年殿。",
+  "authorization_state": "首题已经成功，本轮停止，不追加请求；额度不因分记录而重置"
+}

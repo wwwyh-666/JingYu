@@ -1,0 +1,58 @@
+{
+  "kind": "estimate_from_actual_provider_usage_not_platform_bill",
+  "currency": "USD",
+  "price_reference": "https://api-docs.deepseek.com/quick_start/pricing/",
+  "price_checked_on": "2026-11-10",
+  "price_units": "USD per 1,000,000 tokens",
+  "rates_used": {
+    "cache_hit_input": "0.003",
+    "cache_miss_input": "0.15",
+    "output": "0.6"
+  },
+  "period_basis": "请求开始时间换算UTC，均在官方全部高峰窗口之外；不使用任何人民币汇率。",
+  "phases": [
+    {
+      "phase": "generate",
+      "started_at": "2026-11-10T21:09:19.617572+08:00",
+      "utc_started_at": "2026-11-10T13:09:19.617572+00:00",
+      "period": "off_peak",
+      "actual_model_field": "deepseek-flash",
+      "elapsed_ms": 2143.161,
+      "prompt_tokens": 731,
+      "cache_hit_tokens": 0,
+      "cache_miss_tokens": 731,
+      "completion_tokens": 94,
+      "total_tokens": 825,
+      "estimated_cost_usd": "0.00016605"
+    },
+    {
+      "phase": "verify",
+      "started_at": "2026-11-10T21:09:21.762378+08:00",
+      "utc_started_at": "2026-11-10T13:09:21.762378+00:00",
+      "period": "off_peak",
+      "actual_model_field": "deepseek-flash",
+      "elapsed_ms": 2584.357,
+      "prompt_tokens": 845,
+      "cache_hit_tokens": 0,
+      "cache_miss_tokens": 845,
+      "completion_tokens": 88,
+      "total_tokens": 933,
+      "estimated_cost_usd": "0.00017955"
+    }
+  ],
+  "totals": {
+    "model_requests": 2,
+    "prompt_tokens": 1576,
+    "completion_tokens": 182,
+    "total_tokens": 1758,
+    "estimated_cost_usd": "0.00034560"
+  },
+  "platform_bill_checked": false,
+  "platform_actual_bill_usd": null,
+  "note": "成功两次的费用按API实际用量和公开单价估算，不是平台扣费账单。此前402未返回用量，不以0填充其费用，故无法给出全部3次请求的完整用量估算。平台账单未查询。",
+  "estimate_scope": "只覆盖返回用量的2次成功请求，不包含此前1次402失败请求",
+  "cumulative_authorization_requests": 3,
+  "failed_requests_without_usage": 1,
+  "failed_request_cost_estimate": null,
+  "complete_authorization_cost_estimate": null
+}

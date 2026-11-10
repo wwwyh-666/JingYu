@@ -1,0 +1,81 @@
+{
+  "fact_id": "TT_QND_003",
+  "recorded_on": "2026-11-09",
+  "review_document": "docs/reviews/TT_QND_003_20261108/TT_QND_003_审读稿.md",
+  "review_document_sha256_before_template_update": "23a7045a8cb75273d9c0f3a82059055afaaada2b295b727d6293fa05f91de7be",
+  "source_assessments": [
+    {
+      "source_label": "S1 天坛公园景点介绍",
+      "located": "是",
+      "suitability": "是",
+      "comment": ""
+    },
+    {
+      "source_label": "S2 首都之窗专家讲解配套文字",
+      "located": "是",
+      "suitability": "是",
+      "comment": ""
+    },
+    {
+      "source_label": "S3 天坛公园大事记",
+      "located": "是",
+      "suitability": "是",
+      "comment": ""
+    }
+  ],
+  "claim_assessments": [
+    {
+      "claim_id": "TT_QND_003_C01",
+      "decision": "支持",
+      "comment": ""
+    },
+    {
+      "claim_id": "TT_QND_003_C02",
+      "decision": "支持",
+      "comment": ""
+    },
+    {
+      "claim_id": "TT_QND_003_C03",
+      "decision": "支持",
+      "comment": ""
+    },
+    {
+      "claim_id": "TT_QND_003_C04",
+      "decision": "支持",
+      "comment": ""
+    },
+    {
+      "claim_id": "TT_QND_003_C05",
+      "decision": "支持",
+      "comment": ""
+    }
+  ],
+  "overall_decision": "通过",
+  "accepted_text": "据天坛公园《祈年殿》介绍，1751年（清乾隆十六年），大享殿统一改为蓝瓦，并更名为祈年殿。",
+  "reviewer": "王宇涵",
+  "reviewed_at": "2026-11-10",
+  "teacher_review_record": null,
+  "teacher_review_is_runtime_gate": false,
+  "suggested_text_not_approved": null,
+  "release_status": "approved",
+  "note": "来源适用性和C01—C05原意见保留；本次只将明确批准的收窄文字及S1/E01正式发布，其他证据维持原状态；教师情况未提供，保持未记录。",
+  "reviewer_role": "京遇团队成员、知识库与后端算法负责人",
+  "previous_suggested_text": "据天坛公园《祈年殿》介绍，1751年（清乾隆十六年），大享殿统一改为蓝瓦，并更名为祈年殿。",
+  "approval_scope": {
+    "fact_ids": [
+      "TT_QND_003"
+    ],
+    "source_id": "SRC_TT_OFFICIAL_QND_001",
+    "evidence_ids": [
+      "TT_QND_003_E01"
+    ],
+    "purpose": "仅支持本次明确批准的收窄文字",
+    "whole_webpage_approved": false
+  },
+  "approval_origin": "用户在当前聊天中明确提供的发布结论、最终文字、自审身份与日期",
+  "date_normalization": {
+    "user_input": "11.10",
+    "stored_date": "2026-11-10",
+    "basis": "当前会话日期2026-11-10；未推测具体时刻"
+  }
+}

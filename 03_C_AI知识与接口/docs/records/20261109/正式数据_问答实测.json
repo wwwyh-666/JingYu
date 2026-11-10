@@ -1,0 +1,72 @@
+{
+  "recorded_at": "2026-11-09T11:19:02.494197+08:00",
+  "execution_mode": "actual_local_http_formal_data",
+  "note": "真实本机HTTP请求；正式资料审校拦截，不是成功的真实模型问答。",
+  "health": {
+    "status": "ok",
+    "stage": "2026-11-09-single-turn-evidence-pipeline",
+    "model_provider": "disabled",
+    "model_ready": false,
+    "model_called": false,
+    "spot_count": 8,
+    "candidate_fact_count": 5,
+    "publishable_fact_count": 0
+  },
+  "http_status": 200,
+  "http_round_trip_ms": 5.699,
+  "request": {
+    "spot_id": "TT",
+    "object_id": "TT_QND",
+    "question": "祈年殿的蓝瓦是什么时候改的？",
+    "request_id": "TT_QND_003-20261109-formal-check"
+  },
+  "trace": {
+    "trace_schema": "qa-0.2",
+    "started_at": "2026-11-09T11:19:02.480673+08:00",
+    "execution_mode": "application",
+    "request": {
+      "spot_id": "TT",
+      "question": "祈年殿的蓝瓦是什么时候改的？",
+      "session_id": null,
+      "turn_id": 1,
+      "object_id": "TT_QND",
+      "period": null,
+      "request_id": "TT_QND_003-20261109-formal-check"
+    },
+    "request_id": "TT_QND_003-20261109-formal-check",
+    "answer_id": "23d4b20b-d675-4094-b150-e6bd3118fb60",
+    "retrieved_evidence": [],
+    "approved_facts": [],
+    "attempts": [],
+    "price_verified": false,
+    "cost": null,
+    "final_response": {
+      "spot_id": "TT",
+      "session_id": null,
+      "turn_id": 1,
+      "answer": "现有资料不足以确认该问题，暂不提供未经核验的文化结论。",
+      "fact_ids": [],
+      "citations": [],
+      "confidence_flag": "insufficient_evidence",
+      "check_status": "insufficient_evidence",
+      "is_mock": false,
+      "model_called": false,
+      "request_id": "TT_QND_003-20261109-formal-check",
+      "answer_id": "23d4b20b-d675-4094-b150-e6bd3118fb60",
+      "evidence": [],
+      "claims": [],
+      "verification": {
+        "status": "not_run",
+        "judgments": [],
+        "revision_count": 0
+      },
+      "evidence_review_status": "no_publishable_evidence",
+      "error_code": "NO_PUBLISHABLE_EVIDENCE",
+      "metrics": {
+        "elapsed_ms": 2.665,
+        "retrieval_ms": 0.113,
+        "calls": []
+      }
+    }
+  }
+}

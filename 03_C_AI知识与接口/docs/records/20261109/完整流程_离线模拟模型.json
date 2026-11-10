@@ -1,0 +1,334 @@
+{
+  "recorded_at": "2026-11-09T11:19:02.772315+08:00",
+  "execution_mode": "simulated_model_test",
+  "note": "临时数据副本中的TEST_FIXTURE_ONLY批准、2000-01-01测试日期和脚本模型；不是人工批准、厂商模型或真实token/费用记录。正式数据未改。",
+  "http_status": 200,
+  "request": {
+    "spot_id": "TT",
+    "object_id": "TT_QND",
+    "question": "祈年殿的蓝瓦是什么时候改的？",
+    "request_id": "OFFLINE_SCRIPTED_TEST_NOT_REAL_MODEL"
+  },
+  "trace": {
+    "trace_schema": "qa-0.2",
+    "started_at": "2026-11-09T11:19:02.741783+08:00",
+    "execution_mode": "simulated_model_test",
+    "request": {
+      "spot_id": "TT",
+      "question": "祈年殿的蓝瓦是什么时候改的？",
+      "session_id": null,
+      "turn_id": 1,
+      "object_id": "TT_QND",
+      "period": null,
+      "request_id": "OFFLINE_SCRIPTED_TEST_NOT_REAL_MODEL"
+    },
+    "request_id": "OFFLINE_SCRIPTED_TEST_NOT_REAL_MODEL",
+    "answer_id": "77a6e296-0f40-4a30-ac70-ea2ff9039c2e",
+    "retrieved_evidence": [
+      {
+        "evidence_id": "TT_QND_003_E01",
+        "fact_id": "TT_QND_003",
+        "spot_id": "TT",
+        "object_id": "TT_QND",
+        "period": "清·乾隆十六年（1751）",
+        "source_id": "SRC_TT_OFFICIAL_QND_001",
+        "url": "https://tiantanpark.cn/scenic_spot_list/detail/1254.html",
+        "quote": "1751年 (清·乾隆十六年)，统一改为蓝瓦，并更名“祈年殿”",
+        "locator": "页面标题祈年殿下的建筑介绍段；搜索1751年；段中由该年份开始、至更名的分句",
+        "quote_sha256": "21c5e0f8df59c3d760d744595dec95dede2ba229bdffc0f4929b45b6040cd608",
+        "usage": "answer",
+        "note": "直接表述年份、改瓦和更名；主证据",
+        "review_status": "approved",
+        "reviewer": "TEST_FIXTURE_ONLY",
+        "reviewed_at": "2000-01-01"
+      },
+      {
+        "evidence_id": "TT_QND_003_E02",
+        "fact_id": "TT_QND_003",
+        "spot_id": "TT",
+        "object_id": "TT_QND",
+        "period": "清·乾隆十六年（1751）",
+        "source_id": "SRC_TT_BJ_EXPERT_001",
+        "url": "https://www.beijing.gov.cn/shipin/qushuobeijing/19513.html",
+        "quote": "三重檐的上青中黄下绿，统一改为蓝色琉璃瓦",
+        "locator": "网页配套正文第2自然段末句的中段；以段首乾隆皇帝到了天坛祭祀的时候定位",
+        "quote_sha256": "112d250bac6b9dfb7c025812582374d974a80ce50f692548eee99ee77045e12e",
+        "usage": "answer",
+        "note": "原有三色顺序与三重檐改瓦范围；网页讲解的配套文字",
+        "review_status": "approved",
+        "reviewer": "TEST_FIXTURE_ONLY",
+        "reviewed_at": "2000-01-01"
+      },
+      {
+        "evidence_id": "TT_QND_003_E03",
+        "fact_id": "TT_QND_003",
+        "spot_id": "TT",
+        "object_id": "TT_QND",
+        "period": "清·乾隆十六年（1751）",
+        "source_id": "SRC_TT_BJ_EXPERT_001",
+        "url": "https://www.beijing.gov.cn/shipin/qushuobeijing/19513.html",
+        "quote": "祈年殿琉璃瓦的蓝色也称青色",
+        "locator": "网页配套正文第3自然段首句；搜索蓝色也称青色",
+        "quote_sha256": "c63310303ef40d343ac119f32d3e7140d40c028bff0eab79dcd0f3b73024eaba",
+        "usage": "answer",
+        "note": "该讲解中的蓝与青称谓，不推广成通用颜色等同规则",
+        "review_status": "approved",
+        "reviewer": "TEST_FIXTURE_ONLY",
+        "reviewed_at": "2000-01-01"
+      },
+      {
+        "evidence_id": "TT_QND_003_E04",
+        "fact_id": "TT_QND_003",
+        "spot_id": "TT",
+        "object_id": "TT_QND",
+        "period": "清·乾隆十六年（1751）",
+        "source_id": "SRC_TT_OFFICIAL_HISTORY_001",
+        "url": "https://www.tiantanpark.cn/aboutus.html",
+        "quote": "次年修理圜丘、皇穹宇。",
+        "locator": "关于我们→大事记→清•乾隆十六年／1751年→条目正文第2句",
+        "quote_sha256": "9b62decf71e578cf882c70c08bf3890090751fcd274a86a5f93545ea88c5d696",
+        "usage": "context_only",
+        "note": "保留相邻事件及年份语境；不能据此直接改写祈年殿改瓦年份",
+        "review_status": "approved",
+        "reviewer": "TEST_FIXTURE_ONLY",
+        "reviewed_at": "2000-01-01"
+      },
+      {
+        "evidence_id": "TT_QND_003_E05",
+        "fact_id": "TT_QND_003",
+        "spot_id": "TT",
+        "object_id": "TT_QND",
+        "period": "清·乾隆十六年（1751）",
+        "source_id": "SRC_TT_OFFICIAL_HISTORY_001",
+        "url": "https://www.tiantanpark.cn/aboutus.html",
+        "quote": "其它仍照旧制盖覆绿瓦。",
+        "locator": "同一1751年条目正文最后一个分句",
+        "quote_sha256": "c0cd40a2b1e386ec96b54f51dff7f1dcd980584ff1bd37c7a20c8c4dbf486798",
+        "usage": "context_only",
+        "note": "说明全坛均改蓝瓦的推论不成立；不是说只有祈年殿改瓦",
+        "review_status": "approved",
+        "reviewer": "TEST_FIXTURE_ONLY",
+        "reviewed_at": "2000-01-01"
+      }
+    ],
+    "approved_facts": [
+      {
+        "fact_id": "TT_QND_003",
+        "spot_id": "TT",
+        "object_id": "TT_QND",
+        "period": "清·乾隆十六年（1751）",
+        "text": "据天坛公园《祈年殿》介绍，1751年，大享殿统一改为蓝瓦，并更名为祈年殿。",
+        "source_ids": [
+          "SRC_TT_OFFICIAL_QND_001",
+          "SRC_TT_BJ_EXPERT_001",
+          "SRC_TT_OFFICIAL_HISTORY_001"
+        ],
+        "source_locator": "SRC_TT_OFFICIAL_QND_001：介绍段1751年句；SRC_TT_BJ_EXPERT_001：配套文字第2—3段；SRC_TT_OFFICIAL_HISTORY_001：大事记1751年条目末句",
+        "keywords": [
+          "1751",
+          "乾隆",
+          "蓝瓦",
+          "蓝色",
+          "青色",
+          "更名",
+          "改瓦"
+        ],
+        "query_aliases": [],
+        "review_status": "approved",
+        "reviewer": "TEST_FIXTURE_ONLY",
+        "reviewed_at": "2000-01-01",
+        "notes": "更名年份与祈年殿改瓦按官网景点介绍及政府讲解转述。官网大事记1751条还夹述次年圜丘/皇穹宇工程；不据此给所有建筑改瓦工程指定统一年份，不扩充附属建筑范围。",
+        "dispute_status": "not_assessed",
+        "statement_type": "multi_source_synthesis",
+        "source_evidence": [
+          {
+            "source_id": "SRC_TT_OFFICIAL_QND_001",
+            "locator": "介绍段1751年句",
+            "supports": "1751年更名及统一蓝瓦",
+            "relation": "supports"
+          },
+          {
+            "source_id": "SRC_TT_BJ_EXPERT_001",
+            "locator": "配套文字第2—3段",
+            "supports": "祈年殿三重檐的改瓦范围、原颜色顺序及青蓝称谓",
+            "relation": "supports"
+          },
+          {
+            "source_id": "SRC_TT_OFFICIAL_HISTORY_001",
+            "locator": "大事记1751年条目末句",
+            "supports": "部分建筑改瓦，其他仍用绿瓦；支持不得扩大到全坛的边界",
+            "relation": "supports"
+          }
+        ]
+      }
+    ],
+    "attempts": [
+      {
+        "revision": 0,
+        "candidate": {
+          "claims": [
+            {
+              "claim_id": "c1",
+              "text": "据天坛公园《祈年殿》介绍，1751年，大享殿统一改为蓝瓦，并更名为祈年殿。",
+              "fact_id": "TT_QND_003",
+              "spot_id": "TT",
+              "object_id": "TT_QND",
+              "period": "清·乾隆十六年（1751）",
+              "evidence_ids": [
+                "TT_QND_003_E01"
+              ]
+            }
+          ]
+        },
+        "program_issues": [],
+        "verification": {
+          "judgments": [
+            {
+              "claim_id": "c1",
+              "verdict": "supports",
+              "evidence_ids": [
+                "TT_QND_003_E01"
+              ],
+              "explanation": "离线脚本测试用判断，不是模型实测。"
+            }
+          ]
+        },
+        "verification_program_issues": []
+      }
+    ],
+    "price_verified": false,
+    "cost": null,
+    "final_response": {
+      "spot_id": "TT",
+      "session_id": null,
+      "turn_id": 1,
+      "answer": "据天坛公园《祈年殿》介绍，1751年，大享殿统一改为蓝瓦，并更名为祈年殿。",
+      "fact_ids": [
+        "TT_QND_003"
+      ],
+      "citations": [
+        {
+          "source_id": "SRC_TT_OFFICIAL_QND_001",
+          "title": "祈年殿",
+          "url": "https://tiantanpark.cn/scenic_spot_list/detail/1254.html",
+          "evidence_ids": [
+            "TT_QND_003_E01"
+          ]
+        }
+      ],
+      "confidence_flag": "supported",
+      "check_status": "passed",
+      "is_mock": true,
+      "model_called": true,
+      "request_id": "OFFLINE_SCRIPTED_TEST_NOT_REAL_MODEL",
+      "answer_id": "77a6e296-0f40-4a30-ac70-ea2ff9039c2e",
+      "evidence": [
+        {
+          "evidence_id": "TT_QND_003_E01",
+          "fact_id": "TT_QND_003",
+          "spot_id": "TT",
+          "object_id": "TT_QND",
+          "period": "清·乾隆十六年（1751）",
+          "source_id": "SRC_TT_OFFICIAL_QND_001",
+          "url": "https://tiantanpark.cn/scenic_spot_list/detail/1254.html",
+          "quote": "1751年 (清·乾隆十六年)，统一改为蓝瓦，并更名“祈年殿”",
+          "locator": "页面标题祈年殿下的建筑介绍段；搜索1751年；段中由该年份开始、至更名的分句",
+          "quote_sha256": "21c5e0f8df59c3d760d744595dec95dede2ba229bdffc0f4929b45b6040cd608",
+          "usage": "answer",
+          "note": "直接表述年份、改瓦和更名；主证据",
+          "review_status": "approved",
+          "reviewer": "TEST_FIXTURE_ONLY",
+          "reviewed_at": "2000-01-01"
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "c1",
+          "text": "据天坛公园《祈年殿》介绍，1751年，大享殿统一改为蓝瓦，并更名为祈年殿。",
+          "fact_id": "TT_QND_003",
+          "spot_id": "TT",
+          "object_id": "TT_QND",
+          "period": "清·乾隆十六年（1751）",
+          "evidence_ids": [
+            "TT_QND_003_E01"
+          ]
+        }
+      ],
+      "verification": {
+        "status": "supported",
+        "judgments": [
+          {
+            "claim_id": "c1",
+            "verdict": "supports",
+            "evidence_ids": [
+              "TT_QND_003_E01"
+            ],
+            "explanation": "离线脚本测试用判断，不是模型实测。"
+          }
+        ],
+        "revision_count": 0
+      },
+      "evidence_review_status": "approved",
+      "error_code": null,
+      "metrics": {
+        "elapsed_ms": 5.671,
+        "retrieval_ms": 0.153,
+        "calls": [
+          {
+            "phase": "generate",
+            "started_at": "2026-11-09T11:19:02.744786+08:00",
+            "elapsed_ms": 0.081,
+            "configured_model": "scripted_offline",
+            "actual_model": "scripted_offline",
+            "status": "success",
+            "usage": {},
+            "error_code": null
+          },
+          {
+            "phase": "verify",
+            "started_at": "2026-11-09T11:19:02.744786+08:00",
+            "elapsed_ms": 0.072,
+            "configured_model": "scripted_offline",
+            "actual_model": "scripted_offline",
+            "status": "success",
+            "usage": {},
+            "error_code": null
+          }
+        ]
+      }
+    }
+  },
+  "source_query_response": {
+    "source": {
+      "source_id": "SRC_TT_OFFICIAL_QND_001",
+      "title": "祈年殿",
+      "institution": "天坛公园",
+      "url": "https://tiantanpark.cn/scenic_spot_list/detail/1254.html",
+      "accessed_on": "2026-11-05",
+      "published_on": null,
+      "locator": "页面标题“祈年殿”下的介绍段；按各事实 source_locator 定位",
+      "review_status": "approved",
+      "reviewer": "TEST_FIXTURE_ONLY",
+      "reviewed_at": "2000-01-01"
+    },
+    "evidence": [
+      {
+        "evidence_id": "TT_QND_003_E01",
+        "fact_id": "TT_QND_003",
+        "spot_id": "TT",
+        "object_id": "TT_QND",
+        "period": "清·乾隆十六年（1751）",
+        "source_id": "SRC_TT_OFFICIAL_QND_001",
+        "url": "https://tiantanpark.cn/scenic_spot_list/detail/1254.html",
+        "quote": "1751年 (清·乾隆十六年)，统一改为蓝瓦，并更名“祈年殿”",
+        "locator": "页面标题祈年殿下的建筑介绍段；搜索1751年；段中由该年份开始、至更名的分句",
+        "quote_sha256": "21c5e0f8df59c3d760d744595dec95dede2ba229bdffc0f4929b45b6040cd608",
+        "usage": "answer",
+        "note": "直接表述年份、改瓦和更名；主证据",
+        "review_status": "approved",
+        "reviewer": "TEST_FIXTURE_ONLY",
+        "reviewed_at": "2000-01-01"
+      }
+    ]
+  }
+}

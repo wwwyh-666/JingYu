@@ -1,0 +1,21 @@
+{
+  "other_data_unchanged": true,
+  "source_and_claim_reviews_preserved": true,
+  "published": [
+    [
+      "TT_QND_003",
+      [
+        "TT_QND_003_E01"
+      ]
+    ]
+  ],
+  "reviewer": "王宇涵",
+  "reviewed_at": "2026-11-10",
+  "teacher_review_record": null,
+  "openapi_matches": true,
+  "credential_leaks": [],
+  "test_result": "78 passed, 1 warning in 3.95s",
+  "real_generation_requests_this_turn": 0,
+  "real_verification_requests_this_turn": 0,
+  "next_action": "等待用户确认首次单题调用次数、输出限制和费用估算"
+}

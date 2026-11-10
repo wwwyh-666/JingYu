@@ -1,0 +1,63 @@
+{
+  "recorded_at": "2026-11-10T19:36:31.022357+08:00",
+  "run_id": "c6573bcc-dfc0-4205-904f-d927284cd401",
+  "output_dir": "docs/records/20261110/首题真实测试_c6573bcc-dfc0-4205-904f-d927284cd401",
+  "runner_exit_code": 2,
+  "wall_elapsed_ms": 4138.109,
+  "model_requests_sent": 1,
+  "events": [
+    {
+      "request_number": 1,
+      "phase": "generate",
+      "started_at": "2026-11-10T19:36:29.101007+08:00",
+      "prompt_utf8_bytes": 2519,
+      "conservative_input_proxy": 2775,
+      "max_tokens": 1600,
+      "status": "response_received",
+      "http_status": 402,
+      "elapsed_ms": 1834.924,
+      "finished_at": "2026-11-10T19:36:30.936656+08:00"
+    }
+  ],
+  "http_status": 502,
+  "response": {
+    "spot_id": "TT",
+    "session_id": null,
+    "turn_id": 1,
+    "answer": "模型生成或核验未完成，本次不发布候选回答，请稍后重试。",
+    "fact_ids": [],
+    "citations": [],
+    "confidence_flag": "insufficient_evidence",
+    "check_status": "failed",
+    "is_mock": false,
+    "model_called": true,
+    "request_id": "9499f650-18d8-421f-97c8-acf6abb4eced-normal",
+    "answer_id": "9f7f2a2b-b0b6-480c-9e6b-b99fab95935b",
+    "evidence": [],
+    "claims": [],
+    "verification": {
+      "status": "failed",
+      "judgments": [],
+      "revision_count": 0
+    },
+    "evidence_review_status": "approved",
+    "error_code": "MODEL_HTTP_402",
+    "metrics": {
+      "elapsed_ms": 1852.849,
+      "retrieval_ms": 0.142,
+      "calls": [
+        {
+          "phase": "generate",
+          "started_at": "2026-11-10T19:36:29.088891+08:00",
+          "elapsed_ms": 1849.971,
+          "configured_model": "deepseek-flash",
+          "actual_model": null,
+          "status": "failed",
+          "usage": {},
+          "error_code": "MODEL_HTTP_402"
+        }
+      ]
+    }
+  },
+  "sharing_note": "仅将output_dir改为相对后端根目录路径；其他实测字段保持原样。原始运行摘要留本机。"
+}

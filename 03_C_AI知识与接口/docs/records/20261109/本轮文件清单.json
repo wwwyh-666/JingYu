@@ -1,0 +1,157 @@
+{
+  "branch": "feature/c-ai-backend",
+  "base_commit": "74c69e0d80fab70197fe7bb08f11bf57644e7294",
+  "no_commit_or_push": true,
+  "files": [
+    {
+      "path": ".env.example",
+      "kind": "modified",
+      "sha256": "989c0bd296d5dd8de2da8c0df8c443f9837898a12d52d86681eb7f63900294ed"
+    },
+    {
+      "path": "README.md",
+      "kind": "modified",
+      "sha256": "8195470153a8dfea87a6c7cf911408166e63a6f77a30375606b8b5fd6591dfb7"
+    },
+    {
+      "path": "requirements.in",
+      "kind": "modified",
+      "sha256": "8d34661aa37af018a02a433b0ff5ee2115945b927855a99243e31e0bf76b2ae7"
+    },
+    {
+      "path": "app\\main.py",
+      "kind": "modified",
+      "sha256": "81ccab9a19f69d35aad26f157bdf5e677b6247c1b82409fd0de8ac2aa49bc170"
+    },
+    {
+      "path": "app\\models.py",
+      "kind": "modified",
+      "sha256": "a2b57f012c784722c09504369924a372c401a15b6e9e971a144df1d25d317b34"
+    },
+    {
+      "path": "app\\model_client.py",
+      "kind": "added",
+      "sha256": "cf6f21db7edb523e794b21cbc0a30dd5e81bfe119a343c0d31d26cad7eca8734"
+    },
+    {
+      "path": "app\\qa.py",
+      "kind": "added",
+      "sha256": "e15789d066a8ded61916b748c49559df5a84f71f3fe46a8a04c77b510808bf8a"
+    },
+    {
+      "path": "app\\repository.py",
+      "kind": "modified",
+      "sha256": "f2e84721ca43dd1c936bec9e3818addd9679bceed8cd45decd5b82275804353c"
+    },
+    {
+      "path": "data\\evidence_TT.json",
+      "kind": "added",
+      "sha256": "73100f72433ac869dcfac864f39d1b96786b8c9ab8263b92834d6ce477b87fe1"
+    },
+    {
+      "path": "data\\reviews_TT_QND_003.json",
+      "kind": "added",
+      "sha256": "698caff758a56a4373a34c2168bd1ede8997ea11ffb5146f8c44dad53003861d"
+    },
+    {
+      "path": "docs\\ChatRequest.schema.json",
+      "kind": "added",
+      "sha256": "644b17ebe503410e214a37cf2774f6b221fc12fcad2ecdc57b05d45b20bac34c"
+    },
+    {
+      "path": "docs\\ChatResponse.schema.json",
+      "kind": "added",
+      "sha256": "7d0ca0b14b855f326865b4e479a3407d3667a1446b70a28674a5091ebad2c3b9"
+    },
+    {
+      "path": "docs\\Evidence.schema.json",
+      "kind": "added",
+      "sha256": "ac9b6fd104722dc6532e559a6542ca49d6e93625dee3b49308b84658806cd20e"
+    },
+    {
+      "path": "docs\\Fact.schema.json",
+      "kind": "modified",
+      "sha256": "0078bdb123c884bce54412776b557624eddd1ea7a6e3eed2e1e1f3d3233b1ee2"
+    },
+    {
+      "path": "docs\\openapi.json",
+      "kind": "modified",
+      "sha256": "c4b43353d4d2438c6074df86ad090ffae89efd1dbf6f3cd9e3d68ed6b883c9be"
+    },
+    {
+      "path": "docs\\Source.schema.json",
+      "kind": "modified",
+      "sha256": "ab11dd8154ce74397c073b15cc7eb99108e04d38fad8c0d87fc340b40e079a90"
+    },
+    {
+      "path": "docs\\SourceResponse.schema.json",
+      "kind": "added",
+      "sha256": "38305e179bb032486c306fd643f93408c26a869ef120d180bdde751d213f518a"
+    },
+    {
+      "path": "docs\\Spot.schema.json",
+      "kind": "modified",
+      "sha256": "3cb2b62a28df911155a37d5ca114ddcd7fcd841c45e9bc369f3ce74382475465"
+    },
+    {
+      "path": "docs\\单轮问答开发说明_20261109.md",
+      "kind": "added",
+      "sha256": "bc6ac30dba3864e5e60dc7635f8bf5fe855f42b7278d917e5f84d22789c74a08"
+    },
+    {
+      "path": "docs\\接口合同.md",
+      "kind": "modified",
+      "sha256": "bbfae726b8fef831de95b66225826d6b5c5f3626c3e039c3d2d9e1a6b1011fd1"
+    },
+    {
+      "path": "docs\\接口合同_0.2.md",
+      "kind": "added",
+      "sha256": "4361bf4e2cb517fbfae5b1c382a92f845fbdba4ede0ca61f9d3604ae91d2eb76"
+    },
+    {
+      "path": "docs\\本轮验收_20261109.md",
+      "kind": "added",
+      "sha256": "70fd22db8a42542eebd1f0a62227bafe20f7a53ebfd1842a55fe6987602c26d3"
+    },
+    {
+      "path": "tests\\test_initialization.py",
+      "kind": "modified",
+      "sha256": "a813dd2fa0b7c2ccd386861e4b0972ff72e0f0b6ed37bb3b7d41fa5a14efdc8e"
+    },
+    {
+      "path": "tests\\test_qa_pipeline.py",
+      "kind": "added",
+      "sha256": "90edf038a56488206c7ef2bb6946f58c4299fe08927f6125f6706cbee3b59389"
+    },
+    {
+      "path": "docs\\history\\接口合同_0.1.0_历史.md",
+      "kind": "added",
+      "sha256": "ab7fbfc53a5a67ee69ea4f357c7644e13d8e877b7d6395fea0c294872b3ca15a"
+    },
+    {
+      "path": "docs\\records\\20261109\\完整流程_离线模拟模型.json",
+      "kind": "added",
+      "sha256": "1b8c7963a97580b4a639f7be9c77baf82a8ccaa6560ca480f5dac8db341af85e"
+    },
+    {
+      "path": "docs\\records\\20261109\\正式数据_问答实测.json",
+      "kind": "added",
+      "sha256": "102e098799e9598853d69430612317700b2ad807f57f7f440338a11183161fb0"
+    },
+    {
+      "path": "docs\\records\\20261109\\验证摘要.txt",
+      "kind": "added",
+      "sha256": "8e6ed6c22c2101e9d5a97348cca563bc9a435aebe9b016058a076874c46ee63e"
+    },
+    {
+      "path": "docs\\reviews\\TT_QND_003_20261108\\TT_QND_003_审读稿.md",
+      "kind": "modified",
+      "sha256": "7356fd31b8a04aa462dc240fcb4ed530c209937717a666cabbe2ab29313519cc"
+    },
+    {
+      "path": "docs\\reviews\\TT_QND_003_20261108\\history\\TT_QND_003_审读稿_本轮修改前_23a7045a8cb7.md",
+      "kind": "added",
+      "sha256": "23a7045a8cb75273d9c0f3a82059055afaaada2b295b727d6293fa05f91de7be"
+    }
+  ]
+}

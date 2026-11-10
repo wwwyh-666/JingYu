@@ -1,0 +1,223 @@
+[
+  {
+    "fact_id": "TT_QND_001",
+    "spot_id": "TT",
+    "object_id": "TT_QND",
+    "period": "明·永乐十八年（1420）及后续建筑沿革",
+    "text": "1420年（明永乐十八年）建成的长方形大祀殿，是祈年殿的前身，用于天地合祀。今日所见祈年殿经历嘉靖时期原址改建和清末雷火后重建，不能将1420年大祀殿与现存圆形祈年殿视为同一座未经更替的建筑。",
+    "source_ids": [
+      "SRC_TT_OFFICIAL_QND_001",
+      "SRC_TT_OFFICIAL_HISTORY_001",
+      "SRC_TT_BJ_EXPERT_001"
+    ],
+    "source_locator": "SRC_TT_OFFICIAL_QND_001：祈年殿介绍段开头及1545年句；SRC_TT_OFFICIAL_HISTORY_001：大事记1540年、1889年条目；SRC_TT_BJ_EXPERT_001：配套文字倒数第2段",
+    "keywords": [
+      "1420",
+      "永乐",
+      "大祀殿",
+      "长方形",
+      "前身",
+      "始建"
+    ],
+    "review_status": "pending_human_review",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": "前身与现存建筑的区别是多来源归纳；并非某一来源的逐字引文，不推断现存每一构件年代。",
+    "statement_type": "multi_source_synthesis",
+    "source_evidence": [
+      {
+        "source_id": "SRC_TT_OFFICIAL_QND_001",
+        "locator": "祈年殿介绍段开头及1545年句",
+        "supports": "1420年、大祀殿长方形与天地合祀；1545年圆殿",
+        "relation": "supports"
+      },
+      {
+        "source_id": "SRC_TT_OFFICIAL_HISTORY_001",
+        "locator": "大事记1540年、1889年条目",
+        "supports": "原址兴建与清末雷火后重建的沿革",
+        "relation": "supports"
+      },
+      {
+        "source_id": "SRC_TT_BJ_EXPERT_001",
+        "locator": "配套文字倒数第2段",
+        "supports": "今日祈年殿为光绪时期重建，非乾隆原构",
+        "relation": "supports"
+      }
+    ]
+  },
+  {
+    "fact_id": "TT_QND_002",
+    "spot_id": "TT",
+    "object_id": "TT_QND",
+    "period": "明·嘉靖十七年至二十四年（1538—1545）",
+    "text": "大祀殿拆除命令与大享殿建成的年代存在不同记载，须逐项查看来源主张并等待人工审校。大享殿为三重檐圆殿，瓦色自上而下为青、黄、绿。",
+    "source_ids": [
+      "SRC_TT_OFFICIAL_HISTORY_001",
+      "SRC_TT_OFFICIAL_QND_001"
+    ],
+    "source_locator": "SRC_TT_OFFICIAL_HISTORY_001：大事记1538年及1540年条目；SRC_TT_OFFICIAL_QND_001：祈年殿介绍段1545年句",
+    "keywords": [
+      "1538",
+      "1540",
+      "1545",
+      "嘉靖",
+      "拆除",
+      "兴建",
+      "建成",
+      "大享殿",
+      "三重檐",
+      "三色",
+      "1541",
+      "1542",
+      "年代",
+      "命令",
+      "施工"
+    ],
+    "review_status": "pending_human_review",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": "年代分歧见TT_source_claims.json；不得选定单一年份。",
+    "statement_type": "multi_source_synthesis",
+    "source_evidence": [
+      {
+        "source_id": "SRC_TT_OFFICIAL_HISTORY_001",
+        "locator": "大事记1538年及1540年条目",
+        "supports": "1538年诏令拆殿，1540年原址兴建，1545年建成",
+        "relation": "supports"
+      },
+      {
+        "source_id": "SRC_TT_OFFICIAL_QND_001",
+        "locator": "祈年殿介绍段1545年句",
+        "supports": "大享殿的圆殿形制、三重檐及三色瓦顺序",
+        "relation": "supports"
+      }
+    ],
+    "dispute_status": "disputed"
+  },
+  {
+    "fact_id": "TT_QND_003",
+    "spot_id": "TT",
+    "object_id": "TT_QND",
+    "period": "清·乾隆十六年（1751）",
+    "text": "1751年（清乾隆十六年），大享殿更名为祈年殿，其三重檐原有自上而下青、黄、绿三色琉璃瓦改为统一蓝色（相关官方讲解亦称青色）。这里的颜色变化专指祈年殿三重檐，不意味着整个天坛的全部建筑都改覆蓝瓦。",
+    "source_ids": [
+      "SRC_TT_OFFICIAL_QND_001",
+      "SRC_TT_BJ_EXPERT_001",
+      "SRC_TT_OFFICIAL_HISTORY_001"
+    ],
+    "source_locator": "SRC_TT_OFFICIAL_QND_001：介绍段1751年句；SRC_TT_BJ_EXPERT_001：配套文字第2—3段；SRC_TT_OFFICIAL_HISTORY_001：大事记1751年条目末句",
+    "keywords": [
+      "1751",
+      "乾隆",
+      "蓝瓦",
+      "蓝色",
+      "青色",
+      "更名",
+      "改瓦"
+    ],
+    "review_status": "pending_human_review",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": "更名年份与祈年殿改瓦按官网景点介绍及政府讲解转述。官网大事记1751条还夹述次年圜丘/皇穹宇工程；不据此给所有建筑改瓦工程指定统一年份，不扩充附属建筑范围。",
+    "statement_type": "multi_source_synthesis",
+    "source_evidence": [
+      {
+        "source_id": "SRC_TT_OFFICIAL_QND_001",
+        "locator": "介绍段1751年句",
+        "supports": "1751年更名及统一蓝瓦",
+        "relation": "supports"
+      },
+      {
+        "source_id": "SRC_TT_BJ_EXPERT_001",
+        "locator": "配套文字第2—3段",
+        "supports": "祈年殿三重檐的改瓦范围、原颜色顺序及青蓝称谓",
+        "relation": "supports"
+      },
+      {
+        "source_id": "SRC_TT_OFFICIAL_HISTORY_001",
+        "locator": "大事记1751年条目末句",
+        "supports": "部分建筑改瓦，其他仍用绿瓦；支持不得扩大到全坛的边界",
+        "relation": "supports"
+      }
+    ]
+  },
+  {
+    "fact_id": "TT_QND_004",
+    "spot_id": "TT",
+    "object_id": "TT_QND",
+    "period": "清代·孟春正月祈谷（兼记明代前身礼制背景）",
+    "text": "祈年殿是祈谷坛的中心建筑，清代用于举行祈谷典礼；天坛公园官网将其介绍为孟春（正月）行祈谷礼的专用建筑。明代大祀殿已有祈谷礼的记载，不应把1420年天地合祀的最初用途与后来祈谷用途混为一谈。",
+    "source_ids": [
+      "SRC_TT_PARKS_QND_001",
+      "SRC_TT_OFFICIAL_QND_001",
+      "SRC_TT_BJWW_STUDY_001"
+    ],
+    "source_locator": "SRC_TT_PARKS_QND_001：正文第1段第1句；SRC_TT_OFFICIAL_QND_001：介绍段末句；SRC_TT_BJWW_STUDY_001：第四节引《明史》卷四十八祈谷的段落",
+    "keywords": [
+      "孟春",
+      "正月",
+      "祈谷",
+      "用途",
+      "清代"
+    ],
+    "review_status": "pending_human_review",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": "分开记述清代用途与明代前身背景，不断言祈谷礼始于1751年，不推断用途始终不变。文物局网页是现代研究转引史籍，本样本未独立核验《明史》底本。",
+    "statement_type": "multi_source_synthesis",
+    "source_evidence": [
+      {
+        "source_id": "SRC_TT_PARKS_QND_001",
+        "locator": "正文第1段第1句",
+        "supports": "祈谷坛中心建筑及清代祈谷典礼用途",
+        "relation": "supports"
+      },
+      {
+        "source_id": "SRC_TT_OFFICIAL_QND_001",
+        "locator": "介绍段末句",
+        "supports": "孟春正月祈谷专用建筑的说明",
+        "relation": "supports"
+      },
+      {
+        "source_id": "SRC_TT_BJWW_STUDY_001",
+        "locator": "第四节引《明史》卷四十八祈谷的段落",
+        "supports": "记嘉靖十年孟春上辛于大祀殿行祈谷礼；仅用于明代前身背景",
+        "relation": "supports"
+      }
+    ]
+  },
+  {
+    "fact_id": "TT_QND_005",
+    "spot_id": "TT",
+    "object_id": "TT_QND",
+    "period": "清·光绪十五年至二十二年（1889—1896）",
+    "text": "1889年（清光绪十五年），祈年殿毁于雷火；次年即1890年开始重建，至1896年（光绪二十二年）完工。",
+    "source_ids": [
+      "SRC_TT_OFFICIAL_HISTORY_001"
+    ],
+    "source_locator": "SRC_TT_OFFICIAL_HISTORY_001：大事记1889年条目整段",
+    "keywords": [
+      "1889",
+      "1890",
+      "1896",
+      "光绪",
+      "雷火",
+      "焚毁",
+      "重建",
+      "完工"
+    ],
+    "review_status": "pending_human_review",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": "直接来源转述；1890年由1889年条目中的次年换算为公元年，不是新增独立史料。未推断具体开工日、材料种类或每一构件年代。",
+    "statement_type": "direct_source_paraphrase",
+    "source_evidence": [
+      {
+        "source_id": "SRC_TT_OFFICIAL_HISTORY_001",
+        "locator": "大事记1889年条目整段",
+        "supports": "雷火焚毁、次年重建及1896年毕工的连续记述",
+        "relation": "supports"
+      }
+    ]
+  }
+]

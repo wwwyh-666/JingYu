@@ -1,0 +1,138 @@
+{
+  "question": "祈年殿的蓝瓦是什么时候改的？",
+  "http_status": 200,
+  "actual_answer": "据天坛公园《祈年殿》介绍，1751年（清乾隆十六年），大享殿统一改为蓝瓦，并更名为祈年殿。",
+  "retrieved_evidence": [
+    {
+      "evidence_id": "TT_QND_003_E01",
+      "fact_id": "TT_QND_003",
+      "spot_id": "TT",
+      "object_id": "TT_QND",
+      "period": "清·乾隆十六年（1751）",
+      "source_id": "SRC_TT_OFFICIAL_QND_001",
+      "url": "https://tiantanpark.cn/scenic_spot_list/detail/1254.html",
+      "quote": "1751年 (清·乾隆十六年)，统一改为蓝瓦，并更名“祈年殿”",
+      "locator": "页面标题祈年殿下的建筑介绍段；搜索1751年；段中由该年份开始、至更名的分句",
+      "quote_sha256": "21c5e0f8df59c3d760d744595dec95dede2ba229bdffc0f4929b45b6040cd608",
+      "usage": "answer",
+      "note": "直接表述年份、改瓦和更名；主证据",
+      "review_status": "approved",
+      "reviewer": "王宇涵",
+      "reviewed_at": "2026-11-10"
+    }
+  ],
+  "attempts": [
+    {
+      "revision": 0,
+      "candidate": {
+        "claims": [
+          {
+            "claim_id": "c1",
+            "text": "据天坛公园《祈年殿》介绍，1751年（清乾隆十六年），大享殿统一改为蓝瓦，并更名为祈年殿。",
+            "fact_id": "TT_QND_003",
+            "spot_id": "TT",
+            "object_id": "TT_QND",
+            "period": "清·乾隆十六年（1751）",
+            "evidence_ids": [
+              "TT_QND_003_E01"
+            ]
+          }
+        ]
+      },
+      "program_issues": [],
+      "verification": {
+        "judgments": [
+          {
+            "claim_id": "c1",
+            "verdict": "supports",
+            "evidence_ids": [
+              "TT_QND_003_E01"
+            ],
+            "explanation": "证据原文明确记载1751年（清乾隆十六年）统一改为蓝瓦并更名“祈年殿”，与claim的年份、改瓦、更名内容一致，且对象为祈年殿/大享殿，未扩大范围。"
+          }
+        ]
+      },
+      "verification_program_issues": []
+    }
+  ],
+  "final_verification": {
+    "status": "supported",
+    "judgments": [
+      {
+        "claim_id": "c1",
+        "verdict": "supports",
+        "evidence_ids": [
+          "TT_QND_003_E01"
+        ],
+        "explanation": "证据原文明确记载1751年（清乾隆十六年）统一改为蓝瓦并更名“祈年殿”，与claim的年份、改瓦、更名内容一致，且对象为祈年殿/大享殿，未扩大范围。"
+      }
+    ],
+    "revision_count": 0
+  },
+  "source_query_statuses": [
+    {
+      "source_id": "SRC_TT_OFFICIAL_QND_001",
+      "status": 200
+    }
+  ],
+  "first_question_runtime_passed": true,
+  "all_other_questions_not_run": true,
+  "revision_count": 0,
+  "model_returned": [
+    "deepseek-flash"
+  ],
+  "service_elapsed_ms": 4736.675,
+  "retrieval_ms": 0.141,
+  "http_elapsed_ms": 4740.989,
+  "phase_records": [
+    {
+      "phase": "generate",
+      "started_at": "2026-11-10T21:09:19.617572+08:00",
+      "utc_started_at": "2026-11-10T13:09:19.617572+00:00",
+      "period": "off_peak",
+      "actual_model_field": "deepseek-flash",
+      "elapsed_ms": 2143.161,
+      "prompt_tokens": 731,
+      "cache_hit_tokens": 0,
+      "cache_miss_tokens": 731,
+      "completion_tokens": 94,
+      "total_tokens": 825,
+      "estimated_cost_usd": "0.00016605"
+    },
+    {
+      "phase": "verify",
+      "started_at": "2026-11-10T21:09:21.762378+08:00",
+      "utc_started_at": "2026-11-10T13:09:21.762378+00:00",
+      "period": "off_peak",
+      "actual_model_field": "deepseek-flash",
+      "elapsed_ms": 2584.357,
+      "prompt_tokens": 845,
+      "cache_hit_tokens": 0,
+      "cache_miss_tokens": 845,
+      "completion_tokens": 88,
+      "total_tokens": 933,
+      "estimated_cost_usd": "0.00017955"
+    }
+  ],
+  "usage_totals": {
+    "model_requests": 2,
+    "prompt_tokens": 1576,
+    "completion_tokens": 182,
+    "total_tokens": 1758,
+    "estimated_cost_usd": "0.00034560"
+  },
+  "platform_bill_checked": false,
+  "data_unchanged": true,
+  "assistant_programmatic_postcheck": {
+    "answer_exactly_matches_approved_text": true,
+    "source_query_matches_original_evidence": true
+  },
+  "real_requests_this_successful_execution": 2,
+  "cumulative_authorization_requests": 3,
+  "prior_failure": {
+    "error_code": "MODEL_HTTP_402",
+    "request_count": 1,
+    "usage": null,
+    "elapsed_ms": 1849.971
+  }
+}

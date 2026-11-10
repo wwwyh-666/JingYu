@@ -1,0 +1,22 @@
+{
+  "run_id": "c6573bcc-dfc0-4205-904f-d927284cd401",
+  "kind": "real_provider_request_budget",
+  "max_model_requests": 4,
+  "max_output_tokens_per_request": 1600,
+  "input_assumption_tokens_per_request": 4000,
+  "requests_sent": 1,
+  "events": [
+    {
+      "request_number": 1,
+      "phase": "generate",
+      "started_at": "2026-11-10T19:36:29.101007+08:00",
+      "prompt_utf8_bytes": 2519,
+      "conservative_input_proxy": 2775,
+      "max_tokens": 1600,
+      "status": "response_received",
+      "http_status": 402,
+      "elapsed_ms": 1834.924,
+      "finished_at": "2026-11-10T19:36:30.936656+08:00"
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "scope": "app, data, tests, docs/reviews; compared to start of this organization task, not to old Git HEAD",
+  "changed_files": [],
+  "files": [
+    {
+      "path": "03_C_AI知识与接口/app/main.py",
+      "sha256_before": "81ccab9a19f69d35aad26f157bdf5e677b6247c1b82409fd0de8ac2aa49bc170",
+      "sha256_after": "81ccab9a19f69d35aad26f157bdf5e677b6247c1b82409fd0de8ac2aa49bc170"
+    },
+    {
+      "path": "03_C_AI知识与接口/app/models.py",
+      "sha256_before": "0fa4b1c571076a53f9c193f74f4114dca5c07df7df1a5950076e2e358e4ea3ed",
+      "sha256_after": "0fa4b1c571076a53f9c193f74f4114dca5c07df7df1a5950076e2e358e4ea3ed"
+    },
+    {
+      "path": "03_C_AI知识与接口/app/model_client.py",
+      "sha256_before": "c58860904a06c59ea4beeae7b9ee27db80341934f6ca4a132f29b2b1e5c7c8f4",
+      "sha256_after": "c58860904a06c59ea4beeae7b9ee27db80341934f6ca4a132f29b2b1e5c7c8f4"
+    },
+    {
+      "path": "03_C_AI知识与接口/app/qa.py",
+      "sha256_before": "e15789d066a8ded61916b748c49559df5a84f71f3fe46a8a04c77b510808bf8a",
+      "sha256_after": "e15789d066a8ded61916b748c49559df5a84f71f3fe46a8a04c77b510808bf8a"
+    },
+    {
+      "path": "03_C_AI知识与接口/app/repository.py",
+      "sha256_before": "f9242bd9459a19ef71d40de4c6530c45886235a7475142cfc3a0f2c8512e1178",
+      "sha256_after": "f9242bd9459a19ef71d40de4c6530c45886235a7475142cfc3a0f2c8512e1178"
+    },
+    {
+      "path": "03_C_AI知识与接口/app/__init__.py",
+      "sha256_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256_after": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "03_C_AI知识与接口/data/evidence_TT.json",
+      "sha256_before": "1f861c0461d066929f4c84803d21e1d9e4b1a818294a7ef78623ab67f50181d2",
+      "sha256_after": "1f861c0461d066929f4c84803d21e1d9e4b1a818294a7ef78623ab67f50181d2"
+    },
+    {
+      "path": "03_C_AI知识与接口/data/facts_GG.json",
+      "sha256_before": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+      "sha256_after": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f"
+    },
+    {
+      "path": "03_C_AI知识与接口/data/facts_GWF.json",
+      "sha256_before": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+      "sha256_after": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f"
+    },
+    {
+      "path": "03_C_AI知识与接口/data/facts_JS.json",
+      "sha256_before": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+      "sha256_after": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f"
+    },
+    {
+      "path": "03_C_AI知识与接口/data/facts_TT.json",
+      "sha256_before": "09fce77f6309ec7c636e056c8da92f85bd1ad665fba3a273444d28ebbac9834c",
+      "sha256_after": "09fce77f6309ec7c636e056c8da92f85bd1ad665fba3a273444d28ebbac9834c"
+    },
+    {
+      "path": "03_C_AI知识与接口/data/facts_YHG.json",
+      "sha256_before": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+      "sha256_after": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f"
+    },
+    {
+      "path": "03_C_AI知识与接口/data/facts_YHY.json",
+      "sha256_before": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+      "sha256_after": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f"
+    },
+    {
+      "path": "03_C_AI知识与接口/data/facts_ZGL.json",
+      "sha256_before": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+      "sha256_after": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f"
+    },
+    {
+      "path": "03_C_AI知识与接口/data/facts_ZYM.json",
+      "sha256_before": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+      "sha256_after": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f"
+    },
+    {
+      "path": "03_C_AI知识与接口/data/fact_template.json",
+      "sha256_before": "95b24d0ef8e035464775434f3619b56b106285d972ddb9ed6f844c5c6a51e27d",
+      "sha256_after": "95b24d0ef8e035464775434f3619b56b106285d972ddb9ed6f844c5c6a51e27d"
+    },
+    {
+      "path": "03_C_AI知识与接口/data/reviews_TT_QND_003.json",
+      "sha256_before": "2a31340bf9f9a95c82d5616e5c5f73c9298bf86117203ad2fed8a6d4308b95ad",
+      "sha256_after": "2a31340bf9f9a95c82d5616e5c5f73c9298bf86117203ad2fed8a6d4308b95ad"
+    },
+    {
+      "path": "03_C_AI知识与接口/data/sources.json",
+      "sha256_before": "497839deeefda94c4087fbc68c98b3790ab50d28aeae2a1830c0b575eb7b591e",
+      "sha256_after": "497839deeefda94c4087fbc68c98b3790ab50d28aeae2a1830c0b575eb7b591e"
+    },
+    {
+      "path": "03_C_AI知识与接口/data/spots.json",
+      "sha256_before": "605ad3c0dd470d7260bba3257a967fbff06aeacac1a8abc53f7cc20190aa4b36",
+      "sha256_after": "605ad3c0dd470d7260bba3257a967fbff06aeacac1a8abc53f7cc20190aa4b36"
+    },
+    {
+      "path": "03_C_AI知识与接口/data/TT_events.json",
+      "sha256_before": "46d8025f0949d1385102a817919df497ca082db3a06e1f8af99dcab60f76ce96",
+      "sha256_after": "46d8025f0949d1385102a817919df497ca082db3a06e1f8af99dcab60f76ce96"
+    },
+    {
+      "path": "03_C_AI知识与接口/data/TT_source_claims.json",
+      "sha256_before": "21b9f08c3a014c435f9286566604b467c18b1beea607bf31a010d4314db84d4d",
+      "sha256_after": "21b9f08c3a014c435f9286566604b467c18b1beea607bf31a010d4314db84d4d"
+    },
+    {
+      "path": "03_C_AI知识与接口/tests/conftest.py",
+      "sha256_before": "c6510486fe096736b872ef313144c9d6351093ce7a2af208c8b91a53540856db",
+      "sha256_after": "c6510486fe096736b872ef313144c9d6351093ce7a2af208c8b91a53540856db"
+    },
+    {
+      "path": "03_C_AI知识与接口/tests/test_initialization.py",
+      "sha256_before": "cc5a068fd13bc13e891d02a50d6721c46c28a85eb32cb61677eee146507f635d",
+      "sha256_after": "cc5a068fd13bc13e891d02a50d6721c46c28a85eb32cb61677eee146507f635d"
+    },
+    {
+      "path": "03_C_AI知识与接口/tests/test_qa_pipeline.py",
+      "sha256_before": "29f9fff3ac9f288346ba7e8385dc1491a8ce3703ddc00d42dd8abff52eb2830e",
+      "sha256_after": "29f9fff3ac9f288346ba7e8385dc1491a8ce3703ddc00d42dd8abff52eb2830e"
+    },
+    {
+      "path": "03_C_AI知识与接口/tests/test_tiantan_conflict.py",
+      "sha256_before": "a4b9f3cf5092df0e2f751431a4a3190498a143d07d4adb52789a0bbbb25a3898",
+      "sha256_after": "a4b9f3cf5092df0e2f751431a4a3190498a143d07d4adb52789a0bbbb25a3898"
+    },
+    {
+      "path": "03_C_AI知识与接口/tests/test_tiantan_revision.py",
+      "sha256_before": "1325456fbd953b75dd078aa13229c8cef4ad7b631936d50595ca690bef318979",
+      "sha256_after": "1325456fbd953b75dd078aa13229c8cef4ad7b631936d50595ca690bef318979"
+    },
+    {
+      "path": "03_C_AI知识与接口/docs/reviews/TT_QND_003_20261108/TT_QND_003_原文证据.json",
+      "sha256_before": "f64926ee7f226945fe8212eaf81647e1f2f13dc49fb8818755d47c4820cc37b3",
+      "sha256_after": "f64926ee7f226945fe8212eaf81647e1f2f13dc49fb8818755d47c4820cc37b3"
+    },
+    {
+      "path": "03_C_AI知识与接口/docs/reviews/TT_QND_003_20261108/TT_QND_003_审读材料.pdf",
+      "sha256_before": "41fd6252ed2c9b1ac78d8e672e17f736abbf37de39d1c46ac34b5a16e875813f",
+      "sha256_after": "41fd6252ed2c9b1ac78d8e672e17f736abbf37de39d1c46ac34b5a16e875813f"
+    },
+    {
+      "path": "03_C_AI知识与接口/docs/reviews/TT_QND_003_20261108/TT_QND_003_审读稿.md",
+      "sha256_before": "b8f115c2b6fc1b3ad2ad02d2560a69242bbbe889a8ec5437d63dfc667efde500",
+      "sha256_after": "b8f115c2b6fc1b3ad2ad02d2560a69242bbbe889a8ec5437d63dfc667efde500"
+    },
+    {
+      "path": "03_C_AI知识与接口/docs/reviews/TT_QND_003_20261108/history/TT_QND_003_审读稿_本轮修改前_23a7045a8cb7.md",
+      "sha256_before": "23a7045a8cb75273d9c0f3a82059055afaaada2b295b727d6293fa05f91de7be",
+      "sha256_after": "23a7045a8cb75273d9c0f3a82059055afaaada2b295b727d6293fa05f91de7be"
+    },
+    {
+      "path": "03_C_AI知识与接口/docs/reviews/TT_QND_003_20261108/history/20261110_明确批准前/evidence_TT.json",
+      "sha256_before": "73100f72433ac869dcfac864f39d1b96786b8c9ab8263b92834d6ce477b87fe1",
+      "sha256_after": "73100f72433ac869dcfac864f39d1b96786b8c9ab8263b92834d6ce477b87fe1"
+    },
+    {
+      "path": "03_C_AI知识与接口/docs/reviews/TT_QND_003_20261108/history/20261110_明确批准前/facts_TT.json",
+      "sha256_before": "fbb3c2e0b11f902fe719c24fbcdca3733e21db217f4d1fe6481b26b620da984b",
+      "sha256_after": "fbb3c2e0b11f902fe719c24fbcdca3733e21db217f4d1fe6481b26b620da984b"
+    },
+    {
+      "path": "03_C_AI知识与接口/docs/reviews/TT_QND_003_20261108/history/20261110_明确批准前/reviews_TT_QND_003.json",
+      "sha256_before": "698caff758a56a4373a34c2168bd1ede8997ea11ffb5146f8c44dad53003861d",
+      "sha256_after": "698caff758a56a4373a34c2168bd1ede8997ea11ffb5146f8c44dad53003861d"
+    },
+    {
+      "path": "03_C_AI知识与接口/docs/reviews/TT_QND_003_20261108/history/20261110_明确批准前/sources.json",
+      "sha256_before": "f470e54fff2a1bd83ed6400f6994f2be6ee857a571581156f01738407568e9c2",
+      "sha256_after": "f470e54fff2a1bd83ed6400f6994f2be6ee857a571581156f01738407568e9c2"
+    },
+    {
+      "path": "03_C_AI知识与接口/docs/reviews/TT_QND_003_20261108/history/20261110_明确批准前/TT_QND_003_审读稿.md",
+      "sha256_before": "7356fd31b8a04aa462dc240fcb4ed530c209937717a666cabbe2ab29313519cc",
+      "sha256_after": "7356fd31b8a04aa462dc240fcb4ed530c209937717a666cabbe2ab29313519cc"
+    }
+  ]
+}

@@ -45,10 +45,42 @@
       "enum": [
         "pending_human_review",
         "approved",
-        "rejected"
+        "rejected",
+        "disabled"
       ],
       "title": "Review Status",
       "type": "string"
+    },
+    "reviewer": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Reviewer"
+    },
+    "reviewed_at": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Reviewed At"
+    },
+    "approved_evidence_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Approved Evidence Ids",
+      "type": "array"
     }
   },
   "required": [

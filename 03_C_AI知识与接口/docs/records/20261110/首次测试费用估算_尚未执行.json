@@ -1,0 +1,49 @@
+{
+  "prepared_at": "2026-11-10T18:52:54.368375+08:00",
+  "real_generation_or_verification_executed": false,
+  "model": "deepseek-flash",
+  "stream": false,
+  "thinking": {
+    "type": "disabled"
+  },
+  "normal_request_count": 2,
+  "max_request_count_with_one_revision": 4,
+  "per_request_output_limit_tokens": 1600,
+  "normal_total_output_limit_tokens": 3200,
+  "max_total_output_limit_tokens": 6400,
+  "local_prompt_text_chars": {
+    "generation": 1432,
+    "verification_example": 1683
+  },
+  "local_prompt_utf8_bytes": {
+    "generation": 2519,
+    "verification_example": 2873
+  },
+  "token_count_note": "以上是本地字符/字节数，不是厂商token实测；修订反馈会增加输入。",
+  "price_reference": "https://api-docs.deepseek.com/quick_start/pricing/",
+  "price_checked_on": "2026-11-10",
+  "currency": "USD",
+  "input_tokens_assumed_per_request": 4000,
+  "cache_assumption": "all_cache_miss",
+  "rates_per_million_tokens": {
+    "off_peak": {
+      "input": 0.15,
+      "output": 0.6
+    },
+    "peak": {
+      "input": 0.3,
+      "output": 1.2
+    }
+  },
+  "cost_estimates": {
+    "normal_two_requests": {
+      "off_peak": 0.00312,
+      "peak": 0.00624
+    },
+    "maximum_four_requests": {
+      "off_peak": 0.00624,
+      "peak": 0.01248
+    }
+  },
+  "not_a_bill_or_hard_spending_cap": true
+}

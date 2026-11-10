@@ -39,3 +39,19 @@ Thumbs.db
 /03_C_AI知识与接口/docs/inputs/TT_before_revision_20261105/
 /03_C_AI知识与接口/docs/inputs/TT_before_conflict_review_20261105/
 /首次上传人工确认准备.md
+
+# Frontend build/dependency output (shared directory layout stays unchanged)
+node_modules/
+dist/
+.vite/
+.coverage
+.coverage.*
+htmlcov/
+coverage/
+
+# Local duplicate extracts and the superseded derived review PDF; originals retained
+/03_C_AI知识与接口/docs/inputs/方案提取.txt
+/03_C_AI知识与接口/docs/inputs/每日计划v6提取.txt
+/03_C_AI知识与接口/docs/reviews/TT_QND_003_20261108/TT_QND_003_审读材料.pdf
+# Original machine-path summary retained locally; publish the documented shared copy
+/03_C_AI知识与接口/docs/records/20261110/首题真实测试_c6573bcc-dfc0-4205-904f-d927284cd401/运行摘要.json

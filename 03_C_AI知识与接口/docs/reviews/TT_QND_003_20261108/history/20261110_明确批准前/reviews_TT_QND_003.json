@@ -1,0 +1,62 @@
+{
+  "fact_id": "TT_QND_003",
+  "recorded_on": "2026-11-09",
+  "review_document": "docs/reviews/TT_QND_003_20261108/TT_QND_003_审读稿.md",
+  "review_document_sha256_before_template_update": "23a7045a8cb75273d9c0f3a82059055afaaada2b295b727d6293fa05f91de7be",
+  "source_assessments": [
+    {
+      "source_label": "S1 天坛公园景点介绍",
+      "located": "是",
+      "suitability": "是",
+      "comment": ""
+    },
+    {
+      "source_label": "S2 首都之窗专家讲解配套文字",
+      "located": "是",
+      "suitability": "是",
+      "comment": ""
+    },
+    {
+      "source_label": "S3 天坛公园大事记",
+      "located": "是",
+      "suitability": "是",
+      "comment": ""
+    }
+  ],
+  "claim_assessments": [
+    {
+      "claim_id": "TT_QND_003_C01",
+      "decision": "支持",
+      "comment": ""
+    },
+    {
+      "claim_id": "TT_QND_003_C02",
+      "decision": "支持",
+      "comment": ""
+    },
+    {
+      "claim_id": "TT_QND_003_C03",
+      "decision": "支持",
+      "comment": ""
+    },
+    {
+      "claim_id": "TT_QND_003_C04",
+      "decision": "支持",
+      "comment": ""
+    },
+    {
+      "claim_id": "TT_QND_003_C05",
+      "decision": "支持",
+      "comment": ""
+    }
+  ],
+  "overall_decision": null,
+  "accepted_text": null,
+  "reviewer": null,
+  "reviewed_at": null,
+  "teacher_review_record": null,
+  "teacher_review_is_runtime_gate": false,
+  "suggested_text_not_approved": "据天坛公园《祈年殿》介绍，1751年（清乾隆十六年），大享殿统一改为蓝瓦，并更名为祈年殿。",
+  "release_status": "pending_human_review",
+  "note": "来源适用性、拆分表述支持和整条事实发布分别记录；未代填身份、日期或总体发布决定。"
+}

@@ -1,0 +1,108 @@
+{
+  "checked_at": "2026-11-10T18:52:54.365372+08:00",
+  "kind": "formal_data_local_check_real_model_explicitly_disabled",
+  "health": {
+    "status": "ok",
+    "stage": "2026-11-09-single-turn-evidence-pipeline",
+    "model_provider": "disabled",
+    "model_ready": false,
+    "model_called": false,
+    "spot_count": 8,
+    "candidate_fact_count": 5,
+    "publishable_fact_count": 1
+  },
+  "retrieved_evidence": [
+    {
+      "evidence_id": "TT_QND_003_E01",
+      "fact_id": "TT_QND_003",
+      "spot_id": "TT",
+      "object_id": "TT_QND",
+      "period": "清·乾隆十六年（1751）",
+      "source_id": "SRC_TT_OFFICIAL_QND_001",
+      "url": "https://tiantanpark.cn/scenic_spot_list/detail/1254.html",
+      "quote": "1751年 (清·乾隆十六年)，统一改为蓝瓦，并更名“祈年殿”",
+      "locator": "页面标题祈年殿下的建筑介绍段；搜索1751年；段中由该年份开始、至更名的分句",
+      "quote_sha256": "21c5e0f8df59c3d760d744595dec95dede2ba229bdffc0f4929b45b6040cd608",
+      "usage": "answer",
+      "note": "直接表述年份、改瓦和更名；主证据",
+      "review_status": "approved",
+      "reviewer": "王宇涵",
+      "reviewed_at": "2026-11-10"
+    }
+  ],
+  "source_response": {
+    "source": {
+      "source_id": "SRC_TT_OFFICIAL_QND_001",
+      "title": "祈年殿",
+      "institution": "天坛公园",
+      "url": "https://tiantanpark.cn/scenic_spot_list/detail/1254.html",
+      "accessed_on": "2026-11-05",
+      "published_on": null,
+      "locator": "页面标题“祈年殿”下的介绍段；按各事实 source_locator 定位",
+      "review_status": "approved",
+      "reviewer": "王宇涵",
+      "reviewed_at": "2026-11-10",
+      "approved_evidence_ids": [
+        "TT_QND_003_E01"
+      ]
+    },
+    "evidence": [
+      {
+        "evidence_id": "TT_QND_003_E01",
+        "fact_id": "TT_QND_003",
+        "spot_id": "TT",
+        "object_id": "TT_QND",
+        "period": "清·乾隆十六年（1751）",
+        "source_id": "SRC_TT_OFFICIAL_QND_001",
+        "url": "https://tiantanpark.cn/scenic_spot_list/detail/1254.html",
+        "quote": "1751年 (清·乾隆十六年)，统一改为蓝瓦，并更名“祈年殿”",
+        "locator": "页面标题祈年殿下的建筑介绍段；搜索1751年；段中由该年份开始、至更名的分句",
+        "quote_sha256": "21c5e0f8df59c3d760d744595dec95dede2ba229bdffc0f4929b45b6040cd608",
+        "usage": "answer",
+        "note": "直接表述年份、改瓦和更名；主证据",
+        "review_status": "approved",
+        "reviewer": "王宇涵",
+        "reviewed_at": "2026-11-10"
+      }
+    ]
+  },
+  "chat_request": {
+    "spot_id": "TT",
+    "object_id": "TT_QND",
+    "question": "祈年殿的蓝瓦是什么时候改的？",
+    "request_id": "approval-local-check-no-real-model"
+  },
+  "chat_http_status": 503,
+  "chat_response": {
+    "spot_id": "TT",
+    "session_id": null,
+    "turn_id": 1,
+    "answer": "已找到可发布原文证据，但模型尚未配置，本次未生成或核验回答。",
+    "fact_ids": [],
+    "citations": [],
+    "confidence_flag": "insufficient_evidence",
+    "check_status": "model_unavailable",
+    "is_mock": false,
+    "model_called": false,
+    "request_id": "approval-local-check-no-real-model",
+    "answer_id": "225b9cfb-067d-44d0-bb47-2d9c2fa39589",
+    "evidence": [],
+    "claims": [],
+    "verification": {
+      "status": "not_run",
+      "judgments": [],
+      "revision_count": 0
+    },
+    "evidence_review_status": "approved",
+    "error_code": "MODEL_NOT_CONFIGURED",
+    "metrics": {
+      "elapsed_ms": 2.885,
+      "retrieval_ms": 0.137,
+      "calls": []
+    }
+  },
+  "http_elapsed_ms": 7.214,
+  "generation_requests": 0,
+  "verification_requests": 0,
+  "reason": "按用户要求，真实模型生成与核验须等待费用确认；本机检查使用明确禁用的适配器。"
+}

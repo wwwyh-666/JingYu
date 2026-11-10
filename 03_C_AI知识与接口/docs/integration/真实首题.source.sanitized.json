@@ -1,0 +1,36 @@
+{
+  "source": {
+    "source_id": "SRC_TT_OFFICIAL_QND_001",
+    "title": "祈年殿",
+    "institution": "天坛公园",
+    "url": "https://tiantanpark.cn/scenic_spot_list/detail/1254.html",
+    "accessed_on": "2026-11-05",
+    "published_on": null,
+    "locator": "页面标题“祈年殿”下的介绍段；按各事实 source_locator 定位",
+    "review_status": "approved",
+    "reviewer": "[团队自审人姓名已脱敏]",
+    "reviewed_at": "2026-11-10",
+    "approved_evidence_ids": [
+      "TT_QND_003_E01"
+    ]
+  },
+  "evidence": [
+    {
+      "evidence_id": "TT_QND_003_E01",
+      "fact_id": "TT_QND_003",
+      "spot_id": "TT",
+      "object_id": "TT_QND",
+      "period": "清·乾隆十六年（1751）",
+      "source_id": "SRC_TT_OFFICIAL_QND_001",
+      "url": "https://tiantanpark.cn/scenic_spot_list/detail/1254.html",
+      "quote": "1751年 (清·乾隆十六年)，统一改为蓝瓦，并更名“祈年殿”",
+      "locator": "页面标题祈年殿下的建筑介绍段；搜索1751年；段中由该年份开始、至更名的分句",
+      "quote_sha256": "21c5e0f8df59c3d760d744595dec95dede2ba229bdffc0f4929b45b6040cd608",
+      "usage": "answer",
+      "note": "直接表述年份、改瓦和更名；主证据",
+      "review_status": "approved",
+      "reviewer": "[团队自审人姓名已脱敏]",
+      "reviewed_at": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+2026-11-09 本次执行结果整理（不是厂商模型调用日志）
+
+pytest: 77 passed, 1 warning in 4.68s
+命令: .venv/Scripts/python.exe -m pytest -q -p no:cacheprovider --basetemp=tmp/pytest_qa_handoff_20261109
+模型相关测试: ScriptedModel / httpx.MockTransport，均为离线模拟。
+真实厂商调用: 0；尚未确定服务商、模型及本机密钥。
+pip check: No broken requirements found.
+warning: 既有Starlette/httpx弃用提示。
+正式HTTP记录: 无可发布证据，候选及模型核验均未执行。
+离线完整记录: 临时TEST_FIXTURE_ONLY批准副本，is_mock=true，不能视为正式文化内容批准。

@@ -99,44 +99,29 @@
     "spot_id": "TT",
     "object_id": "TT_QND",
     "period": "清·乾隆十六年（1751）",
-    "text": "1751年（清乾隆十六年），大享殿更名为祈年殿，其三重檐原有自上而下青、黄、绿三色琉璃瓦改为统一蓝色（相关官方讲解亦称青色）。这里的颜色变化专指祈年殿三重檐，不意味着整个天坛的全部建筑都改覆蓝瓦。",
+    "text": "据天坛公园《祈年殿》介绍，1751年（清乾隆十六年），大享殿统一改为蓝瓦，并更名为祈年殿。",
     "source_ids": [
-      "SRC_TT_OFFICIAL_QND_001",
-      "SRC_TT_BJ_EXPERT_001",
-      "SRC_TT_OFFICIAL_HISTORY_001"
+      "SRC_TT_OFFICIAL_QND_001"
     ],
-    "source_locator": "SRC_TT_OFFICIAL_QND_001：介绍段1751年句；SRC_TT_BJ_EXPERT_001：配套文字第2—3段；SRC_TT_OFFICIAL_HISTORY_001：大事记1751年条目末句",
+    "source_locator": "SRC_TT_OFFICIAL_QND_001：祈年殿介绍段1751年句；原文片段TT_QND_003_E01",
     "keywords": [
       "1751",
       "乾隆",
       "蓝瓦",
       "蓝色",
-      "青色",
       "更名",
       "改瓦"
     ],
-    "review_status": "pending_human_review",
-    "reviewer": null,
-    "reviewed_at": null,
-    "notes": "更名年份与祈年殿改瓦按官网景点介绍及政府讲解转述。官网大事记1751条还夹述次年圜丘/皇穹宇工程；不据此给所有建筑改瓦工程指定统一年份，不扩充附属建筑范围。",
-    "statement_type": "multi_source_synthesis",
+    "review_status": "approved",
+    "reviewer": "王宇涵",
+    "reviewed_at": "2026-11-10",
+    "notes": "2026-11-10王宇涵明确批准的收窄表述。仅关联S1/E01；不扩大为全坛全部或仅此一殿改瓦，不把记述年份等同所有工程完工年份。其他原多来源内容保留在审读历史中，未随本条自动发布。",
+    "statement_type": "direct_source_paraphrase",
     "source_evidence": [
       {
         "source_id": "SRC_TT_OFFICIAL_QND_001",
-        "locator": "介绍段1751年句",
-        "supports": "1751年更名及统一蓝瓦",
-        "relation": "supports"
-      },
-      {
-        "source_id": "SRC_TT_BJ_EXPERT_001",
-        "locator": "配套文字第2—3段",
-        "supports": "祈年殿三重檐的改瓦范围、原颜色顺序及青蓝称谓",
-        "relation": "supports"
-      },
-      {
-        "source_id": "SRC_TT_OFFICIAL_HISTORY_001",
-        "locator": "大事记1751年条目末句",
-        "supports": "部分建筑改瓦，其他仍用绿瓦；支持不得扩大到全坛的边界",
+        "locator": "祈年殿介绍段1751年句；TT_QND_003_E01",
+        "supports": "仅支持本条获批的1751年统一改蓝瓦及更名表述",
         "relation": "supports"
       }
     ]

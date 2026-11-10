@@ -92,11 +92,19 @@
       "title": "Keywords",
       "type": "array"
     },
+    "query_aliases": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Query Aliases",
+      "type": "array"
+    },
     "review_status": {
       "enum": [
         "pending_human_review",
         "approved",
-        "rejected"
+        "rejected",
+        "disabled"
       ],
       "title": "Review Status",
       "type": "string"

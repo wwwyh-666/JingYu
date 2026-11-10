@@ -1,8 +1,8 @@
 {
   "openapi": "3.1.0",
   "info": {
-    "title": "京遇 C 初始化接口",
-    "version": "0.1.0"
+    "title": "京遇知识问答接口",
+    "version": "0.2.0"
   },
   "paths": {
     "/health": {
@@ -77,6 +77,45 @@
         }
       }
     },
+    "/sources/{source_id}": {
+      "get": {
+        "summary": "Source Detail",
+        "operationId": "source_detail_sources__source_id__get",
+        "parameters": [
+          {
+            "name": "source_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Source Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SourceResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/journal/draft": {
       "post": {
         "summary": "Draft",
@@ -116,6 +155,141 @@
   },
   "components": {
     "schemas": {
+      "AnswerClaim": {
+        "properties": {
+          "claim_id": {
+            "type": "string",
+            "maxLength": 100,
+            "minLength": 1,
+            "title": "Claim Id"
+          },
+          "text": {
+            "type": "string",
+            "maxLength": 1000,
+            "minLength": 1,
+            "title": "Text"
+          },
+          "fact_id": {
+            "type": "string",
+            "title": "Fact Id"
+          },
+          "spot_id": {
+            "type": "string",
+            "enum": [
+              "TT",
+              "GG",
+              "ZGL",
+              "YHY",
+              "JS",
+              "GWF",
+              "YHG",
+              "ZYM"
+            ],
+            "title": "Spot Id"
+          },
+          "object_id": {
+            "type": "string",
+            "title": "Object Id"
+          },
+          "period": {
+            "type": "string",
+            "title": "Period"
+          },
+          "evidence_ids": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "maxItems": 12,
+            "minItems": 1,
+            "title": "Evidence Ids"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "claim_id",
+          "text",
+          "fact_id",
+          "spot_id",
+          "object_id",
+          "period",
+          "evidence_ids"
+        ],
+        "title": "AnswerClaim"
+      },
+      "CallRecord": {
+        "properties": {
+          "phase": {
+            "type": "string",
+            "enum": [
+              "generate",
+              "verify",
+              "revise"
+            ],
+            "title": "Phase"
+          },
+          "started_at": {
+            "type": "string",
+            "title": "Started At"
+          },
+          "elapsed_ms": {
+            "type": "number",
+            "title": "Elapsed Ms"
+          },
+          "configured_model": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Configured Model"
+          },
+          "actual_model": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Actual Model"
+          },
+          "status": {
+            "type": "string",
+            "title": "Status"
+          },
+          "usage": {
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Usage"
+          },
+          "error_code": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Error Code"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "phase",
+          "started_at",
+          "elapsed_ms",
+          "status"
+        ],
+        "title": "CallRecord"
+      },
       "ChatRequest": {
         "properties": {
           "spot_id": {
@@ -168,6 +342,31 @@
               }
             ],
             "title": "Object Id"
+          },
+          "period": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 200
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Period"
+          },
+          "request_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 100,
+                "minLength": 1
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Request Id"
           }
         },
         "additionalProperties": false,
@@ -240,7 +439,11 @@
             "type": "string",
             "enum": [
               "not_checked",
-              "human_reviewed"
+              "human_reviewed",
+              "passed",
+              "failed",
+              "insufficient_evidence",
+              "model_unavailable"
             ],
             "title": "Check Status"
           },
@@ -251,6 +454,68 @@
           "model_called": {
             "type": "boolean",
             "title": "Model Called"
+          },
+          "request_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Request Id"
+          },
+          "answer_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Answer Id"
+          },
+          "evidence": {
+            "items": {
+              "$ref": "#/components/schemas/Evidence"
+            },
+            "type": "array",
+            "title": "Evidence"
+          },
+          "claims": {
+            "items": {
+              "$ref": "#/components/schemas/AnswerClaim"
+            },
+            "type": "array",
+            "title": "Claims"
+          },
+          "verification": {
+            "$ref": "#/components/schemas/VerificationState"
+          },
+          "evidence_review_status": {
+            "type": "string",
+            "enum": [
+              "approved",
+              "no_publishable_evidence"
+            ],
+            "title": "Evidence Review Status",
+            "default": "no_publishable_evidence"
+          },
+          "error_code": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Error Code"
+          },
+          "metrics": {
+            "$ref": "#/components/schemas/RunMetrics"
           }
         },
         "additionalProperties": false,
@@ -285,6 +550,13 @@
             "minLength": 1,
             "format": "uri",
             "title": "Url"
+          },
+          "evidence_ids": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Evidence Ids"
           }
         },
         "additionalProperties": false,
@@ -295,6 +567,45 @@
           "url"
         ],
         "title": "Citation"
+      },
+      "ClaimJudgment": {
+        "properties": {
+          "claim_id": {
+            "type": "string",
+            "title": "Claim Id"
+          },
+          "verdict": {
+            "type": "string",
+            "enum": [
+              "supports",
+              "contradicts",
+              "insufficient_evidence"
+            ],
+            "title": "Verdict"
+          },
+          "evidence_ids": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "maxItems": 12,
+            "title": "Evidence Ids"
+          },
+          "explanation": {
+            "type": "string",
+            "maxLength": 500,
+            "minLength": 1,
+            "title": "Explanation"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "claim_id",
+          "verdict",
+          "explanation"
+        ],
+        "title": "ClaimJudgment"
       },
       "DraftRequest": {
         "properties": {
@@ -347,6 +658,130 @@
           "spot_id"
         ],
         "title": "DraftRequest"
+      },
+      "Evidence": {
+        "properties": {
+          "evidence_id": {
+            "type": "string",
+            "minLength": 1,
+            "title": "Evidence Id"
+          },
+          "fact_id": {
+            "type": "string",
+            "title": "Fact Id"
+          },
+          "spot_id": {
+            "type": "string",
+            "enum": [
+              "TT",
+              "GG",
+              "ZGL",
+              "YHY",
+              "JS",
+              "GWF",
+              "YHG",
+              "ZYM"
+            ],
+            "title": "Spot Id"
+          },
+          "object_id": {
+            "type": "string",
+            "title": "Object Id"
+          },
+          "period": {
+            "type": "string",
+            "title": "Period"
+          },
+          "source_id": {
+            "type": "string",
+            "title": "Source Id"
+          },
+          "url": {
+            "type": "string",
+            "maxLength": 2083,
+            "minLength": 1,
+            "format": "uri",
+            "title": "Url"
+          },
+          "quote": {
+            "type": "string",
+            "minLength": 1,
+            "title": "Quote"
+          },
+          "locator": {
+            "type": "string",
+            "minLength": 1,
+            "title": "Locator"
+          },
+          "quote_sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$",
+            "title": "Quote Sha256"
+          },
+          "usage": {
+            "type": "string",
+            "enum": [
+              "answer",
+              "context_only",
+              "suspected_typo"
+            ],
+            "title": "Usage",
+            "default": "answer"
+          },
+          "note": {
+            "type": "string",
+            "title": "Note",
+            "default": ""
+          },
+          "review_status": {
+            "type": "string",
+            "enum": [
+              "pending_human_review",
+              "approved",
+              "rejected",
+              "disabled"
+            ],
+            "title": "Review Status"
+          },
+          "reviewer": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Reviewer"
+          },
+          "reviewed_at": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Reviewed At"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "evidence_id",
+          "fact_id",
+          "spot_id",
+          "object_id",
+          "period",
+          "source_id",
+          "url",
+          "quote",
+          "locator",
+          "quote_sha256",
+          "review_status"
+        ],
+        "title": "Evidence"
       },
       "Geo": {
         "properties": {
@@ -424,6 +859,145 @@
         ],
         "title": "Position"
       },
+      "RunMetrics": {
+        "properties": {
+          "elapsed_ms": {
+            "type": "number",
+            "title": "Elapsed Ms",
+            "default": 0
+          },
+          "retrieval_ms": {
+            "type": "number",
+            "title": "Retrieval Ms",
+            "default": 0
+          },
+          "calls": {
+            "items": {
+              "$ref": "#/components/schemas/CallRecord"
+            },
+            "type": "array",
+            "title": "Calls"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "title": "RunMetrics"
+      },
+      "Source": {
+        "properties": {
+          "source_id": {
+            "type": "string",
+            "minLength": 1,
+            "title": "Source Id"
+          },
+          "title": {
+            "type": "string",
+            "title": "Title"
+          },
+          "institution": {
+            "type": "string",
+            "title": "Institution"
+          },
+          "url": {
+            "type": "string",
+            "maxLength": 2083,
+            "minLength": 1,
+            "format": "uri",
+            "title": "Url"
+          },
+          "accessed_on": {
+            "type": "string",
+            "title": "Accessed On"
+          },
+          "published_on": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Published On"
+          },
+          "locator": {
+            "type": "string",
+            "title": "Locator"
+          },
+          "review_status": {
+            "type": "string",
+            "enum": [
+              "pending_human_review",
+              "approved",
+              "rejected",
+              "disabled"
+            ],
+            "title": "Review Status"
+          },
+          "reviewer": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Reviewer"
+          },
+          "reviewed_at": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Reviewed At"
+          },
+          "approved_evidence_ids": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Approved Evidence Ids"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "source_id",
+          "title",
+          "institution",
+          "url",
+          "accessed_on",
+          "locator",
+          "review_status"
+        ],
+        "title": "Source"
+      },
+      "SourceResponse": {
+        "properties": {
+          "source": {
+            "$ref": "#/components/schemas/Source"
+          },
+          "evidence": {
+            "items": {
+              "$ref": "#/components/schemas/Evidence"
+            },
+            "type": "array",
+            "title": "Evidence"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "source",
+          "evidence"
+        ],
+        "title": "SourceResponse"
+      },
       "Spot": {
         "properties": {
           "spot_id": {
@@ -499,7 +1073,8 @@
             "enum": [
               "pending_human_review",
               "approved",
-              "rejected"
+              "rejected",
+              "disabled"
             ],
             "title": "Review Status",
             "default": "pending_human_review"
@@ -585,6 +1160,39 @@
           "type"
         ],
         "title": "ValidationError"
+      },
+      "VerificationState": {
+        "properties": {
+          "status": {
+            "type": "string",
+            "enum": [
+              "not_run",
+              "supported",
+              "contradicts",
+              "insufficient_evidence",
+              "failed"
+            ],
+            "title": "Status",
+            "default": "not_run"
+          },
+          "judgments": {
+            "items": {
+              "$ref": "#/components/schemas/ClaimJudgment"
+            },
+            "type": "array",
+            "title": "Judgments"
+          },
+          "revision_count": {
+            "type": "integer",
+            "maximum": 1.0,
+            "minimum": 0.0,
+            "title": "Revision Count",
+            "default": 0
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "title": "VerificationState"
       }
     }
   }

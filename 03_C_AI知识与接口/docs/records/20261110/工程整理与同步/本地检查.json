@@ -1,0 +1,30 @@
+{
+  "exit_code": 0,
+  "elapsed_seconds": 5.691,
+  "command": "python -m pytest -q -p no:cacheprovider --basetemp=tmp/pytest_sync_b6a95919bdee4db4ac78f3537b3f5814",
+  "model_provider": "disabled",
+  "real_model_requests": 0,
+  "output": "........................................................................ [ 92%]\n......                                                                   [100%]\n============================== warnings summary ===============================\n.venv\\Lib\\site-packages\\fastapi\\testclient.py:1\n  .\\.venv\\Lib\\site-packages\\fastapi\\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n    from starlette.testclient import TestClient as TestClient  # noqa\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n78 passed, 1 warning in 4.80s\n",
+  "python_syntax_files": 14,
+  "javascript_syntax": "client module and inline demo script passed; not executed",
+  "openapi_matches_current_source": true,
+  "sanitized_examples_match_current_schemas": true,
+  "pip_check": "No broken requirements found.",
+  "powershell_syntax": "3 existing scripts parsed successfully",
+  "official_data_changed_this_round": false,
+  "real_model_calls_this_round": 0,
+  "note": "pytest uses ScriptedModel/MockTransport and loopback HTTP. Existing historical real-model evidence remains separate; no ASR/TTS/cross-machine acceptance claimed.",
+  "precommit_checks": {
+    "selected_files": 78,
+    "selected_bytes": 421947,
+    "relative_links_checked": 60,
+    "security_findings": [],
+    "protected_files_unchanged": 35,
+    "excluded_unconfirmed_work": [
+      "04_交互测试/.gitkeep",
+      "GitHub团队协作初始化说明.md"
+    ],
+    "scan_scope": "all proposed new/modified text files, exact configured key, credential patterns, private paths, contact data; review signatures retained as authorized audit attribution",
+    "git_email": "configured GitHub noreply address"
+  }
+}

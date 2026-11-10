@@ -1,0 +1,556 @@
+{
+  "$defs": {
+    "AnswerClaim": {
+      "additionalProperties": false,
+      "properties": {
+        "claim_id": {
+          "maxLength": 100,
+          "minLength": 1,
+          "title": "Claim Id",
+          "type": "string"
+        },
+        "text": {
+          "maxLength": 1000,
+          "minLength": 1,
+          "title": "Text",
+          "type": "string"
+        },
+        "fact_id": {
+          "title": "Fact Id",
+          "type": "string"
+        },
+        "spot_id": {
+          "enum": [
+            "TT",
+            "GG",
+            "ZGL",
+            "YHY",
+            "JS",
+            "GWF",
+            "YHG",
+            "ZYM"
+          ],
+          "title": "Spot Id",
+          "type": "string"
+        },
+        "object_id": {
+          "title": "Object Id",
+          "type": "string"
+        },
+        "period": {
+          "title": "Period",
+          "type": "string"
+        },
+        "evidence_ids": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 12,
+          "minItems": 1,
+          "title": "Evidence Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "claim_id",
+        "text",
+        "fact_id",
+        "spot_id",
+        "object_id",
+        "period",
+        "evidence_ids"
+      ],
+      "title": "AnswerClaim",
+      "type": "object"
+    },
+    "CallRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "phase": {
+          "enum": [
+            "generate",
+            "verify",
+            "revise"
+          ],
+          "title": "Phase",
+          "type": "string"
+        },
+        "started_at": {
+          "title": "Started At",
+          "type": "string"
+        },
+        "elapsed_ms": {
+          "title": "Elapsed Ms",
+          "type": "number"
+        },
+        "configured_model": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Configured Model"
+        },
+        "actual_model": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Actual Model"
+        },
+        "status": {
+          "title": "Status",
+          "type": "string"
+        },
+        "usage": {
+          "additionalProperties": true,
+          "title": "Usage",
+          "type": "object"
+        },
+        "error_code": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Error Code"
+        }
+      },
+      "required": [
+        "phase",
+        "started_at",
+        "elapsed_ms",
+        "status"
+      ],
+      "title": "CallRecord",
+      "type": "object"
+    },
+    "Citation": {
+      "additionalProperties": false,
+      "properties": {
+        "source_id": {
+          "title": "Source Id",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "url": {
+          "format": "uri",
+          "maxLength": 2083,
+          "minLength": 1,
+          "title": "Url",
+          "type": "string"
+        },
+        "evidence_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Evidence Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "source_id",
+        "title",
+        "url"
+      ],
+      "title": "Citation",
+      "type": "object"
+    },
+    "ClaimJudgment": {
+      "additionalProperties": false,
+      "properties": {
+        "claim_id": {
+          "title": "Claim Id",
+          "type": "string"
+        },
+        "verdict": {
+          "enum": [
+            "supports",
+            "contradicts",
+            "insufficient_evidence"
+          ],
+          "title": "Verdict",
+          "type": "string"
+        },
+        "evidence_ids": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 12,
+          "title": "Evidence Ids",
+          "type": "array"
+        },
+        "explanation": {
+          "maxLength": 500,
+          "minLength": 1,
+          "title": "Explanation",
+          "type": "string"
+        }
+      },
+      "required": [
+        "claim_id",
+        "verdict",
+        "explanation"
+      ],
+      "title": "ClaimJudgment",
+      "type": "object"
+    },
+    "Evidence": {
+      "additionalProperties": false,
+      "properties": {
+        "evidence_id": {
+          "minLength": 1,
+          "title": "Evidence Id",
+          "type": "string"
+        },
+        "fact_id": {
+          "title": "Fact Id",
+          "type": "string"
+        },
+        "spot_id": {
+          "enum": [
+            "TT",
+            "GG",
+            "ZGL",
+            "YHY",
+            "JS",
+            "GWF",
+            "YHG",
+            "ZYM"
+          ],
+          "title": "Spot Id",
+          "type": "string"
+        },
+        "object_id": {
+          "title": "Object Id",
+          "type": "string"
+        },
+        "period": {
+          "title": "Period",
+          "type": "string"
+        },
+        "source_id": {
+          "title": "Source Id",
+          "type": "string"
+        },
+        "url": {
+          "format": "uri",
+          "maxLength": 2083,
+          "minLength": 1,
+          "title": "Url",
+          "type": "string"
+        },
+        "quote": {
+          "minLength": 1,
+          "title": "Quote",
+          "type": "string"
+        },
+        "locator": {
+          "minLength": 1,
+          "title": "Locator",
+          "type": "string"
+        },
+        "quote_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Quote Sha256",
+          "type": "string"
+        },
+        "usage": {
+          "default": "answer",
+          "enum": [
+            "answer",
+            "context_only",
+            "suspected_typo"
+          ],
+          "title": "Usage",
+          "type": "string"
+        },
+        "note": {
+          "default": "",
+          "title": "Note",
+          "type": "string"
+        },
+        "review_status": {
+          "enum": [
+            "pending_human_review",
+            "approved",
+            "rejected",
+            "disabled"
+          ],
+          "title": "Review Status",
+          "type": "string"
+        },
+        "reviewer": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Reviewer"
+        },
+        "reviewed_at": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Reviewed At"
+        }
+      },
+      "required": [
+        "evidence_id",
+        "fact_id",
+        "spot_id",
+        "object_id",
+        "period",
+        "source_id",
+        "url",
+        "quote",
+        "locator",
+        "quote_sha256",
+        "review_status"
+      ],
+      "title": "Evidence",
+      "type": "object"
+    },
+    "RunMetrics": {
+      "additionalProperties": false,
+      "properties": {
+        "elapsed_ms": {
+          "default": 0,
+          "title": "Elapsed Ms",
+          "type": "number"
+        },
+        "retrieval_ms": {
+          "default": 0,
+          "title": "Retrieval Ms",
+          "type": "number"
+        },
+        "calls": {
+          "items": {
+            "$ref": "#/$defs/CallRecord"
+          },
+          "title": "Calls",
+          "type": "array"
+        }
+      },
+      "title": "RunMetrics",
+      "type": "object"
+    },
+    "VerificationState": {
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "default": "not_run",
+          "enum": [
+            "not_run",
+            "supported",
+            "contradicts",
+            "insufficient_evidence",
+            "failed"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "judgments": {
+          "items": {
+            "$ref": "#/$defs/ClaimJudgment"
+          },
+          "title": "Judgments",
+          "type": "array"
+        },
+        "revision_count": {
+          "default": 0,
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Revision Count",
+          "type": "integer"
+        }
+      },
+      "title": "VerificationState",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "spot_id": {
+      "enum": [
+        "TT",
+        "GG",
+        "ZGL",
+        "YHY",
+        "JS",
+        "GWF",
+        "YHG",
+        "ZYM"
+      ],
+      "title": "Spot Id",
+      "type": "string"
+    },
+    "session_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Session Id"
+    },
+    "turn_id": {
+      "title": "Turn Id",
+      "type": "integer"
+    },
+    "answer": {
+      "title": "Answer",
+      "type": "string"
+    },
+    "fact_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Fact Ids",
+      "type": "array"
+    },
+    "citations": {
+      "items": {
+        "$ref": "#/$defs/Citation"
+      },
+      "title": "Citations",
+      "type": "array"
+    },
+    "confidence_flag": {
+      "enum": [
+        "mock",
+        "insufficient_evidence",
+        "supported"
+      ],
+      "title": "Confidence Flag",
+      "type": "string"
+    },
+    "check_status": {
+      "enum": [
+        "not_checked",
+        "human_reviewed",
+        "passed",
+        "failed",
+        "insufficient_evidence",
+        "model_unavailable"
+      ],
+      "title": "Check Status",
+      "type": "string"
+    },
+    "is_mock": {
+      "title": "Is Mock",
+      "type": "boolean"
+    },
+    "model_called": {
+      "title": "Model Called",
+      "type": "boolean"
+    },
+    "request_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Request Id"
+    },
+    "answer_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Answer Id"
+    },
+    "evidence": {
+      "items": {
+        "$ref": "#/$defs/Evidence"
+      },
+      "title": "Evidence",
+      "type": "array"
+    },
+    "claims": {
+      "items": {
+        "$ref": "#/$defs/AnswerClaim"
+      },
+      "title": "Claims",
+      "type": "array"
+    },
+    "verification": {
+      "$ref": "#/$defs/VerificationState"
+    },
+    "evidence_review_status": {
+      "default": "no_publishable_evidence",
+      "enum": [
+        "approved",
+        "no_publishable_evidence"
+      ],
+      "title": "Evidence Review Status",
+      "type": "string"
+    },
+    "error_code": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Error Code"
+    },
+    "metrics": {
+      "$ref": "#/$defs/RunMetrics"
+    }
+  },
+  "required": [
+    "spot_id",
+    "session_id",
+    "turn_id",
+    "answer",
+    "fact_ids",
+    "citations",
+    "confidence_flag",
+    "check_status",
+    "is_mock",
+    "model_called"
+  ],
+  "title": "ChatResponse",
+  "type": "object"
+}
