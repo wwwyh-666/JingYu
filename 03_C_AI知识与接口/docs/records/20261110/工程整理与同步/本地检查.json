@@ -10,7 +10,7 @@
   "openapi_matches_current_source": true,
   "sanitized_examples_match_current_schemas": true,
   "pip_check": "No broken requirements found.",
-  "powershell_syntax": "3 existing scripts parsed successfully",
+  "powershell_syntax": "2 existing scripts parsed successfully",
   "official_data_changed_this_round": false,
   "real_model_calls_this_round": 0,
   "note": "pytest uses ScriptedModel/MockTransport and loopback HTTP. Existing historical real-model evidence remains separate; no ASR/TTS/cross-machine acceptance claimed.",
@@ -26,5 +26,6 @@
     ],
     "scan_scope": "all proposed new/modified text files, exact configured key, credential patterns, private paths, contact data; review signatures retained as authorized audit attribution",
     "git_email": "configured GitHub noreply address"
-  }
+  },
+  "record_correction": "PowerShell脚本数量原误写3，按实际文件清单更正为2；语法通过结论不变。"
 }
