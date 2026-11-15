@@ -21,5 +21,13 @@ def test_claim_integrity_and_review_status():
     assert {c['source_id'] for c in claims}<={s.source_id for s in repo.sources}
     assert {c['event_id'] for c in claims}<={e['event_id'] for e in events}
     assert all(c['review_status']=='pending_human_review' for c in claims)
+    assert {f.fact_id for f in repo.facts if f.spot_id=='TT' and f.review_status=='approved'}=={'TT_QND_003','TT_QND_004','TT_QND_005'}
+    pending=[f for f in repo.facts if f.fact_id in {'TT_QND_001','TT_QND_002'}]
+    assert len(pending)==2
     assert all(f.review_status=='pending_human_review' and f.reviewer is None and f.reviewed_at is None
-               for f in repo.facts if f.fact_id!='TT_QND_003')
+               for f in pending)
+    disputed=next(f for f in repo.facts if f.fact_id=='TT_QND_002')
+    assert disputed.dispute_status=='disputed'
+    assert not repo.publishable_evidence(disputed)
+    assert all(c['fact_id']=='TT_QND_002' for c in claims)
+    assert all(e['review_status']=='pending_human_review' and e['selected_year'] is None for e in events)

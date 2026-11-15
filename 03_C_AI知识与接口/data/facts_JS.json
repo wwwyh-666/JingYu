@@ -1,1 +1,77 @@
-[]
+[
+  {
+    "fact_id": "JS_PARK_001",
+    "spot_id": "JS",
+    "object_id": "JS_PARK",
+    "period": "元·明·清三代（皇宫后苑）",
+    "text": "景山公园位于北京内城南北中轴线中心点上，是元、明、清三代的皇宫后苑，曾是北京城中心的最高点。",
+    "source_ids": [
+      "SRC_JS_BJGOV_001"
+    ],
+    "source_locator": "SRC_JS_BJGOV_001：正文第一段第1-2句（段首全角空格缩进不含在quote内）",
+    "keywords": [
+      "景山",
+      "景山公园",
+      "中轴线",
+      "皇宫后苑",
+      "最高点",
+      "位置",
+      "哪里"
+    ],
+    "query_aliases": [
+      "景山公园在哪里？",
+      "景山过去是做什么用的？",
+      "景山和中轴线有什么关系？"
+    ],
+    "review_status": "approved",
+    "reviewer": "王宇涵",
+    "reviewed_at": "2026-11-15",
+    "notes": "概况与历史地位；quote取正文第1段第1-2句，原文段首有全角空格缩进，quote不含缩进。",
+    "statement_type": "direct_source_paraphrase",
+    "source_evidence": [
+      {
+        "source_id": "SRC_JS_BJGOV_001",
+        "locator": "正文第一段第1-2句",
+        "supports": "北京内城中轴线中心点、元明清皇宫后苑、曾为北京城中心最高点",
+        "relation": "supports"
+      }
+    ]
+  },
+  {
+    "fact_id": "JS_WCT_001",
+    "spot_id": "JS",
+    "object_id": "JS_WCT",
+    "period": "北京中轴线制高点（现状介绍）",
+    "text": "万春亭位于景山的中峰，是北京城南北中轴线上最高和最佳的观景点。",
+    "source_ids": [
+      "SRC_JS_GYGL_001"
+    ],
+    "source_locator": "SRC_JS_GYGL_001：页面正文前两句",
+    "keywords": [
+      "万春亭",
+      "制高点",
+      "观景",
+      "中峰",
+      "俯瞰",
+      "五亭"
+    ],
+    "query_aliases": [
+      "景山上最好的观景点是哪里？",
+      "万春亭在哪里？",
+      "在哪里可以俯瞰故宫？"
+    ],
+    "review_status": "approved",
+    "reviewer": "王宇涵",
+    "reviewed_at": "2026-11-15",
+    "notes": "代表性景观；quote中相对高度45.7米、亭高17.4米等数字保留在原文内，statement不引用具体数字以免扩大。",
+    "statement_type": "direct_source_paraphrase",
+    "source_evidence": [
+      {
+        "source_id": "SRC_JS_GYGL_001",
+        "locator": "页面正文前两句",
+        "supports": "万春亭位于景山中峰、中轴线上最高和最佳观景点",
+        "relation": "supports"
+      }
+    ]
+  }
+]

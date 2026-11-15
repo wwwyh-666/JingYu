@@ -1,1 +1,79 @@
-[]
+[
+  {
+    "fact_id": "GG_PALACE_001",
+    "spot_id": "GG",
+    "object_id": "GG_PALACE",
+    "period": "现代·1925年建院至今（建立在明清皇宫基础上）",
+    "text": "故宫博物院成立于1925年，建立在明清两朝皇宫紫禁城的基础上，拥有世界上规模最大、保存最完整的木结构宫殿建筑群。",
+    "source_ids": [
+      "SRC_GG_PANO_001"
+    ],
+    "source_locator": "SRC_GG_PANO_001：“故宫概览”介绍段第2-3句；句间原有半角空格，按摘录原样保留",
+    "keywords": [
+      "故宫",
+      "故宫博物院",
+      "1925",
+      "紫禁城",
+      "宫殿建筑群",
+      "博物馆"
+    ],
+    "query_aliases": [
+      "故宫是什么时候成立的？",
+      "故宫博物院建立在什么基础上？",
+      "故宫是什么规模的建筑群？"
+    ],
+    "review_status": "approved",
+    "reviewer": "王宇涵",
+    "reviewed_at": "2026-11-15",
+    "notes": "概况与历史地位；quote中“基础上。”后的半角空格按网页摘录原样保留，人工核对时注意。",
+    "statement_type": "direct_source_paraphrase",
+    "source_evidence": [
+      {
+        "source_id": "SRC_GG_PANO_001",
+        "locator": "故宫概览介绍段第2-3句",
+        "supports": "1925年建院、建立在明清两朝皇宫紫禁城基础上、世界上规模最大保存最完整的木结构宫殿建筑群",
+        "relation": "supports"
+      }
+    ]
+  },
+  {
+    "fact_id": "GG_PALACE_002",
+    "spot_id": "GG",
+    "object_id": "GG_PALACE",
+    "period": "明清·紫禁城建筑格局",
+    "text": "据故宫博物院官网介绍，紫禁城内的建筑分为外朝和内廷两部分：外朝中心为太和殿、中和殿、保和殿，统称三大殿，是国家举行大典礼的地方；内廷中心是乾清宫、交泰殿、坤宁宫，统称后三宫，是皇帝和皇后居住的正宫。",
+    "source_ids": [
+      "SRC_GG_BUILDINGS_001"
+    ],
+    "source_locator": "SRC_GG_BUILDINGS_001：页面开头建筑介绍段中部连续四句",
+    "keywords": [
+      "外朝",
+      "内廷",
+      "三大殿",
+      "太和殿",
+      "中和殿",
+      "保和殿",
+      "后三宫",
+      "乾清宫",
+      "大典礼"
+    ],
+    "query_aliases": [
+      "故宫的建筑布局是怎样的？",
+      "三大殿是做什么用的？",
+      "后三宫指哪几座宫殿？"
+    ],
+    "review_status": "approved",
+    "reviewer": "王宇涵",
+    "reviewed_at": "2026-11-15",
+    "notes": "代表性建筑与用途；statement为逐句转述，不增加quote之外的建筑信息。",
+    "statement_type": "direct_source_paraphrase",
+    "source_evidence": [
+      {
+        "source_id": "SRC_GG_BUILDINGS_001",
+        "locator": "建筑介绍段中部连续四句",
+        "supports": "外朝内廷两部分、三大殿是国家举行大典礼的地方、后三宫是帝后正宫",
+        "relation": "supports"
+      }
+    ]
+  }
+]

@@ -1,0 +1,66 @@
+{
+  "fact_id": "TT_QND_004",
+  "recorded_on": "2026-11-15",
+  "review_document": "docs/2026-11-15_TT_QND_004正式入库前预检报告.md",
+  "candidate_document": "docs/2026-11-13_TT_QND_004候选证据包与人工审核准备.md",
+  "candidate_evidence_file": "docs/candidate/TT_QND_004_20261113/evidence_TT_QND_004.candidate.json",
+  "overall_decision": "通过",
+  "accepted_text": "据北京市公园管理中心介绍，祈年殿是祈谷坛的中心建筑，是清王朝举行祈谷典礼的场所。天坛公园《祈年殿》介绍将其称为孟春（正月）举行祈谷礼的专用建筑。",
+  "reviewer": "王宇涵",
+  "reviewer_role": "京遇团队成员、知识库与后端算法负责人",
+  "reviewed_at": "2026-11-15",
+  "reviewer_identity_source": "data/reviews_TT_QND_003.json中既有reviewer与reviewer_role，按用户明确指示沿用",
+  "release_status": "approved",
+  "teacher_review_record": null,
+  "teacher_review_is_runtime_gate": false,
+  "approval_origin": "用户在聊天中批准A版文字、E01、E02原文核对与answer授权、统一period（清代·孟春（正月）祈谷礼）、S1白名单追加004_E02、S3仅授权004_E01，并指定审核人沿用王宇涵既有自审身份、审核日期2026-11-15",
+  "approval_scope": {
+    "fact_ids": [
+      "TT_QND_004"
+    ],
+    "source_ids": [
+      "SRC_TT_PARKS_QND_001",
+      "SRC_TT_OFFICIAL_QND_001"
+    ],
+    "evidence_ids": [
+      "TT_QND_004_E01",
+      "TT_QND_004_E02"
+    ],
+    "purpose": "仅支持accepted_text所列祈谷坛中心建筑、清代祈谷典礼场所及孟春（正月）祈谷专用建筑表述",
+    "whole_webpage_approved": false,
+    "other_facts_approved": false
+  },
+  "source_permissions": {
+    "SRC_TT_PARKS_QND_001": "本次批准，approved_evidence_ids仅[TT_QND_004_E01]，不代表全页获批",
+    "SRC_TT_OFFICIAL_QND_001": "保留原003审核记录；approved_evidence_ids由[TT_QND_003_E01]追加TT_QND_004_E02，不替换不扩展",
+    "SRC_TT_BJWW_STUDY_001": "移出本事实source_ids关联；保持pending_human_review，不批准，白名单不增加"
+  },
+  "period_unification": {
+    "unified_period": "清代·孟春（正月）祈谷礼",
+    "applies_to": "Fact.period、TT_QND_004_E01.period、TT_QND_004_E02.period",
+    "note": "A版清代用途适用范围标签，不是祈谷礼首次出现年份；改period不改变quote_sha256"
+  },
+  "excluded_evidence": {
+    "evidence_ids": [
+      "TT_QND_004_E03",
+      "TT_QND_004_E04"
+    ],
+    "handling": "保留在docs/candidate/TT_QND_004_20261113/候选文件内pending_human_review，不复制入正式data，不加入任何来源白名单与A版关联，不进入回答上下文"
+  },
+  "wording_constraints": [
+    "不主张祈谷礼始于1751年",
+    "不推断用途始终不变或每年实际执行",
+    "明代背景不进入A版回答范围",
+    "保留候选quote、locator、source_id与quote_sha256"
+  ],
+  "evidence_quote_sha256": {
+    "TT_QND_004_E01": "2a5bf728b576f6076cd5af4c781a4a2409a9f198d4976096613b4ddbe8cb8b30",
+    "TT_QND_004_E02": "0d5956491257659f0bf360e0c39202a2f712d456c661c5460a6df0b57221c8c3"
+  },
+  "previous_fact_changes": "period由“清代·孟春正月祈谷（兼记明代前身礼制背景）”统一为“清代·孟春（正月）祈谷礼”；text由旧多来源表述改为A版；source_ids由[S3,S1,S2]收窄为[S3,S1]；source_evidence同步移除S2项；keywords补充“祈谷礼”“祈谷坛”“中心建筑”“祈年殿”；原notes中明代背景表述移除",
+  "automatic_model_verification": {
+    "status": "not_run",
+    "model_called": false,
+    "note": "本轮只按人工批准入库并进行离线结构/门禁检查，不执行真实问答或收费核验。"
+  }
+}

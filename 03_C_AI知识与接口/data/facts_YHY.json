@@ -1,1 +1,76 @@
-[]
+[
+  {
+    "fact_id": "YHY_PARK_001",
+    "spot_id": "YHY",
+    "object_id": "YHY_PARK",
+    "period": "清·乾隆年间始建（原名清漪园）",
+    "text": "据北京市公园管理中心介绍，颐和园位于北京西北郊海淀，原名清漪园，是清代皇家园林“三山五园”中最晚兴建的一座，也是目前保存最完整的一座。",
+    "source_ids": [
+      "SRC_YHY_GYGL_001"
+    ],
+    "source_locator": "SRC_YHY_GYGL_001：正文第一段第1句",
+    "keywords": [
+      "颐和园",
+      "清漪园",
+      "三山五园",
+      "皇家园林",
+      "位置",
+      "哪里"
+    ],
+    "query_aliases": [
+      "颐和园在哪里？",
+      "颐和园原来叫什么名字？",
+      "什么是三山五园？"
+    ],
+    "review_status": "approved",
+    "reviewer": "王宇涵",
+    "reviewed_at": "2026-11-15",
+    "notes": "概况与历史地位；来源同页有“1998年颐和园列入《世界文化遗产名录》”，如需扩展另立事实卡。",
+    "statement_type": "direct_source_paraphrase",
+    "source_evidence": [
+      {
+        "source_id": "SRC_YHY_GYGL_001",
+        "locator": "正文第一段第1句",
+        "supports": "位于北京西北郊海淀、原名清漪园、三山五园中最晚兴建且目前保存最完整",
+        "relation": "supports"
+      }
+    ]
+  },
+  {
+    "fact_id": "YHY_FXF_001",
+    "spot_id": "YHY",
+    "object_id": "YHY_FXF",
+    "period": "清·乾隆始建、光绪重建",
+    "text": "佛香阁始建于清乾隆年间，1860年被英法联军烧毁，光绪时按原样重建，为八面三层四重檐结构，是颐和园全园的构图中心。",
+    "source_ids": [
+      "SRC_YHY_SUMMER_001"
+    ],
+    "source_locator": "SRC_YHY_SUMMER_001：“正文”栏目“佛香阁”下介绍段前两句",
+    "keywords": [
+      "佛香阁",
+      "构图中心",
+      "烧毁",
+      "重建",
+      "八面三层",
+      "标志性建筑"
+    ],
+    "query_aliases": [
+      "佛香阁是什么样子的？",
+      "佛香阁是哪年被烧毁的？",
+      "颐和园的标志性建筑是什么？"
+    ],
+    "review_status": "approved",
+    "reviewer": "王宇涵",
+    "reviewed_at": "2026-11-15",
+    "notes": "代表性建筑；原文年份为“一八六〇年”，statement转写作1860年。",
+    "statement_type": "direct_source_paraphrase",
+    "source_evidence": [
+      {
+        "source_id": "SRC_YHY_SUMMER_001",
+        "locator": "佛香阁介绍段前两句",
+        "supports": "乾隆始建、1860年被烧毁光绪时重建、八面三层四重檐、全园构图中心",
+        "relation": "supports"
+      }
+    ]
+  }
+]

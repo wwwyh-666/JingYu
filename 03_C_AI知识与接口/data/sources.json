@@ -11,7 +11,8 @@
     "reviewer": "王宇涵",
     "reviewed_at": "2026-11-10",
     "approved_evidence_ids": [
-      "TT_QND_003_E01"
+      "TT_QND_003_E01",
+      "TT_QND_004_E02"
     ]
   },
   {
@@ -22,7 +23,12 @@
     "accessed_on": "2026-11-05",
     "published_on": null,
     "locator": "大事记：1538年、1540年、1751年、1889年四个条目。注意1751条含次年工程；网页有“嘉请”“青死”等疑似录入错字，不原样作为规范表述。",
-    "review_status": "pending_human_review"
+    "review_status": "approved",
+    "reviewer": "王宇涵",
+    "reviewed_at": "2026-11-13",
+    "approved_evidence_ids": [
+      "TT_QND_005_E01"
+    ]
   },
   {
     "source_id": "SRC_TT_BJ_EXPERT_001",
@@ -52,7 +58,12 @@
     "accessed_on": "2026-11-05",
     "published_on": "2019-12-11",
     "locator": "正文第1段第1句（祈谷坛中心建筑、清代祈谷典礼），第2句（圆形攒尖顶、三重檐、蓝色琉璃瓦）；不采用与本次任务无关的尺寸数字。",
-    "review_status": "pending_human_review"
+    "review_status": "approved",
+    "reviewer": "王宇涵",
+    "reviewed_at": "2026-11-15",
+    "approved_evidence_ids": [
+      "TT_QND_004_E01"
+    ]
   },
   {
     "source_id": "SRC_TT_BJ_EXPERT_JIAJING_001",
@@ -63,5 +74,161 @@
     "published_on": "2020-04-10",
     "locator": "网页正文倒数第三段：1540年下令拆除及原址修建；同句未单独说明施工开始或完工时间",
     "review_status": "pending_human_review"
+  },
+  {
+    "source_id": "SRC_GG_PANO_001",
+    "title": "全景故宫（故宫概览）",
+    "institution": "故宫博物院",
+    "url": "https://pano.dpm.org.cn/",
+    "accessed_on": "2026-11-15",
+    "published_on": null,
+    "locator": "页面“故宫概览”介绍段；按各候选事实locator定位",
+    "review_status": "approved",
+    "reviewer": "王宇涵",
+    "reviewed_at": "2026-11-15",
+    "approved_evidence_ids": [
+      "GG_PALACE_001_E01"
+    ]
+  },
+  {
+    "source_id": "SRC_GG_BUILDINGS_001",
+    "title": "建筑（探索—建筑）",
+    "institution": "故宫博物院",
+    "url": "https://www.dpm.org.cn/explore/buildings.html",
+    "accessed_on": "2026-11-15",
+    "published_on": null,
+    "locator": "页面开头建筑介绍段",
+    "review_status": "approved",
+    "reviewer": "王宇涵",
+    "reviewed_at": "2026-11-15",
+    "approved_evidence_ids": [
+      "GG_PALACE_002_E01"
+    ]
+  },
+  {
+    "source_id": "SRC_ZGL_BJGOV_001",
+    "title": "钟鼓楼（走进北京·区县特色·钟鼓楼）",
+    "institution": "北京市人民政府门户网站（首都之窗）",
+    "url": "https://www.beijing.gov.cn/renwen/rwzyd/qxdw/zmzhzhpgj/zhgl/202309/t20230919_3262298.html",
+    "accessed_on": "2026-11-15",
+    "published_on": "2023-09-19",
+    "locator": "页面正文三段：钟鼓楼介绍、钟楼、鼓楼",
+    "review_status": "approved",
+    "reviewer": "王宇涵",
+    "reviewed_at": "2026-11-15",
+    "approved_evidence_ids": [
+      "ZGL_TOWER_001_E01",
+      "ZGL_TOWER_002_E01"
+    ]
+  },
+  {
+    "source_id": "SRC_YHY_GYGL_001",
+    "title": "颐和园（名录·历史名胜）",
+    "institution": "北京市公园管理中心",
+    "url": "https://gygl.beijing.gov.cn/mlgy/mlgy_lsmy/201911/t20191129_732237.html",
+    "accessed_on": "2026-11-15",
+    "published_on": "2019-11-29",
+    "locator": "正文第一段；1998年列入《世界文化遗产名录》句",
+    "review_status": "approved",
+    "reviewer": "王宇涵",
+    "reviewed_at": "2026-11-15",
+    "approved_evidence_ids": [
+      "YHY_PARK_001_E01"
+    ]
+  },
+  {
+    "source_id": "SRC_YHY_SUMMER_001",
+    "title": "佛香阁（景点—万寿山景区—前山景点）",
+    "institution": "颐和园（颐和园官网）",
+    "url": "http://summerpalace.net.cn/longevity/detailqianshan/382.html",
+    "accessed_on": "2026-11-15",
+    "published_on": null,
+    "locator": "页面“正文”栏目“佛香阁”下完整介绍段",
+    "review_status": "approved",
+    "reviewer": "王宇涵",
+    "reviewed_at": "2026-11-15",
+    "approved_evidence_ids": [
+      "YHY_FXF_001_E01"
+    ]
+  },
+  {
+    "source_id": "SRC_JS_BJGOV_001",
+    "title": "景山（景山公园）",
+    "institution": "北京市人民政府门户网站（首都之窗）",
+    "url": "https://www.beijing.gov.cn/renwen/rwzyd/qgzdwwbhdw/js/202210/t20221027_2846298.html",
+    "accessed_on": "2026-11-15",
+    "published_on": "2022-10-27",
+    "locator": "正文第一段（缩进两全角空格起）",
+    "review_status": "approved",
+    "reviewer": "王宇涵",
+    "reviewed_at": "2026-11-15",
+    "approved_evidence_ids": [
+      "JS_PARK_001_E01"
+    ]
+  },
+  {
+    "source_id": "SRC_JS_GYGL_001",
+    "title": "万春亭",
+    "institution": "北京市公园管理中心",
+    "url": "https://gygl.beijing.gov.cn/mlgy/mlgy_gyjg01/201912/t20191211_1048536.html",
+    "accessed_on": "2026-11-15",
+    "published_on": "2019-12-11",
+    "locator": "页面正文全部段落",
+    "review_status": "approved",
+    "reviewer": "王宇涵",
+    "reviewed_at": "2026-11-15",
+    "approved_evidence_ids": [
+      "JS_WCT_001_E01"
+    ]
+  },
+  {
+    "source_id": "SRC_GWF_PGM_001",
+    "title": "构建公共的文化空间——恭王府的保护和利用",
+    "institution": "文化和旅游部恭王府博物馆（恭王府博物馆官网）",
+    "url": "https://www.pgm.org.cn/pgmbhly/bhly/201710/28d8dcde86894ca7989592322bc0142f.shtml",
+    "accessed_on": "2026-11-15",
+    "published_on": "2017-10-17",
+    "locator": "正文第1、2段；按各候选证据locator定位",
+    "review_status": "approved",
+    "reviewer": "王宇涵",
+    "reviewed_at": "2026-11-15",
+    "approved_evidence_ids": [
+      "GWF_MANSION_002_E01",
+      "GWF_MANSION_002_E02"
+    ]
+  },
+  {
+    "source_id": "SRC_YHG_OFFICIAL_001",
+    "title": "雍和宫简介",
+    "institution": "雍和宫（北京雍和宫藏传佛教艺术博物馆官网）",
+    "url": "https://www.yonghegong.cn/2017-01/05/content_40045177.htm",
+    "accessed_on": "2026-11-15",
+    "published_on": "2017-01-05",
+    "locator": "正文介绍段及建筑布局、文物特色段",
+    "review_status": "approved",
+    "reviewer": "王宇涵",
+    "reviewed_at": "2026-11-15",
+    "approved_evidence_ids": [
+      "YHG_TEMPLE_001_E01",
+      "YHG_TEMPLE_002_E01"
+    ]
+  },
+  {
+    "source_id": "SRC_ZYM_WWJ_001",
+    "title": "北京中轴线遗产保护中心（正阳门）",
+    "institution": "北京市文物局",
+    "url": "https://wwj.beijing.gov.cn/bjww/362771/362772/545898/index.html",
+    "accessed_on": "2026-11-15",
+    "published_on": "2018-01-02",
+    "locator": "“博物馆介绍”栏目正文",
+    "review_status": "approved",
+    "reviewer": "王宇涵",
+    "reviewed_at": "2026-11-15",
+    "approved_evidence_ids": [
+      "ZYM_GATE_001_E01",
+      "ZYM_GATE_001_E02",
+      "ZYM_GATE_002_E01",
+      "ZYM_GATE_002_E02"
+    ]
   }
 ]

@@ -1,0 +1,84 @@
+{
+  "fact_id": "TT_QND_005",
+  "recorded_on": "2026-11-13",
+  "review_document": "docs/2026-11-13_TT_QND_005正式审核与入库记录.md",
+  "candidate_document": "docs/2026-11-13_TT_QND_005候选证据包与人工审核准备.md",
+  "candidate_evidence_file": "docs/candidate/TT_QND_005_20261113/evidence_TT_QND_005.candidate.json",
+  "overall_decision": "通过",
+  "accepted_text": "据天坛公园“大事记”记载，1889年（清光绪十五年），祈年殿毁于雷火，次年重建，直至光绪二十二年（1896年）毕工。",
+  "reviewer": "王宇涵",
+  "reviewer_role": "京遇团队成员、知识库与后端算法负责人",
+  "reviewed_at": "2026-11-13",
+  "reviewer_identity_source": "data/reviews_TT_QND_003.json中既有reviewer与reviewer_role，按用户明确指示沿用",
+  "release_status": "approved",
+  "teacher_review_record": null,
+  "teacher_review_is_runtime_gate": false,
+  "approval_origin": "用户在当前聊天中明确批准最终文字、E01、来源范围、辅助换算及审核日期，并要求沿用003自审身份",
+  "approval_scope": {
+    "fact_ids": [
+      "TT_QND_005"
+    ],
+    "source_id": "SRC_TT_OFFICIAL_HISTORY_001",
+    "evidence_ids": [
+      "TT_QND_005_E01"
+    ],
+    "purpose": "仅支持accepted_text所列1889年祈年殿毁于雷火、次年重建、1896年毕工",
+    "whole_webpage_approved": false,
+    "other_facts_approved": false
+  },
+  "source_permission_mechanism": "沿用现有source approved AND approved_evidence_ids精确白名单 AND Fact/Evidence审核与关联检查；来源状态不单独授权整页。",
+  "time_conversion": {
+    "accepted_for_auxiliary_explanation": true,
+    "base_year": 1889,
+    "relative_time": "次年",
+    "derived_year": 1890,
+    "formula": "1889 + 1 = 1890",
+    "direct_source_year": false,
+    "included_in_accepted_text": false
+  },
+  "wording_constraints": [
+    "保留次年重建，不改为次年开始重建",
+    "原文未明确开工或开始重建，不强化其含义",
+    "保留候选quote、locator、source_id与quote_sha256"
+  ],
+  "evidence_quote_sha256": "01a5288763f93532ba2b2df66a299a54213df80fef9b003181afe5a5dd41cd9a",
+  "previous_fact": {
+    "fact_id": "TT_QND_005",
+    "spot_id": "TT",
+    "object_id": "TT_QND",
+    "period": "清·光绪十五年至二十二年（1889—1896）",
+    "text": "1889年（清光绪十五年），祈年殿毁于雷火；次年即1890年开始重建，至1896年（光绪二十二年）完工。",
+    "source_ids": [
+      "SRC_TT_OFFICIAL_HISTORY_001"
+    ],
+    "source_locator": "SRC_TT_OFFICIAL_HISTORY_001：大事记1889年条目整段",
+    "keywords": [
+      "1889",
+      "1890",
+      "1896",
+      "光绪",
+      "雷火",
+      "焚毁",
+      "重建",
+      "完工"
+    ],
+    "review_status": "pending_human_review",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": "直接来源转述；1890年由1889年条目中的次年换算为公元年，不是新增独立史料。未推断具体开工日、材料种类或每一构件年代。",
+    "statement_type": "direct_source_paraphrase",
+    "source_evidence": [
+      {
+        "source_id": "SRC_TT_OFFICIAL_HISTORY_001",
+        "locator": "大事记1889年条目整段",
+        "supports": "雷火焚毁、次年重建及1896年毕工的连续记述",
+        "relation": "supports"
+      }
+    ]
+  },
+  "automatic_model_verification": {
+    "status": "not_run",
+    "model_called": false,
+    "note": "本轮只按人工批准入库并进行离线结构/门禁检查，不执行真实问答或收费核验。"
+  }
+}

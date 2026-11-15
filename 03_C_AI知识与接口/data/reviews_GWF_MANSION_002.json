@@ -1,0 +1,48 @@
+{
+  "fact_id": "GWF_MANSION_002",
+  "recorded_on": "2026-11-15",
+  "review_document": "docs/2026-11-15_八景知识库正式入库与统一验收报告.md",
+  "candidate_document": "docs/2026-11-15_八景候选知识库集中审核报告.md",
+  "candidate_evidence_file": "docs/candidate/eight_spots_20261115/eight_spots_candidates.json",
+  "overall_decision": "通过",
+  "accepted_text": "据恭王府博物馆介绍，和珅、庆亲王永璘、恭亲王奕䜣等先后成为恭王府的主人。恭王府见证了清王朝由盛转衰的历史，因此有“一座恭王府，半部清代史”之说。",
+  "reviewer": "王宇涵",
+  "reviewer_role": "京遇团队成员、知识库与后端算法负责人",
+  "reviewed_at": "2026-11-15",
+  "reviewer_identity_source": "data/reviews_TT_QND_003.json中既有reviewer与reviewer_role，按用户明确指示沿用",
+  "release_status": "approved",
+  "teacher_review_record": null,
+  "teacher_review_is_runtime_gate": false,
+  "approval_origin": "用户在2026-11-15聊天指令中逐条核对17条官网原文并批准14条事实审核方案（9条沿用候选statement、5条替换为最终文字）；本记录按该指令登记",
+  "approval_scope": {
+    "fact_ids": [
+      "GWF_MANSION_002"
+    ],
+    "source_ids": [
+      "SRC_GWF_PGM_001"
+    ],
+    "evidence_ids": [
+      "GWF_MANSION_002_E01",
+      "GWF_MANSION_002_E02"
+    ],
+    "purpose": "仅支持accepted_text所列表述；quote用字“由胜至衰”，statement为用户确认的“由盛转衰”；列举收窄为和珅、永璘、奕䜣",
+    "whole_webpage_approved": false,
+    "other_facts_approved": false
+  },
+  "source_permissions": {
+    "SRC_GWF_PGM_001": "本次批准，approved_evidence_ids仅[\"GWF_MANSION_002_E01\", \"GWF_MANSION_002_E02\"]，不代表全页获批"
+  },
+  "evidence_quote_sha256": {
+    "GWF_MANSION_002_E01": "de5da98168af25b7b7615d6ea48101fb27d856d70a718df44a23a75d4556bbf1",
+    "GWF_MANSION_002_E02": "853c65a5c1eaca9295e0a4299f5437f1606f10b86bebbe959c2748408f815c8b"
+  },
+  "wording_constraints": [
+    "仅批准accepted_text与对应evidence_ids，不代表批准相关网页全部内容",
+    "quote与quote_sha256保持候选包原样，本轮未改动"
+  ],
+  "automatic_model_verification": {
+    "status": "not_run",
+    "model_called": false,
+    "note": "本轮只按人工批准入库并进行离线结构/门禁检查，不执行真实问答或收费核验。"
+  }
+}

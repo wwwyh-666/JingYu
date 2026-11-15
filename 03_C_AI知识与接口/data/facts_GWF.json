@@ -1,1 +1,40 @@
-[]
+[
+  {
+    "fact_id": "GWF_MANSION_002",
+    "spot_id": "GWF",
+    "object_id": "GWF_MANSION",
+    "period": "清代·恭王府主人与历史沿革",
+    "text": "据恭王府博物馆介绍，和珅、庆亲王永璘、恭亲王奕䜣等先后成为恭王府的主人。恭王府见证了清王朝由盛转衰的历史，因此有“一座恭王府，半部清代史”之说。",
+    "source_ids": [
+      "SRC_GWF_PGM_001"
+    ],
+    "source_locator": "SRC_GWF_PGM_001：正文第2段第1句",
+    "keywords": [
+      "和珅",
+      "永璘",
+      "恭亲王",
+      "主人",
+      "半部清代史",
+      "历史",
+      "沿革"
+    ],
+    "query_aliases": [
+      "恭王府住过哪些人？",
+      "为什么说一座恭王府半部清代史？",
+      "恭王府见证了怎样的历史？"
+    ],
+    "review_status": "approved",
+    "reviewer": "王宇涵",
+    "reviewed_at": "2026-11-15",
+    "notes": "2026-11-15用户确认最终文字：删除1776年始建内容，period由“清·乾隆四十一年（1776）始建至清末”调整为“清代·恭王府主人与历史沿革”；keywords与query_examples同步移除1776/始建/谁建的问法。E01原文含“清代大臣”“固伦和孝公主”，最终文字收窄列举和珅、永璘、奕䜣；E02原文用字“由胜至衰”，最终文字为“由盛转衰”，系用户确认的同义表述。",
+    "statement_type": "direct_source_paraphrase",
+    "source_evidence": [
+      {
+        "source_id": "SRC_GWF_PGM_001",
+        "locator": "正文第2段第1-2句（两条证据各支持一句）",
+        "supports": "和珅、庆亲王永璘、恭亲王奕䜣等先后为主人；见证清王朝由盛转衰，故有“一座恭王府，半部清代史”之说",
+        "relation": "supports"
+      }
+    ]
+  }
+]

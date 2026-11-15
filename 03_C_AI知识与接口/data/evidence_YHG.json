@@ -1,0 +1,36 @@
+[
+  {
+    "evidence_id": "YHG_TEMPLE_001_E01",
+    "fact_id": "YHG_TEMPLE_001",
+    "spot_id": "YHG",
+    "object_id": "YHG_TEMPLE",
+    "period": "清·康熙初建至乾隆九年改寺",
+    "source_id": "SRC_YHG_OFFICIAL_001",
+    "url": "https://www.yonghegong.cn/2017-01/05/content_40045177.htm",
+    "quote": "历史上的雍和宫曾是清朝雍正皇帝承接皇位前的王府，也是乾隆皇帝的出生和成长之地。雍和宫初建于康熙年间，雍正三年（1725年）改为行宫，乾隆九年（1744年）改为藏传佛教格鲁派黄教寺院。",
+    "locator": "正文介绍段第2-3句",
+    "quote_sha256": "c9ed5131b26159eecaecf1b4757db90c518b0cfc526c17bcdfec3284c714305c",
+    "usage": "answer",
+    "note": "2026-11-15王宇涵批准；仅支持本事实statement表述；整页未批准（whole_webpage_approved=false）。statement略去“黄教”“雍正三年改为行宫”细节，“即位前”对应quote“承接皇位前”。",
+    "review_status": "approved",
+    "reviewer": "王宇涵",
+    "reviewed_at": "2026-11-15"
+  },
+  {
+    "evidence_id": "YHG_TEMPLE_002_E01",
+    "fact_id": "YHG_TEMPLE_002",
+    "spot_id": "YHG",
+    "object_id": "YHG_TEMPLE",
+    "period": "清代·雍和宫藏传佛教艺术",
+    "source_id": "SRC_YHG_OFFICIAL_001",
+    "url": "https://www.yonghegong.cn/2017-01/05/content_40045177.htm",
+    "quote": "殿堂内供有众多佛像、唐卡及大量珍贵文物，华美珍贵。其中紫檀木雕刻的五百罗汉山、金丝楠木雕刻的佛龛和18米高的白檀木大佛被誉为雍和宫“木雕三绝”。",
+    "locator": "正文文物特色段前两句",
+    "quote_sha256": "69faf9952b7c46cc82898131d71ee0f326371ef83ba0a5b1351725f9e796590f",
+    "usage": "answer",
+    "note": "2026-11-15王宇涵批准；仅支持本事实statement表述；整页未批准（whole_webpage_approved=false）。",
+    "review_status": "approved",
+    "reviewer": "王宇涵",
+    "reviewed_at": "2026-11-15"
+  }
+]

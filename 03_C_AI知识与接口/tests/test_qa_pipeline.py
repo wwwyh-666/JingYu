@@ -314,7 +314,8 @@ def test_formal_release_matches_explicit_approval(tmp_path):
     with TestClient(app) as client:
         r=client.get('/sources/SRC_TT_OFFICIAL_QND_001')
         assert r.status_code==200
-        assert [e['evidence_id'] for e in r.json()['evidence']]==[EID]
+        # S1白名单追加004_E02后，来源查询返回两条获批片段。
+        assert [e['evidence_id'] for e in r.json()['evidence']]==[EID,'TT_QND_004_E02']
 
 
 def test_source_approval_is_limited_to_explicit_evidence(approved_data):

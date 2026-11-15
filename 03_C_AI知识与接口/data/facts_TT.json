@@ -130,25 +130,29 @@
     "fact_id": "TT_QND_004",
     "spot_id": "TT",
     "object_id": "TT_QND",
-    "period": "清代·孟春正月祈谷（兼记明代前身礼制背景）",
-    "text": "祈年殿是祈谷坛的中心建筑，清代用于举行祈谷典礼；天坛公园官网将其介绍为孟春（正月）行祈谷礼的专用建筑。明代大祀殿已有祈谷礼的记载，不应把1420年天地合祀的最初用途与后来祈谷用途混为一谈。",
+    "period": "清代·孟春（正月）祈谷礼",
+    "text": "据北京市公园管理中心介绍，祈年殿是祈谷坛的中心建筑，是清王朝举行祈谷典礼的场所。天坛公园《祈年殿》介绍将其称为孟春（正月）举行祈谷礼的专用建筑。",
     "source_ids": [
       "SRC_TT_PARKS_QND_001",
-      "SRC_TT_OFFICIAL_QND_001",
-      "SRC_TT_BJWW_STUDY_001"
+      "SRC_TT_OFFICIAL_QND_001"
     ],
-    "source_locator": "SRC_TT_PARKS_QND_001：正文第1段第1句；SRC_TT_OFFICIAL_QND_001：介绍段末句；SRC_TT_BJWW_STUDY_001：第四节引《明史》卷四十八祈谷的段落",
+    "source_locator": "SRC_TT_PARKS_QND_001：正文第1段第1句（祈年殿是祈谷坛的中心建筑句）；SRC_TT_OFFICIAL_QND_001：介绍段末句1751年句（孟春祈谷专用建筑说明）",
     "keywords": [
       "孟春",
       "正月",
       "祈谷",
+      "祈谷礼",
+      "祈谷坛",
+      "中心建筑",
       "用途",
+      "举行",
+      "活动",
       "清代"
     ],
-    "review_status": "pending_human_review",
-    "reviewer": null,
-    "reviewed_at": null,
-    "notes": "分开记述清代用途与明代前身背景，不断言祈谷礼始于1751年，不推断用途始终不变。文物局网页是现代研究转引史籍，本样本未独立核验《明史》底本。",
+    "review_status": "approved",
+    "reviewer": "王宇涵",
+    "reviewed_at": "2026-11-15",
+    "notes": "2026-11-15王宇涵明确批准的A版文字。仅关联S3（SRC_TT_PARKS_QND_001，仅004_E01）与S1（SRC_TT_OFFICIAL_QND_001，仅004_E02）。不主张祈谷礼始于1751年，不推断用途始终不变；明代背景保留在候选目录，不进入正式回答范围。移除原S2（SRC_TT_BJWW_STUDY_001）事实关联，S2保持待审，不批准。",
     "statement_type": "multi_source_synthesis",
     "source_evidence": [
       {
@@ -159,14 +163,8 @@
       },
       {
         "source_id": "SRC_TT_OFFICIAL_QND_001",
-        "locator": "介绍段末句",
-        "supports": "孟春正月祈谷专用建筑的说明",
-        "relation": "supports"
-      },
-      {
-        "source_id": "SRC_TT_BJWW_STUDY_001",
-        "locator": "第四节引《明史》卷四十八祈谷的段落",
-        "supports": "记嘉靖十年孟春上辛于大祀殿行祈谷礼；仅用于明代前身背景",
+        "locator": "介绍段末句1751年句",
+        "supports": "孟春（正月）祈谷专用建筑的说明",
         "relation": "supports"
       }
     ]
@@ -176,11 +174,11 @@
     "spot_id": "TT",
     "object_id": "TT_QND",
     "period": "清·光绪十五年至二十二年（1889—1896）",
-    "text": "1889年（清光绪十五年），祈年殿毁于雷火；次年即1890年开始重建，至1896年（光绪二十二年）完工。",
+    "text": "据天坛公园“大事记”记载，1889年（清光绪十五年），祈年殿毁于雷火，次年重建，直至光绪二十二年（1896年）毕工。",
     "source_ids": [
       "SRC_TT_OFFICIAL_HISTORY_001"
     ],
-    "source_locator": "SRC_TT_OFFICIAL_HISTORY_001：大事记1889年条目整段",
+    "source_locator": "SRC_TT_OFFICIAL_HISTORY_001：大事记清•光绪十五年／1889年同一卡片的年号、年份标签及完整正文；TT_QND_005_E01",
     "keywords": [
       "1889",
       "1890",
@@ -191,16 +189,16 @@
       "重建",
       "完工"
     ],
-    "review_status": "pending_human_review",
-    "reviewer": null,
-    "reviewed_at": null,
-    "notes": "直接来源转述；1890年由1889年条目中的次年换算为公元年，不是新增独立史料。未推断具体开工日、材料种类或每一构件年代。",
+    "review_status": "approved",
+    "reviewer": "王宇涵",
+    "reviewed_at": "2026-11-13",
+    "notes": "2026-11-13用户本人明确批准的限定表述，仅使用SRC_TT_OFFICIAL_HISTORY_001及TT_QND_005_E01。保留“次年重建”，不得改为“次年开始重建”。1890仅接受为1889+1的辅助换算，不是原文直接记载；不加入原文quote或本条获批事实文字。不扩大为整页或其他事实授权；自审身份见reviews_TT_QND_005.json。",
     "statement_type": "direct_source_paraphrase",
     "source_evidence": [
       {
         "source_id": "SRC_TT_OFFICIAL_HISTORY_001",
-        "locator": "大事记1889年条目整段",
-        "supports": "雷火焚毁、次年重建及1896年毕工的连续记述",
+        "locator": "同一卡片年号与1889年标签及完整正文；TT_QND_005_E01",
+        "supports": "仅支持获批文字中的1889年毁于雷火、次年重建及光绪二十二年（1896年）毕工；不声称原文出现1890或开始/开工",
         "relation": "supports"
       }
     ]

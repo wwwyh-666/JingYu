@@ -1,0 +1,36 @@
+[
+  {
+    "evidence_id": "YHY_PARK_001_E01",
+    "fact_id": "YHY_PARK_001",
+    "spot_id": "YHY",
+    "object_id": "YHY_PARK",
+    "period": "清·乾隆年间始建（原名清漪园）",
+    "source_id": "SRC_YHY_GYGL_001",
+    "url": "https://gygl.beijing.gov.cn/mlgy/mlgy_lsmy/201911/t20191129_732237.html",
+    "quote": "颐和园位于北京西北郊海淀，原名清漪园，是清代皇家园林“三山五园”中最晚兴建的一座，也是目前保存最完整的一座。",
+    "locator": "正文第一段第1句",
+    "quote_sha256": "0fc9d03edf9a494656c2013866cee3b21d8efe451be799723df7c2d2bd252907",
+    "usage": "answer",
+    "note": "2026-11-15王宇涵批准；仅支持本事实statement表述；整页未批准（whole_webpage_approved=false）。",
+    "review_status": "approved",
+    "reviewer": "王宇涵",
+    "reviewed_at": "2026-11-15"
+  },
+  {
+    "evidence_id": "YHY_FXF_001_E01",
+    "fact_id": "YHY_FXF_001",
+    "spot_id": "YHY",
+    "object_id": "YHY_FXF",
+    "period": "清·乾隆始建、光绪重建",
+    "source_id": "SRC_YHY_SUMMER_001",
+    "url": "http://summerpalace.net.cn/longevity/detailqianshan/382.html",
+    "quote": "始建于清乾隆年间，一八六〇年被英法联军烧毁，光绪时按原样重建。阁结构为八面三层四重檐，通高36.44米，耸立于20米高的石造台基上，气势雄伟，是颐和园全园的构图中心。",
+    "locator": "“正文”栏目“佛香阁”下介绍段前两句",
+    "quote_sha256": "f1f09786f671e0ff83d0ebd6bf80cb4a18a28328cefcdcbaa213e0b241906634",
+    "usage": "answer",
+    "note": "2026-11-15王宇涵批准；仅支持本事实statement表述；整页未批准（whole_webpage_approved=false）。statement将原文“一八六〇年”转写为1860年。",
+    "review_status": "approved",
+    "reviewer": "王宇涵",
+    "reviewed_at": "2026-11-15"
+  }
+]

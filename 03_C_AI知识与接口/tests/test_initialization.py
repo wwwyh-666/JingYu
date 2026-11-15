@@ -54,7 +54,10 @@ def test_real_records_and_review_gate():
     assert repo.search('TT',' ',include_unreviewed=True)==[]
 
 def test_approved_requires_review():
-    row=Repository().facts[0].model_dump();row['review_status']='approved'
+    # 正式库已有多条approved事实；取一条仍待审的事实验证“approved必须带审核人”门禁。
+    pending=next(f for f in Repository().facts if f.review_status=='pending_human_review')
+    row=pending.model_dump();row['review_status']='approved'
+    assert row['reviewer'] is None
     with pytest.raises(ValidationError): Fact.model_validate(row)
 
 @pytest.mark.parametrize('damage',['unknown_source','duplicate_fact','missing_spot'])

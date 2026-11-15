@@ -1,0 +1,36 @@
+[
+  {
+    "evidence_id": "JS_PARK_001_E01",
+    "fact_id": "JS_PARK_001",
+    "spot_id": "JS",
+    "object_id": "JS_PARK",
+    "period": "元·明·清三代（皇宫后苑）",
+    "source_id": "SRC_JS_BJGOV_001",
+    "url": "https://www.beijing.gov.cn/renwen/rwzyd/qgzdwwbhdw/js/202210/t20221027_2846298.html",
+    "quote": "景山公园位于北京内城南北中轴线中心点上，是元、明、清三代的皇宫后苑，曾是北京城中心的最高点。",
+    "locator": "正文第一段第1-2句（段首全角空格缩进不含在quote内）",
+    "quote_sha256": "9e2ce2bc055a3b398e3e596fcfe77e877df8d94b0ef05c90061d68a3d0968237",
+    "usage": "answer",
+    "note": "2026-11-15王宇涵批准；仅支持本事实statement表述；整页未批准（whole_webpage_approved=false）。",
+    "review_status": "approved",
+    "reviewer": "王宇涵",
+    "reviewed_at": "2026-11-15"
+  },
+  {
+    "evidence_id": "JS_WCT_001_E01",
+    "fact_id": "JS_WCT_001",
+    "spot_id": "JS",
+    "object_id": "JS_WCT",
+    "period": "北京中轴线制高点（现状介绍）",
+    "source_id": "SRC_JS_GYGL_001",
+    "url": "https://gygl.beijing.gov.cn/mlgy/mlgy_gyjg01/201912/t20191211_1048536.html",
+    "quote": "万春亭位于景山的中峰，中峰的相对高度为45.7米，是北京城南北中轴线上最高和最佳的观景点。万春亭坐落在中央，高17.4米，三层重檐，32根红柱，金顶剪绿边，四角攒尖。",
+    "locator": "页面正文前两句",
+    "quote_sha256": "af8e615dbee12c5076b3f9e8f1f0b23c06853a9164b9fd34a0f4da2ba994966f",
+    "usage": "answer",
+    "note": "2026-11-15王宇涵批准；仅支持本事实statement表述；整页未批准（whole_webpage_approved=false）。",
+    "review_status": "approved",
+    "reviewer": "王宇涵",
+    "reviewed_at": "2026-11-15"
+  }
+]

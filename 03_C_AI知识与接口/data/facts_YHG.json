@@ -1,1 +1,78 @@
-[]
+[
+  {
+    "fact_id": "YHG_TEMPLE_001",
+    "spot_id": "YHG",
+    "object_id": "YHG_TEMPLE",
+    "period": "清·康熙初建至乾隆九年改寺",
+    "text": "雍和宫曾是雍正皇帝即位前的王府，也是乾隆皇帝的出生和成长之地。雍和宫初建于康熙年间，乾隆九年（1744年）改为藏传佛教格鲁派寺院。",
+    "source_ids": [
+      "SRC_YHG_OFFICIAL_001"
+    ],
+    "source_locator": "SRC_YHG_OFFICIAL_001：正文介绍段第2-3句",
+    "keywords": [
+      "雍和宫",
+      "藏传佛教",
+      "格鲁派",
+      "雍正",
+      "乾隆",
+      "1744",
+      "王府",
+      "寺院"
+    ],
+    "query_aliases": [
+      "雍和宫以前是做什么的？",
+      "雍和宫是什么时候改成寺院的？",
+      "雍正和乾隆与雍和宫有什么关系？"
+    ],
+    "review_status": "approved",
+    "reviewer": "王宇涵",
+    "reviewed_at": "2026-11-15",
+    "notes": "2026-11-15用户确认最终文字：不再使用“清代藏传佛教皇家寺庙”总括与“黄教”细节，略去“雍正三年（1725年）改为行宫”；“即位前”对应原文“承接皇位前”。1725年、黄教等细节保留在quote内，不作为单独可答结论。",
+    "statement_type": "direct_source_paraphrase",
+    "source_evidence": [
+      {
+        "source_id": "SRC_YHG_OFFICIAL_001",
+        "locator": "正文介绍段第2-3句",
+        "supports": "雍正即位前王府、乾隆出生成长之地；康熙初建、乾隆九年改藏传佛教格鲁派寺院",
+        "relation": "supports"
+      }
+    ]
+  },
+  {
+    "fact_id": "YHG_TEMPLE_002",
+    "spot_id": "YHG",
+    "object_id": "YHG_TEMPLE",
+    "period": "清代·雍和宫藏传佛教艺术",
+    "text": "雍和宫殿堂内紫檀木雕刻的五百罗汉山、金丝楠木雕刻的佛龛和18米高的白檀木大佛被誉为雍和宫“木雕三绝”。",
+    "source_ids": [
+      "SRC_YHG_OFFICIAL_001"
+    ],
+    "source_locator": "SRC_YHG_OFFICIAL_001：正文文物特色段前两句",
+    "keywords": [
+      "木雕三绝",
+      "五百罗汉山",
+      "佛龛",
+      "白檀木大佛",
+      "文物",
+      "特色"
+    ],
+    "query_aliases": [
+      "雍和宫有什么文物特色？",
+      "木雕三绝指什么？",
+      "雍和宫的大佛有多高？"
+    ],
+    "review_status": "approved",
+    "reviewer": "王宇涵",
+    "reviewed_at": "2026-11-15",
+    "notes": "文化特色。",
+    "statement_type": "direct_source_paraphrase",
+    "source_evidence": [
+      {
+        "source_id": "SRC_YHG_OFFICIAL_001",
+        "locator": "正文文物特色段前两句",
+        "supports": "紫檀木五百罗汉山、金丝楠木佛龛、18米白檀木大佛被誉为木雕三绝",
+        "relation": "supports"
+      }
+    ]
+  }
+]

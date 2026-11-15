@@ -1,0 +1,36 @@
+[
+  {
+    "evidence_id": "ZGL_TOWER_001_E01",
+    "fact_id": "ZGL_TOWER_001",
+    "spot_id": "ZGL",
+    "object_id": "ZGL_TOWER",
+    "period": "元·明·清三代（报时中心）",
+    "source_id": "SRC_ZGL_BJGOV_001",
+    "url": "https://www.beijing.gov.cn/renwen/rwzyd/qxdw/zmzhzhpgj/zhgl/202309/t20230919_3262298.html",
+    "quote": "钟鼓楼为北京南北中轴线北端的一组古代建筑，两楼前后纵置，气势雄伟，巍峨壮观。作为元、明、清三代都城的报时中心，至今已有700多年的历史。现为全国重点文物保护单位，北京著名的文物旅游景点。",
+    "locator": "正文第一段（钟鼓楼介绍）完整三句",
+    "quote_sha256": "b31c1c9a1b7653e0230115f45e0feb7707a945d4a9b691f0412f0571d54fbc51",
+    "usage": "answer",
+    "note": "2026-11-15王宇涵批准；仅支持本事实statement表述；整页未批准（whole_webpage_approved=false）。",
+    "review_status": "approved",
+    "reviewer": "王宇涵",
+    "reviewed_at": "2026-11-15"
+  },
+  {
+    "evidence_id": "ZGL_TOWER_002_E01",
+    "fact_id": "ZGL_TOWER_002",
+    "spot_id": "ZGL",
+    "object_id": "ZGL_TOWER",
+    "period": "清·乾隆年间（1747年，现存钟楼）",
+    "source_id": "SRC_ZGL_BJGOV_001",
+    "url": "https://www.beijing.gov.cn/renwen/rwzyd/qxdw/zmzhzhpgj/zhgl/202309/t20230919_3262298.html",
+    "quote": "钟楼建于元朝1272年，1297年复建，火毁后明代1420年重建，现存建筑在清乾隆年间1747年完工。楼高47.9米，重檐，歇山顶，上覆黑琉璃瓦绿琉璃剪边。二层悬挂着明永乐年间铸造的重63吨的报时铜钟，被誉为“古钟之王”。",
+    "locator": "正文第二段（钟楼）完整三句",
+    "quote_sha256": "f81880d3cba65e5fccf2bfd3fe7223246f59806999babf2e8e678ca4cb4867a0",
+    "usage": "answer",
+    "note": "2026-11-15王宇涵批准；仅支持本事实statement表述；整页未批准（whole_webpage_approved=false）。statement为用户确认最终文字（“于1747年（清乾隆年间）完工”“悬挂着”与quote用字一致）。",
+    "review_status": "approved",
+    "reviewer": "王宇涵",
+    "reviewed_at": "2026-11-15"
+  }
+]

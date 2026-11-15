@@ -1,0 +1,46 @@
+{
+  "fact_id": "YHG_TEMPLE_002",
+  "recorded_on": "2026-11-15",
+  "review_document": "docs/2026-11-15_八景知识库正式入库与统一验收报告.md",
+  "candidate_document": "docs/2026-11-15_八景候选知识库集中审核报告.md",
+  "candidate_evidence_file": "docs/candidate/eight_spots_20261115/eight_spots_candidates.json",
+  "overall_decision": "通过",
+  "accepted_text": "雍和宫殿堂内紫檀木雕刻的五百罗汉山、金丝楠木雕刻的佛龛和18米高的白檀木大佛被誉为雍和宫“木雕三绝”。",
+  "reviewer": "王宇涵",
+  "reviewer_role": "京遇团队成员、知识库与后端算法负责人",
+  "reviewed_at": "2026-11-15",
+  "reviewer_identity_source": "data/reviews_TT_QND_003.json中既有reviewer与reviewer_role，按用户明确指示沿用",
+  "release_status": "approved",
+  "teacher_review_record": null,
+  "teacher_review_is_runtime_gate": false,
+  "approval_origin": "用户在2026-11-15聊天指令中逐条核对17条官网原文并批准14条事实审核方案（9条沿用候选statement、5条替换为最终文字）；本记录按该指令登记",
+  "approval_scope": {
+    "fact_ids": [
+      "YHG_TEMPLE_002"
+    ],
+    "source_ids": [
+      "SRC_YHG_OFFICIAL_001"
+    ],
+    "evidence_ids": [
+      "YHG_TEMPLE_002_E01"
+    ],
+    "purpose": "仅支持accepted_text所列表述；statement与quote逐字对应，无未经确认的词面差异",
+    "whole_webpage_approved": false,
+    "other_facts_approved": false
+  },
+  "source_permissions": {
+    "SRC_YHG_OFFICIAL_001": "本次批准，approved_evidence_ids仅[\"YHG_TEMPLE_002_E01\"]，不代表全页获批"
+  },
+  "evidence_quote_sha256": {
+    "YHG_TEMPLE_002_E01": "69faf9952b7c46cc82898131d71ee0f326371ef83ba0a5b1351725f9e796590f"
+  },
+  "wording_constraints": [
+    "仅批准accepted_text与对应evidence_ids，不代表批准相关网页全部内容",
+    "quote与quote_sha256保持候选包原样，本轮未改动"
+  ],
+  "automatic_model_verification": {
+    "status": "not_run",
+    "model_called": false,
+    "note": "本轮只按人工批准入库并进行离线结构/门禁检查，不执行真实问答或收费核验。"
+  }
+}

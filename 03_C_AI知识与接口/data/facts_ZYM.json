@@ -1,1 +1,84 @@
-[]
+[
+  {
+    "fact_id": "ZYM_GATE_001",
+    "spot_id": "ZYM",
+    "object_id": "ZYM_GATE",
+    "period": "明·永乐十七年（1419）始建",
+    "text": "正阳门是中国明、清两朝都城的正南门，坐落在老北京城的中轴线上，俗称前门；始建于明永乐十七年（1419年），明正统四年（1439年）改称正阳门并沿用至今。",
+    "source_ids": [
+      "SRC_ZYM_WWJ_001"
+    ],
+    "source_locator": "SRC_ZYM_WWJ_001：“博物馆介绍”栏目第1句",
+    "keywords": [
+      "正阳门",
+      "前门",
+      "城门",
+      "1419",
+      "中轴线",
+      "丽正门",
+      "始建"
+    ],
+    "query_aliases": [
+      "正阳门为什么叫前门？",
+      "正阳门是什么时候建的？",
+      "正阳门在什么位置？"
+    ],
+    "review_status": "approved",
+    "reviewer": "王宇涵",
+    "reviewed_at": "2026-11-15",
+    "notes": "概况与历史地位；两段原文不连续，分列E01/E02。statement将原文“（公元1419年）”简写为“（1419年）”，公元表述不带入正式回答亦可保留原文写法，由人工审核定稿。",
+    "statement_type": "direct_source_paraphrase",
+    "source_evidence": [
+      {
+        "source_id": "SRC_ZYM_WWJ_001",
+        "locator": "博物馆介绍第1、3句（两条证据各支持一句）",
+        "supports": "明清都城正南门、中轴线上俗称前门；1419年始建、1439年改称正阳门沿用至今",
+        "relation": "supports"
+      }
+    ]
+  },
+  {
+    "fact_id": "ZYM_GATE_002",
+    "spot_id": "ZYM",
+    "object_id": "ZYM_GATE",
+    "period": "正阳门现存建筑形制",
+    "text": "据北京市文物局介绍，历史上的正阳门包括城楼、箭楼、瓮城及庙宇，如今仅存城楼和箭楼两座主体建筑；其中城楼为楼阁式，采用重檐歇山三滴水结构，通高43.65米。",
+    "source_ids": [
+      "SRC_ZYM_WWJ_001"
+    ],
+    "source_locator": "SRC_ZYM_WWJ_001：“博物馆介绍”栏目第4句",
+    "keywords": [
+      "城楼",
+      "箭楼",
+      "瓮城",
+      "形制",
+      "楼阁式",
+      "多高",
+      "43.65",
+      "保留",
+      "现存",
+      "两座",
+      "主体建筑"
+    ],
+    "query_aliases": [
+      "正阳门还剩哪些建筑？",
+      "正阳门城楼有多高？",
+      "正阳门的建筑形制是什么？",
+      "正阳门现在还保留哪两座主体建筑？",
+      "正阳门现存哪些建筑？"
+    ],
+    "review_status": "approved",
+    "reviewer": "王宇涵",
+    "reviewed_at": "2026-11-15",
+    "notes": "2026-11-15用户确认最终文字：删除“为1906年的遗存”及“灰筒瓦绿琉璃剪边”细节；period由“清末·1906年现存遗存”调整为“正阳门现存建筑形制”。1906年与1907年说法差异继续搁置，不作为可答结论；quote中1906年数字原样保留，不进入statement。",
+    "statement_type": "direct_source_paraphrase",
+    "source_evidence": [
+      {
+        "source_id": "SRC_ZYM_WWJ_001",
+        "locator": "博物馆介绍第4、5句（两条证据各支持一句）",
+        "supports": "历史上包括城楼箭楼瓮城庙宇、如今仅存两座主体建筑；城楼楼阁式重檐歇山三滴水通高43.65米",
+        "relation": "supports"
+      }
+    ]
+  }
+]
