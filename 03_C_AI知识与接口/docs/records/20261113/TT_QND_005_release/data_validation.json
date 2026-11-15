@@ -1,0 +1,153 @@
+{
+  "kind": "offline_data_validation_no_question_generation",
+  "checks_passed": 31,
+  "checks_failed": 0,
+  "checks": [
+    {
+      "check": "all formal data JSON parse",
+      "passed": true
+    },
+    {
+      "check": "Fact/Source/Evidence Pydantic models and repository integrity",
+      "passed": true
+    },
+    {
+      "check": "all seven Evidence hashes match exact UTF-8 quote",
+      "passed": true
+    },
+    {
+      "check": "all Evidence refer to existing fact and source, matching spot/object/period/url",
+      "passed": true
+    },
+    {
+      "check": "formal fifth fact exactly equals user-approved text",
+      "passed": true
+    },
+    {
+      "check": "candidate quote/locator/source_id/hash/period/url preserved",
+      "passed": true
+    },
+    {
+      "check": "005 only E01 is publishable",
+      "passed": true
+    },
+    {
+      "check": "source whitelist exactly 005 E01",
+      "passed": true
+    },
+    {
+      "check": "other evidence ID is blocked even with approved source/fact",
+      "passed": true
+    },
+    {
+      "check": "pending fifth fact is blocked",
+      "passed": true
+    },
+    {
+      "check": "pending fifth evidence is blocked",
+      "passed": true
+    },
+    {
+      "check": "pending source is blocked",
+      "passed": true
+    },
+    {
+      "check": "spot mismatch is blocked",
+      "passed": true
+    },
+    {
+      "check": "object mismatch is blocked",
+      "passed": true
+    },
+    {
+      "check": "period mismatch is blocked",
+      "passed": true
+    },
+    {
+      "check": "fact mismatch is blocked",
+      "passed": true
+    },
+    {
+      "check": "suspected typo is blocked",
+      "passed": true
+    },
+    {
+      "check": "003 S1 E01 only, still original approval",
+      "passed": true
+    },
+    {
+      "check": "003 E04/E05/E06 remain blocked despite HISTORY source approval",
+      "passed": true
+    },
+    {
+      "check": "001/002/004 still unpublishable",
+      "passed": true
+    },
+    {
+      "check": "default retrieval finds 005 for registered date keywords",
+      "passed": true
+    },
+    {
+      "check": "005 retrieval respects spot/object/period",
+      "passed": true
+    },
+    {
+      "check": "other four Fact objects exactly unchanged",
+      "passed": true
+    },
+    {
+      "check": "old six Evidence objects unchanged",
+      "passed": true
+    },
+    {
+      "check": "other five Source objects unchanged",
+      "passed": true
+    },
+    {
+      "check": "no 005 E02/E03 created",
+      "passed": true
+    },
+    {
+      "check": "reviewer identity inherited exactly; explicit user date",
+      "passed": true
+    },
+    {
+      "check": "approval scope exact, whole page not approved",
+      "passed": true
+    },
+    {
+      "check": "1890 only auxiliary, not literal quote or approved fact text",
+      "passed": true
+    },
+    {
+      "check": "start wording not inserted",
+      "passed": true
+    },
+    {
+      "check": "only three authorized existing files changed",
+      "passed": true
+    }
+  ],
+  "formal_json_files": 16,
+  "review_record": "data/reviews_TT_QND_005.json",
+  "protected_existing_files": 129,
+  "unchanged_existing_files": 126,
+  "changed_existing_files": [
+    "data/evidence_TT.json",
+    "data/facts_TT.json",
+    "data/sources.json"
+  ],
+  "real_model_calls": 0,
+  "real_question_answers": 0,
+  "scope_by_fact": {
+    "TT_QND_001": [],
+    "TT_QND_002": [],
+    "TT_QND_003": [
+      "TT_QND_003_E01"
+    ],
+    "TT_QND_004": [],
+    "TT_QND_005": [
+      "TT_QND_005_E01"
+    ]
+  }
+}

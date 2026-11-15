@@ -1,0 +1,19 @@
+[
+  {
+    "evidence_id": "TT_QND_005_E01",
+    "fact_id": "TT_QND_005",
+    "spot_id": "TT",
+    "object_id": "TT_QND",
+    "period": "清·光绪十五年至二十二年（1889—1896）",
+    "source_id": "SRC_TT_OFFICIAL_HISTORY_001",
+    "url": "https://www.tiantanpark.cn/aboutus.html",
+    "quote": "清•光绪十五年\n1889年\n祈年殿毁于雷火，次年重建．直至光绪二十二年（1896年）毕工。",
+    "locator": "关于我们→大事记→清•光绪十五年／1889年卡片；同一卡片的div.year-title、div.year及div.scroll-box内div.p完整正文。quote按网页DOM顺序连接三个文本块，块间以LF换行分隔；不改原字词与标点。",
+    "quote_sha256": "01a5288763f93532ba2b2df66a299a54213df80fef9b003181afe5a5dd41cd9a",
+    "usage": "answer",
+    "note": "candidate，仅建议用于未来审核通过后的回答；含年号/年份标签以保留1889与次年承接。1890为1889+1换算，原文未写开始或开工。当前不在正式data目录，不具备发布许可。",
+    "review_status": "pending_human_review",
+    "reviewer": null,
+    "reviewed_at": null
+  }
+]

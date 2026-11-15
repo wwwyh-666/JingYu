@@ -1,0 +1,125 @@
+{
+  "status": "candidate_validation_only",
+  "checks": [
+    {
+      "check": "TT_QND_004_E01 schema/hash",
+      "passed": true
+    },
+    {
+      "check": "TT_QND_004_E01 actual source substring",
+      "passed": true
+    },
+    {
+      "check": "TT_QND_004_E01 source relation",
+      "passed": true
+    },
+    {
+      "check": "TT_QND_004_E01 pending/no reviewer",
+      "passed": true
+    },
+    {
+      "check": "TT_QND_004_E02 schema/hash",
+      "passed": true
+    },
+    {
+      "check": "TT_QND_004_E02 actual source substring",
+      "passed": true
+    },
+    {
+      "check": "TT_QND_004_E02 source relation",
+      "passed": true
+    },
+    {
+      "check": "TT_QND_004_E02 pending/no reviewer",
+      "passed": true
+    },
+    {
+      "check": "TT_QND_004_E03 schema/hash",
+      "passed": true
+    },
+    {
+      "check": "TT_QND_004_E03 actual source substring",
+      "passed": true
+    },
+    {
+      "check": "TT_QND_004_E03 source relation",
+      "passed": true
+    },
+    {
+      "check": "TT_QND_004_E03 pending/no reviewer",
+      "passed": true
+    },
+    {
+      "check": "TT_QND_004_E04 schema/hash",
+      "passed": true
+    },
+    {
+      "check": "TT_QND_004_E04 actual source substring",
+      "passed": true
+    },
+    {
+      "check": "TT_QND_004_E04 source relation",
+      "passed": true
+    },
+    {
+      "check": "TT_QND_004_E04 pending/no reviewer",
+      "passed": true
+    },
+    {
+      "check": "unique IDs, no formal collision",
+      "passed": true
+    },
+    {
+      "check": "all source requests succeeded",
+      "passed": true
+    },
+    {
+      "check": "all pre-existing non-ignored files byte unchanged",
+      "passed": true
+    },
+    {
+      "check": "HEAD unchanged",
+      "passed": true
+    },
+    {
+      "check": "index still empty",
+      "passed": true
+    },
+    {
+      "check": "git diff --check",
+      "passed": true
+    },
+    {
+      "check": "report relative links",
+      "passed": true
+    }
+  ],
+  "checks_passed": 23,
+  "existing_files_protected": 141,
+  "preexisting_changed_files": [],
+  "head_before": "498925473c3ac6887d2e6da9a730dbbb4e335600",
+  "head_after": "498925473c3ac6887d2e6da9a730dbbb4e335600",
+  "index_empty": true,
+  "git_status_before": " M 03_C_AI知识与接口/data/evidence_TT.json\n M 03_C_AI知识与接口/data/facts_TT.json\n M 03_C_AI知识与接口/data/sources.json\n M 03_C_AI知识与接口/tests/test_tiantan_conflict.py\n M 03_C_AI知识与接口/tests/test_tiantan_revision.py\n?? 03_C_AI知识与接口/data/reviews_TT_QND_005.json\n?? 03_C_AI知识与接口/docs/2026-11-13_TT_QND_005候选证据包与人工审核准备.md\n?? 03_C_AI知识与接口/docs/2026-11-13_TT_QND_005正式审核与入库记录.md\n?? 03_C_AI知识与接口/docs/2026-11-13_TT_QND_005测试基线更新与回归验证.md\n?? 03_C_AI知识与接口/docs/2026-11-13_天坛知识库现状盘点.md\n?? 03_C_AI知识与接口/docs/candidate/\n?? 03_C_AI知识与接口/docs/records/20261113/\n?? 03_C_AI知识与接口/tests/test_tiantan_release_scope.py\n?? 04_交互测试/.gitkeep\n?? GitHub团队协作初始化说明.md\n",
+  "new_files": [
+    "docs/2026-11-13_TT_QND_004候选证据包与人工审核准备.md",
+    "docs/candidate/TT_QND_004_20261113/evidence_TT_QND_004.candidate.json",
+    "docs/candidate/TT_QND_004_20261113/source_checks.candidate.json",
+    "docs/candidate/TT_QND_004_20261113/validation.candidate.json"
+  ],
+  "formal_data_unchanged": true,
+  "formal_review_records_unchanged": true,
+  "source_whitelists_unchanged": true,
+  "tests_modified": false,
+  "full_test_suite_run": false,
+  "historical_latest_test_result": "118 passed, 0 failed, 0 errors, 0 skipped; not rerun this round",
+  "model_called": false,
+  "git_committed_or_pushed": false,
+  "git_diff_check": {
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "warning: in the working copy of '03_C_AI知识与接口/data/evidence_TT.json', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of '03_C_AI知识与接口/data/facts_TT.json', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of '03_C_AI知识与接口/data/sources.json', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of '03_C_AI知识与接口/tests/test_tiantan_conflict.py', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of '03_C_AI知识与接口/tests/test_tiantan_revision.py', CRLF will be replaced by LF the next time Git touches it\n",
+    "note": "可能含既有CRLF归一化提示，不是差异空白错误。"
+  },
+  "git_status_after": " M 03_C_AI知识与接口/data/evidence_TT.json\n M 03_C_AI知识与接口/data/facts_TT.json\n M 03_C_AI知识与接口/data/sources.json\n M 03_C_AI知识与接口/tests/test_tiantan_conflict.py\n M 03_C_AI知识与接口/tests/test_tiantan_revision.py\n?? 03_C_AI知识与接口/data/reviews_TT_QND_005.json\n?? 03_C_AI知识与接口/docs/2026-11-13_TT_QND_004候选证据包与人工审核准备.md\n?? 03_C_AI知识与接口/docs/2026-11-13_TT_QND_005候选证据包与人工审核准备.md\n?? 03_C_AI知识与接口/docs/2026-11-13_TT_QND_005正式审核与入库记录.md\n?? 03_C_AI知识与接口/docs/2026-11-13_TT_QND_005测试基线更新与回归验证.md\n?? 03_C_AI知识与接口/docs/2026-11-13_天坛知识库现状盘点.md\n?? 03_C_AI知识与接口/docs/candidate/\n?? 03_C_AI知识与接口/docs/records/20261113/\n?? 03_C_AI知识与接口/tests/test_tiantan_release_scope.py\n?? 04_交互测试/.gitkeep\n?? GitHub团队协作初始化说明.md\n"
+}

@@ -1,0 +1,42 @@
+{
+  "kind": "approved_fact_release_change_manifest",
+  "fact_id": "TT_QND_005",
+  "reviewed_at": "2026-11-13",
+  "existing_files_changed": {
+    "facts_TT.json": {
+      "before_sha256": "09fce77f6309ec7c636e056c8da92f85bd1ad665fba3a273444d28ebbac9834c",
+      "after_sha256": "f3bcf64c148e0c1ea7434daf317e3031c6e17fca03b73bb021e771672a65ffd4"
+    },
+    "sources.json": {
+      "before_sha256": "497839deeefda94c4087fbc68c98b3790ab50d28aeae2a1830c0b575eb7b591e",
+      "after_sha256": "1e2663126670b0ff1291bf55aa555b6a0a79d99ce00fc989097dbd5346c9cd59"
+    },
+    "evidence_TT.json": {
+      "before_sha256": "1f861c0461d066929f4c84803d21e1d9e4b1a818294a7ef78623ab67f50181d2",
+      "after_sha256": "1439302f25070ddf9b9dd3b2a678cc83c17f77939f094e7744907456f7fbf04a"
+    }
+  },
+  "other_fact_ids_unchanged": [
+    "TT_QND_001",
+    "TT_QND_002",
+    "TT_QND_003",
+    "TT_QND_004"
+  ],
+  "existing_evidence_unchanged": true,
+  "source_scope": {
+    "source_id": "SRC_TT_OFFICIAL_HISTORY_001",
+    "old_review_status": "pending_human_review",
+    "new_review_status": "approved",
+    "old_approved_evidence_ids": [],
+    "new_approved_evidence_ids": [
+      "TT_QND_005_E01"
+    ],
+    "whole_webpage_permission": false
+  },
+  "review_003_file_unchanged": true,
+  "candidate_files_modified": false,
+  "api_or_test_code_modified": false,
+  "head": "498925473c3ac6887d2e6da9a730dbbb4e335600",
+  "git_committed_or_pushed": false,
+  "new_model_calls": 0
+}

@@ -1,0 +1,41 @@
+{
+  "test_basis": "HEAD 4989254 code and unchanged tests + current approved working-copy data; independent temp snapshot, not pure HEAD snapshot",
+  "exit_code": 1,
+  "wall_seconds": 6.548,
+  "counts": {
+    "tests": 78,
+    "failures": 5,
+    "errors": 0,
+    "skipped": 0,
+    "passed": 73
+  },
+  "failures": [
+    {
+      "test": "test_claim_integrity_and_review_status",
+      "class": "tests.test_tiantan_conflict",
+      "message": "assert False\n +  where False = all(<generator object test_claim_integrity_and_review_status.<locals>.<genexpr> at 0x00000122EB8D39F0>)"
+    },
+    {
+      "test": "test_stable_fact_ids_and_scoped_review",
+      "class": "tests.test_tiantan_revision",
+      "message": "assert False\n +  where False = all(<generator object test_stable_fact_ids_and_scoped_review.<locals>.<genexpr> at 0x00000122EBB6CE10>)"
+    },
+    {
+      "test": "test_retrieval_and_exact_period_filter[1889-TT_QND_005]",
+      "class": "tests.test_tiantan_revision",
+      "message": "AssertionError: assert ['TT_QND_005'] == []\n  \n  Left contains one more item: 'TT_QND_005'\n  Use -v to get more diff"
+    },
+    {
+      "test": "test_retrieval_and_exact_period_filter[1890-TT_QND_005]",
+      "class": "tests.test_tiantan_revision",
+      "message": "AssertionError: assert ['TT_QND_005'] == []\n  \n  Left contains one more item: 'TT_QND_005'\n  Use -v to get more diff"
+    },
+    {
+      "test": "test_retrieval_and_exact_period_filter[1896-TT_QND_005]",
+      "class": "tests.test_tiantan_revision",
+      "message": "AssertionError: assert ['TT_QND_005'] == []\n  \n  Left contains one more item: 'TT_QND_005'\n  Use -v to get more diff"
+    }
+  ],
+  "real_model_calls": 0,
+  "output": "................................................................FF...... [ 92%]\n.FFF..                                                                   [100%]\n================================== FAILURES ===================================\n___________________ test_claim_integrity_and_review_status ____________________\n\n    def test_claim_integrity_and_review_status():\n        repo=Repository(); claims=json.loads((DATA/'TT_source_claims.json').read_text('utf-8'));events=json.loads((DATA/'TT_events.json').read_text('utf-8'))\n        assert len({c['claim_id'] for c in claims})==len(claims)\n        assert {c['source_id'] for c in claims}<={s.source_id for s in repo.sources}\n        assert {c['event_id'] for c in claims}<={e['event_id'] for e in events}\n        assert all(c['review_status']=='pending_human_review' for c in claims)\n>       assert all(f.review_status=='pending_human_review' and f.reviewer is None and f.reviewed_at is None\n                   for f in repo.facts if f.fact_id!='TT_QND_003')\nE       assert False\nE        +  where False = all(<generator object test_claim_integrity_and_review_status.<locals>.<genexpr> at 0x00000122EB8D39F0>)\n\ntests\\test_tiantan_conflict.py:24: AssertionError\n___________________ test_stable_fact_ids_and_scoped_review ____________________\n\n    def test_stable_fact_ids_and_scoped_review():\n        facts=Repository().facts\n        assert [f.fact_id for f in facts]==[f'TT_QND_{n:03}' for n in range(1,6)]\n        assert all(f.spot_id=='TT' and f.object_id=='TT_QND' for f in facts)\n>       assert all(f.review_status=='pending_human_review' and f.reviewer is None and f.reviewed_at is None\n                   for f in facts if f.fact_id!='TT_QND_003')\nE       assert False\nE        +  where False = all(<generator object test_stable_fact_ids_and_scoped_review.<locals>.<genexpr> at 0x00000122EBB6CE10>)\n\ntests\\test_tiantan_revision.py:13: AssertionError\n___________ test_retrieval_and_exact_period_filter[1889-TT_QND_005] ___________\n\nquery = '1889', expected = 'TT_QND_005'\n\n    @pytest.mark.parametrize('query,expected',[('1420','TT_QND_001'),('1538','TT_QND_002'),('1540','TT_QND_002'),('1545','TT_QND_002'),('蓝瓦','TT_QND_003'),('祈谷','TT_QND_004'),('1889','TT_QND_005'),('1890','TT_QND_005'),('1896','TT_QND_005')])\n    def test_retrieval_and_exact_period_filter(query,expected):\n        repo=Repository();row=next(f for f in repo.facts if f.fact_id==expected)\n        assert [f.fact_id for f in repo.search('TT',query,period=row.period,include_unreviewed=True)]==[expected]\n        assert repo.search('TT',query,period='不匹配时期',include_unreviewed=True)==[]\n        assert repo.search('GG',query,include_unreviewed=True)==[]\n        assert repo.search('TT',query,object_id='TT_OTHER',include_unreviewed=True)==[]\n>       assert [f.fact_id for f in repo.search('TT',query)]==(['TT_QND_003'] if expected=='TT_QND_003' else [])\nE       AssertionError: assert ['TT_QND_005'] == []\nE         \nE         Left contains one more item: 'TT_QND_005'\nE         Use -v to get more diff\n\ntests\\test_tiantan_revision.py:38: AssertionError\n___________ test_retrieval_and_exact_period_filter[1890-TT_QND_005] ___________\n\nquery = '1890', expected = 'TT_QND_005'\n\n    @pytest.mark.parametrize('query,expected',[('1420','TT_QND_001'),('1538','TT_QND_002'),('1540','TT_QND_002'),('1545','TT_QND_002'),('蓝瓦','TT_QND_003'),('祈谷','TT_QND_004'),('1889','TT_QND_005'),('1890','TT_QND_005'),('1896','TT_QND_005')])\n    def test_retrieval_and_exact_period_filter(query,expected):\n        repo=Repository();row=next(f for f in repo.facts if f.fact_id==expected)\n        assert [f.fact_id for f in repo.search('TT',query,period=row.period,include_unreviewed=True)]==[expected]\n        assert repo.search('TT',query,period='不匹配时期',include_unreviewed=True)==[]\n        assert repo.search('GG',query,include_unreviewed=True)==[]\n        assert repo.search('TT',query,object_id='TT_OTHER',include_unreviewed=True)==[]\n>       assert [f.fact_id for f in repo.search('TT',query)]==(['TT_QND_003'] if expected=='TT_QND_003' else [])\nE       AssertionError: assert ['TT_QND_005'] == []\nE         \nE         Left contains one more item: 'TT_QND_005'\nE         Use -v to get more diff\n\ntests\\test_tiantan_revision.py:38: AssertionError\n___________ test_retrieval_and_exact_period_filter[1896-TT_QND_005] ___________\n\nquery = '1896', expected = 'TT_QND_005'\n\n    @pytest.mark.parametrize('query,expected',[('1420','TT_QND_001'),('1538','TT_QND_002'),('1540','TT_QND_002'),('1545','TT_QND_002'),('蓝瓦','TT_QND_003'),('祈谷','TT_QND_004'),('1889','TT_QND_005'),('1890','TT_QND_005'),('1896','TT_QND_005')])\n    def test_retrieval_and_exact_period_filter(query,expected):\n        repo=Repository();row=next(f for f in repo.facts if f.fact_id==expected)\n        assert [f.fact_id for f in repo.search('TT',query,period=row.period,include_unreviewed=True)]==[expected]\n        assert repo.search('TT',query,period='不匹配时期',include_unreviewed=True)==[]\n        assert repo.search('GG',query,include_unreviewed=True)==[]\n        assert repo.search('TT',query,object_id='TT_OTHER',include_unreviewed=True)==[]\n>       assert [f.fact_id for f in repo.search('TT',query)]==(['TT_QND_003'] if expected=='TT_QND_003' else [])\nE       AssertionError: assert ['TT_QND_005'] == []\nE         \nE         Left contains one more item: 'TT_QND_005'\nE         Use -v to get more diff\n\ntests\\test_tiantan_revision.py:38: AssertionError\n============================== warnings summary ===============================\n[backend]\\.venv\\Lib\\site-packages\\fastapi\\testclient.py:1\n  [backend]\\.venv\\Lib\\site-packages\\fastapi\\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n    from starlette.testclient import TestClient as TestClient  # noqa\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n=========================== short test summary info ===========================\nFAILED tests/test_tiantan_conflict.py::test_claim_integrity_and_review_status\nFAILED tests/test_tiantan_revision.py::test_stable_fact_ids_and_scoped_review\nFAILED tests/test_tiantan_revision.py::test_retrieval_and_exact_period_filter[1889-TT_QND_005]\nFAILED tests/test_tiantan_revision.py::test_retrieval_and_exact_period_filter[1890-TT_QND_005]\nFAILED tests/test_tiantan_revision.py::test_retrieval_and_exact_period_filter[1896-TT_QND_005]\n5 failed, 73 passed, 1 warning in 5.49s\n"
+}

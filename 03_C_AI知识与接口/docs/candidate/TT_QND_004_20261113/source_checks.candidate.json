@@ -1,0 +1,80 @@
+{
+  "status": "candidate_only",
+  "fact_id": "TT_QND_004",
+  "accessed_on": "2026-11-13",
+  "sources": [
+    {
+      "label": "S1",
+      "source_id": "SRC_TT_OFFICIAL_QND_001",
+      "title": "祈年殿",
+      "institution": "天坛公园",
+      "published_on": null,
+      "url": "https://tiantanpark.cn/scenic_spot_list/detail/1254.html",
+      "final_url": "https://tiantanpark.cn/scenic_spot_list/detail/1254.html",
+      "http_status": 200,
+      "accessed_on": "2026-11-13",
+      "recorded_at": "2026-11-13T22:28:52+08:00",
+      "access_method": "公开网页GET，UTF-8解码；网页阅读工具交叉核对",
+      "formal_status_unchanged": "approved",
+      "formal_whitelist_unchanged": [
+        "TT_QND_003_E01"
+      ],
+      "candidate_evidence_ids": [
+        "TT_QND_004_E02",
+        "TT_QND_004_E04"
+      ]
+    },
+    {
+      "label": "S2",
+      "source_id": "SRC_TT_BJWW_STUDY_001",
+      "title": "北京天坛圜丘坛建筑尺度研究",
+      "institution": "北京市文物局；作者李忠义",
+      "published_on": "2024-01-31",
+      "url": "https://wwj.beijing.gov.cn/bjww/362760/362770/436348561/index.html",
+      "final_url": "https://wwj.beijing.gov.cn/bjww/362760/362770/436348561/index.html",
+      "http_status": 200,
+      "accessed_on": "2026-11-13",
+      "recorded_at": "2026-11-13T22:28:52+08:00",
+      "access_method": "公开网页GET，UTF-8解码；网页阅读工具交叉核对",
+      "formal_status_unchanged": "pending_human_review",
+      "formal_whitelist_unchanged": [],
+      "candidate_evidence_ids": [
+        "TT_QND_004_E03"
+      ],
+      "citation_note": {
+        "footnote": "㉖《明史》，中华书局，1974年，第1256页。",
+        "locator": "#mainText文末注释㉖",
+        "original_book_independently_checked": false
+      }
+    },
+    {
+      "label": "S3",
+      "source_id": "SRC_TT_PARKS_QND_001",
+      "title": "祈年殿",
+      "institution": "北京市公园管理中心",
+      "published_on": "2019-12-11",
+      "url": "https://gygl.beijing.gov.cn/mlgy/mlgy_gyjg01/201912/t20191211_1048233.html",
+      "final_url": "https://gygl.beijing.gov.cn/mlgy/mlgy_gyjg01/201912/t20191211_1048233.html",
+      "http_status": 200,
+      "accessed_on": "2026-11-13",
+      "recorded_at": "2026-11-13T22:28:52+08:00",
+      "access_method": "公开网页GET，UTF-8解码；网页阅读工具交叉核对",
+      "formal_status_unchanged": "pending_human_review",
+      "formal_whitelist_unchanged": [],
+      "candidate_evidence_ids": [
+        "TT_QND_004_E01"
+      ]
+    }
+  ],
+  "quote_extraction": "仅截取必要连续文字，去除首尾排版空白，保留内部原字词、标点及空格，不跨来源拼接。",
+  "period_object_note": "object_id沿用TT_QND作为前身及祈年殿系列标识，不等同同一实体建筑。候选period按各片段真实语境细分，尚未与正式聚合Fact.period对齐；现行精确过滤不能直接导入。未来最终选择后另行确认映射，不改变门禁。",
+  "human_review": {
+    "reviewer": null,
+    "reviewer_role": null,
+    "reviewed_at": null,
+    "overall_decision": null,
+    "accepted_text": null,
+    "allowed_evidence_ids": null
+  },
+  "model_called": false
+}
