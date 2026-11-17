@@ -5,6 +5,7 @@ from time import perf_counter
 from uuid import uuid4
 
 from pydantic import ValidationError
+from .config import max_revisions_from_env, validate_max_revisions
 from .model_client import ModelError, timestamp
 from .models import (CandidateAnswer, ChatRequest, ChatResponse, Citation,
                      VerificationOutput, VerificationState)
@@ -108,10 +109,14 @@ def check_verification(output,candidate,repo,facts,evidence):
 
 
 class QAService:
-    def __init__(self, repository_factory, model, audit_dir: Path):
+    def __init__(self, repository_factory, model, audit_dir: Path,
+                 max_revisions: int | None = None):
         self.repository_factory=repository_factory
         self.model=model
         self.audit_dir=Path(audit_dir)
+        # MAX_REVISIONS=额外修订轮数；0=仅一次生成+一次核验；缺省从环境读取（默认1=原行为）。
+        self.max_revisions=(validate_max_revisions(max_revisions) if max_revisions is not None
+                            else max_revisions_from_env())
 
     def answer(self,body: ChatRequest) -> ChatResponse:
         started=perf_counter()
@@ -171,7 +176,7 @@ class QAService:
                                'object_id':f.object_id,'period':f.period} for f in facts],
             'evidence':[e.model_dump(mode='json') for e in evidence]}
         feedback=None
-        for revision in range(2):
+        for revision in range(self.max_revisions + 1):
             result.verification=VerificationState(revision_count=revision)
             attempt={'revision':revision,'candidate':None,'program_issues':[],
                      'verification':None,'verification_program_issues':[]}
