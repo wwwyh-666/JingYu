@@ -1,0 +1,98 @@
+{
+  "task": "GWF_MANSION_002 MIN 检索优化正式实施",
+  "authorized_by": "用户（2026-11-17 正式批准）",
+  "date": "2026-11-17",
+  "data_changes": [
+    {
+      "file": "data/facts_GWF.json",
+      "fact_id": "GWF_MANSION_002",
+      "field": "keywords",
+      "operation": "append_only",
+      "added": [
+        "恭王府",
+        "王府"
+      ],
+      "before": [
+        "和珅",
+        "永璘",
+        "恭亲王",
+        "主人",
+        "半部清代史",
+        "历史",
+        "沿革"
+      ],
+      "after": [
+        "和珅",
+        "永璘",
+        "恭亲王",
+        "主人",
+        "半部清代史",
+        "历史",
+        "沿革",
+        "恭王府",
+        "王府"
+      ]
+    },
+    {
+      "file": "data/facts_GWF.json",
+      "fact_id": "GWF_MANSION_002",
+      "field": "query_aliases",
+      "operation": "append_only",
+      "added": [
+        "谁曾经居住在恭王府？"
+      ],
+      "before": [
+        "恭王府住过哪些人？",
+        "为什么说一座恭王府半部清代史？",
+        "恭王府见证了怎样的历史？"
+      ],
+      "after": [
+        "恭王府住过哪些人？",
+        "为什么说一座恭王府半部清代史？",
+        "恭王府见证了怎样的历史？",
+        "谁曾经居住在恭王府？"
+      ]
+    }
+  ],
+  "test_changes": [
+    {
+      "file": "tests/test_eight_spots_retrieval.py",
+      "guard": "facts/evidence/sources 计数",
+      "before": "len(repo.facts)==18 and len(repo.evidence)==25 and len(repo.sources)==16；counts GWF:1",
+      "after": "len(repo.facts)==19 and len(repo.evidence)==26 and len(repo.sources)==16；counts GWF:2",
+      "reason": "001入库守卫（授权变更）"
+    },
+    {
+      "file": "tests/test_eight_spots_retrieval.py",
+      "guard": "001排除守卫",
+      "before": "assert all(f.fact_id != 'GWF_MANSION_001' for f in repo.facts)",
+      "after": "001 存在性+approved+publishable_evidence==['GWF_MANSION_001_E01'] 精确校验",
+      "reason": "001已入库，守卫目的改为入库后发布链完整性"
+    },
+    {
+      "file": "tests/test_tiantan_release_scope.py",
+      "guard": "全库Evidence数量",
+      "before": "len(repo.evidence)==25；EIGHT_SPOT_EVIDENCE 无 001_E01",
+      "after": "len(repo.evidence)==26；EIGHT_SPOT_EVIDENCE 追加 GWF_MANSION_001_E01",
+      "reason": "001入库守卫"
+    },
+    {
+      "file": "logs/TT_revision_unchanged_before.json",
+      "guard": "facts_GWF.json SHA快照",
+      "before": "efb3588ae47118499671c0fca752aa947e6e4d10ec2003c6e7e0f6f52a1f086e",
+      "after": "956554737168ca0e46a261c5b9f2f6a8669bbbd28bee8f339e1b1e4ac6c3439a",
+      "reason": "001入库+002三词追加导致文件字节变化，快照重置为当前指纹"
+    }
+  ],
+  "protected_untouched": [
+    "GWF_MANSION_001 全部字段",
+    "GWF_MANSION_002 statement/period/source_ids/review状态",
+    "E01/E02/E03 quote、locator、SHA256",
+    "sources.json",
+    "全部 reviews 文件",
+    "其他七景点数据",
+    "业务源码/检索算法/Prompt/配置",
+    ".env"
+  ],
+  "semantic_risk_retained": "「谁曾经居住在恭王府？」仅为检索问法映射，非事实证据。正式事实仍只支持「先后成为恭王府的主人」；statement/Evidence 均无『居住』字样。当前核验机制在程序层面无法确定性拦截所有措辞扩展，『主人→居住』改写依赖核验模型语义判断，为概率性拦截。"
+}

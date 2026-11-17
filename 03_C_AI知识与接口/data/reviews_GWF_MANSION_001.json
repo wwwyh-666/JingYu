@@ -1,0 +1,61 @@
+{
+  "fact_id": "GWF_MANSION_001",
+  "recorded_on": "2026-11-17",
+  "review_document": "docs/records/20261117/GWF_MANSION_001_release/GWF_MANSION_001正式入库报告.md",
+  "prior_review_material": "仓库外材料包 C:/Users/Public/GWF_MANSION_001_人工审核材料_20261117/（事实审核卡、E01证据审核卡、官方来源审核卡、正式入库差异预览、人工审核总表）",
+  "special_verification_report": "仓库外报告 C:/Users/Public/GWF_MANSION_001复核_20261117/GWF_MANSION_001_E01_证据专项复核报告.md（2026-11-17，判定PASS）",
+  "candidate_document": "docs/2026-11-15_八景候选知识库集中审核报告.md",
+  "candidate_evidence_file": "docs/candidate/eight_spots_20261115/eight_spots_candidates.json",
+  "overall_decision": "通过",
+  "accepted_text": "据恭王府博物馆介绍，恭王府位于北京西城区什刹海西岸的前海西街，是北京保存较为完整并向公众开放的清代王府建筑群，1982年被列入第二批全国重点文物保护单位。",
+  "reviewer": "王宇涵",
+  "reviewer_role": "京遇团队成员、知识库与后端算法负责人",
+  "reviewed_at": "2026-11-17",
+  "reviewer_identity_source": "data/reviews_TT_QND_003.json中既有reviewer与reviewer_role，按用户明确指示沿用",
+  "release_status": "approved",
+  "teacher_review_record": null,
+  "teacher_review_is_runtime_gate": false,
+  "approval_origin": "用户在2026-11-17聊天指令中完成人工审核（依据2026-11-17专项复核报告与仓库外人工审核材料包）并明确批准入库；证据处理方案A由用户确定：保留原始单条E01，不拆分、不修改原始quote与SHA256",
+  "approval_scope": {
+    "fact_ids": [
+      "GWF_MANSION_001"
+    ],
+    "source_ids": [
+      "SRC_GWF_PGM_001"
+    ],
+    "evidence_ids": [
+      "GWF_MANSION_001_E01"
+    ],
+    "purpose": "仅支持accepted_text所列表述；statement为用户确认的收窄版（保存较为完整并向公众开放），不恢复唯一、保存最完整等最高级断言",
+    "whole_webpage_approved": false,
+    "other_facts_approved": false
+  },
+  "review_checklist": {
+    "事实准确性": "statement准确反映官方材料；保存较为完整、向公众开放为原文保存最完整、唯一对社会开放的弱化/收窄转述，方向安全，用户确认接受",
+    "表述完整性": "位置、文保级别、开放描述均已覆盖，无夸大与不必要推断；未引入候选quote之外的新细节",
+    "时间信息": "1982年列入第二批全国重点文物保护单位与官网原文逐字一致；无其他新增时间断言",
+    "证据真实性": "E01 quote与官网正文逐字一致、两句连续（2026-11-17双层核查：web_fetch+原始抓取机器比对），SHA256复算一致",
+    "证据充分性": "单条E01两句完整覆盖statement全部断言（位置、保存与开放、1982年文保），证据充分",
+    "来源可靠性": "SRC_GWF_PGM_001为恭王府博物馆官网文章，来源本体已于2026-11-15经王宇涵批准，适用性经本次审核确认",
+    "发布范围": "允许进入正式问答知识库；query_aliases按正式库惯例映射、source_evidence按002结构补建、approved_evidence_ids追加E01，均已按用户指示处理"
+  },
+  "plan_a_rationale": "用户2026-11-17确定方案A：经专项复核证实候选quote两句在官网正文中相邻连续、逐字一致，原quote本身即为连续准确原文，无需拆分或重取；保留单条E01与候选材料零改动，可追溯性最强",
+  "temporal_boundary": "向公众开放仅理解为恭王府博物馆历史介绍文章（2014年报刊文章官网转载，页面2017-10-17更新）中的描述，不构成2026年实时开放状态证明；整页未批准（whole_webpage_approved=false）",
+  "historical_pause_note": "候选包2026-11-15记录的暂缓原因（E01两句不连续、中间夹有1996年开放与2008年修缮等句、第二句措辞疑似差异）与2026-11-17官网实测不符：实测两句连续、正文无1996字样、2008年句位于第4段。该矛盾成因尚未完全还原，不能直接认定为笔误（无法排除盘点时页面状态不同或引用其他网页版本的可能）；历史暂缓记录在候选包notes中完整保留，未删除、未改写",
+  "source_permissions": {
+    "SRC_GWF_PGM_001": "来源本体2026-11-15已批准；本次仅追加approved_evidence_ids=[GWF_MANSION_001_E01]，不代表全页获批"
+  },
+  "evidence_quote_sha256": {
+    "GWF_MANSION_001_E01": "cb5e2827d14fa91df73b8d6cb947afc05bdc53236bc472295a65e150d2d66296"
+  },
+  "wording_constraints": [
+    "仅批准accepted_text与对应evidence_ids，不代表批准相关网页全部内容",
+    "quote与quote_sha256保持候选包原样，本轮未改动",
+    "statement保持用户确认的收窄版，不恢复最高级断言"
+  ],
+  "automatic_model_verification": {
+    "status": "not_run",
+    "model_called": false,
+    "note": "本轮只按人工批准入库并进行离线结构/门禁/检索检查，不执行真实问答或收费核验。"
+  }
+}

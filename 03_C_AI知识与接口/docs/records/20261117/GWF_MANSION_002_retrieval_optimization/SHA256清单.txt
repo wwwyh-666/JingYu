@@ -1,0 +1,9 @@
+﻿# SHA256 清单 — GWF_MANSION_002_retrieval_optimization
+算法: SHA256；本清单自身不含自哈希（自引用不可行）；其余全部交付文件均纳入校验。
+======================================================================
+53ae0ae79c9f86c150b4e2980f5fa717b10b75e74130b93949725059a61d3a45  13题检索回归结果.json  (9113 B)
+ff5fa3d81cf73858d5b344f2b282bb127a8ddf3a7b3102bf90707f081f5cf27f  八景点隔离验证.json  (1834 B)
+c0427478f8f509b42dcdf4eac95ea69f315704f68b4dc8e39ede0e3dcd8da059  变更清单.json  (3574 B)
+213ce92d0dcd83de1dc45d08300cf9ad136e077815fd6b65cdb699633b9dd0a4  数据完整性校验.json  (2338 B)
+90b84d21317eee073363c3f46cf297854b2ac83e2365367fd1b347d5fc41089e  正式实施报告.md  (3883 B)
+04c8db944167af9dd9ccebfc4453739d732380ba77c57e82f3bc52c20d80ad22  测试结果.json  (824 B)

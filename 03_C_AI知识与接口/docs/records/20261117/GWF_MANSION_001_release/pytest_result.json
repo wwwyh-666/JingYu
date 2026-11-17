@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-17",
+  "env": "MODEL_PROVIDER=disabled",
+  "exit_code": 1,
+  "summary_lines": [
+    "=========================== short test summary info ===========================",
+    "FAILED tests/test_eight_spots_retrieval.py::test_repository_loads_all_eight_spots",
+    "FAILED tests/test_eight_spots_retrieval.py::test_natural_question_hits_expected_fact[GWF-\\u606d\\u738b\\u5e9c\\u4f4f\\u8fc7\\u54ea\\u4e9b\\u4eba\\uff1f-GWF_MANSION_002]",
+    "FAILED tests/test_eight_spots_retrieval.py::test_natural_question_hits_expected_fact[GWF-\\u4e3a\\u4ec0\\u4e48\\u8bf4\\u4e00\\u5ea7\\u606d\\u738b\\u5e9c\\u534a\\u90e8\\u6e05\\u4ee3\\u53f2\\uff1f-GWF_MANSION_002]",
+    "FAILED tests/test_eight_spots_retrieval.py::test_all_evidence_hashes_and_whitelists_consistent",
+    "FAILED tests/test_tiantan_release_scope.py::test_exact_formal_evidence_inventory_and_hashes",
+    "FAILED tests/test_tiantan_revision.py::test_other_data_unchanged - AssertionE...",
+    "6 failed, 229 passed, 1 warning in 14.91s"
+  ],
+  "failed": [
+    "test_repository_loads_all_eight_spots",
+    "test_natural_question_hits_expected_fact[GWF-恭王府住过哪些人？-GWF_MANSION_002]",
+    "test_natural_question_hits_expected_fact[GWF-为什么说一座恭王府半部清代史？-GWF_MANSION_002]",
+    "test_all_evidence_hashes_and_whitelists_consistent",
+    "test_tiantan_release_scope.py::test_exact_formal_evidence_inventory_and_hashes",
+    "test_tiantan_revision.py::test_other_data_unchanged"
+  ],
+  "diagnosis": "全部为守卫型基线断言拦截本轮授权入库变更；数据哈希/白名单/门禁检查全部通过；按任务书指示未修改测试基线，待另行授权更新"
+}

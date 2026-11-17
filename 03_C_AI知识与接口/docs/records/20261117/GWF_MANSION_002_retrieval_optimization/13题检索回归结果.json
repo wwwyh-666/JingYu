@@ -1,0 +1,401 @@
+{
+  "summary": {
+    "total": 13,
+    "q001_first": 3,
+    "q002_first": 7,
+    "tie": 3,
+    "all_pass": true,
+    "model_provider": "disabled",
+    "api_calls": 0
+  },
+  "per_question": [
+    {
+      "question": "恭王府在哪里？",
+      "category": "地理位置与文物保护",
+      "expected": "001优先",
+      "s1": 4,
+      "s2": 2,
+      "detail": {
+        "GWF_MANSION_002": {
+          "score": 2,
+          "hit_terms": [
+            "恭王府",
+            "王府"
+          ]
+        },
+        "GWF_MANSION_001": {
+          "score": 4,
+          "hit_terms": [
+            "恭王府",
+            "王府",
+            "哪里",
+            "恭王府在哪里？"
+          ]
+        }
+      },
+      "order": [
+        "GWF_MANSION_001",
+        "GWF_MANSION_002"
+      ],
+      "expected_first": "GWF_MANSION_001",
+      "pass": true
+    },
+    {
+      "question": "恭王府位于什么地方？",
+      "category": "地理位置与文物保护",
+      "expected": "001优先",
+      "s1": 2,
+      "s2": 2,
+      "detail": {
+        "GWF_MANSION_002": {
+          "score": 2,
+          "hit_terms": [
+            "恭王府",
+            "王府"
+          ]
+        },
+        "GWF_MANSION_001": {
+          "score": 2,
+          "hit_terms": [
+            "恭王府",
+            "王府"
+          ]
+        }
+      },
+      "order": [
+        "GWF_MANSION_001",
+        "GWF_MANSION_002"
+      ],
+      "expected_first": "GWF_MANSION_001",
+      "pass": true
+    },
+    {
+      "question": "恭王府什么时候被列为全国重点文物保护单位？",
+      "category": "地理位置与文物保护",
+      "expected": "001优先",
+      "s1": 3,
+      "s2": 2,
+      "detail": {
+        "GWF_MANSION_002": {
+          "score": 2,
+          "hit_terms": [
+            "恭王府",
+            "王府"
+          ]
+        },
+        "GWF_MANSION_001": {
+          "score": 3,
+          "hit_terms": [
+            "恭王府",
+            "王府",
+            "文物保护单位"
+          ]
+        }
+      },
+      "order": [
+        "GWF_MANSION_001",
+        "GWF_MANSION_002"
+      ],
+      "expected_first": "GWF_MANSION_001",
+      "pass": true
+    },
+    {
+      "question": "恭王府的地理位置和文物保护身份是什么？",
+      "category": "地理位置与文物保护",
+      "expected": "001优先",
+      "s1": 3,
+      "s2": 2,
+      "detail": {
+        "GWF_MANSION_002": {
+          "score": 2,
+          "hit_terms": [
+            "恭王府",
+            "王府"
+          ]
+        },
+        "GWF_MANSION_001": {
+          "score": 3,
+          "hit_terms": [
+            "恭王府",
+            "王府",
+            "位置"
+          ]
+        }
+      },
+      "order": [
+        "GWF_MANSION_001",
+        "GWF_MANSION_002"
+      ],
+      "expected_first": "GWF_MANSION_001",
+      "pass": true
+    },
+    {
+      "question": "恭王府住过哪些人？",
+      "category": "历史人物",
+      "expected": "002优先",
+      "s1": 2,
+      "s2": 3,
+      "detail": {
+        "GWF_MANSION_002": {
+          "score": 3,
+          "hit_terms": [
+            "恭王府",
+            "王府",
+            "恭王府住过哪些人？"
+          ]
+        },
+        "GWF_MANSION_001": {
+          "score": 2,
+          "hit_terms": [
+            "恭王府",
+            "王府"
+          ]
+        }
+      },
+      "order": [
+        "GWF_MANSION_002",
+        "GWF_MANSION_001"
+      ],
+      "expected_first": "GWF_MANSION_002",
+      "pass": true
+    },
+    {
+      "question": "恭王府有哪些著名历史人物？",
+      "category": "历史人物",
+      "expected": "002优先",
+      "s1": 2,
+      "s2": 3,
+      "detail": {
+        "GWF_MANSION_002": {
+          "score": 3,
+          "hit_terms": [
+            "历史",
+            "恭王府",
+            "王府"
+          ]
+        },
+        "GWF_MANSION_001": {
+          "score": 2,
+          "hit_terms": [
+            "恭王府",
+            "王府"
+          ]
+        }
+      },
+      "order": [
+        "GWF_MANSION_002",
+        "GWF_MANSION_001"
+      ],
+      "expected_first": "GWF_MANSION_002",
+      "pass": true
+    },
+    {
+      "question": "谁曾经居住在恭王府？",
+      "category": "历史人物",
+      "expected": "002优先",
+      "s1": 2,
+      "s2": 3,
+      "detail": {
+        "GWF_MANSION_002": {
+          "score": 3,
+          "hit_terms": [
+            "恭王府",
+            "王府",
+            "谁曾经居住在恭王府？"
+          ]
+        },
+        "GWF_MANSION_001": {
+          "score": 2,
+          "hit_terms": [
+            "恭王府",
+            "王府"
+          ]
+        }
+      },
+      "order": [
+        "GWF_MANSION_002",
+        "GWF_MANSION_001"
+      ],
+      "expected_first": "GWF_MANSION_002",
+      "pass": true
+    },
+    {
+      "question": "恭王府与历史人物有什么关系？",
+      "category": "历史人物",
+      "expected": "002优先",
+      "s1": 2,
+      "s2": 3,
+      "detail": {
+        "GWF_MANSION_002": {
+          "score": 3,
+          "hit_terms": [
+            "历史",
+            "恭王府",
+            "王府"
+          ]
+        },
+        "GWF_MANSION_001": {
+          "score": 2,
+          "hit_terms": [
+            "恭王府",
+            "王府"
+          ]
+        }
+      },
+      "order": [
+        "GWF_MANSION_002",
+        "GWF_MANSION_001"
+      ],
+      "expected_first": "GWF_MANSION_002",
+      "pass": true
+    },
+    {
+      "question": "介绍一下恭王府。",
+      "category": "综合",
+      "expected": "001优先或同分",
+      "s1": 2,
+      "s2": 2,
+      "detail": {
+        "GWF_MANSION_002": {
+          "score": 2,
+          "hit_terms": [
+            "恭王府",
+            "王府"
+          ]
+        },
+        "GWF_MANSION_001": {
+          "score": 2,
+          "hit_terms": [
+            "恭王府",
+            "王府"
+          ]
+        }
+      },
+      "order": [
+        "GWF_MANSION_001",
+        "GWF_MANSION_002"
+      ],
+      "expected_first": "GWF_MANSION_001",
+      "pass": true
+    },
+    {
+      "question": "恭王府有什么历史？",
+      "category": "综合",
+      "expected": "002优先",
+      "s1": 2,
+      "s2": 3,
+      "detail": {
+        "GWF_MANSION_002": {
+          "score": 3,
+          "hit_terms": [
+            "历史",
+            "恭王府",
+            "王府"
+          ]
+        },
+        "GWF_MANSION_001": {
+          "score": 2,
+          "hit_terms": [
+            "恭王府",
+            "王府"
+          ]
+        }
+      },
+      "order": [
+        "GWF_MANSION_002",
+        "GWF_MANSION_001"
+      ],
+      "expected_first": "GWF_MANSION_002",
+      "pass": true
+    },
+    {
+      "question": "恭王府有哪些值得了解的内容？",
+      "category": "综合",
+      "expected": "001优先或同分",
+      "s1": 2,
+      "s2": 2,
+      "detail": {
+        "GWF_MANSION_002": {
+          "score": 2,
+          "hit_terms": [
+            "恭王府",
+            "王府"
+          ]
+        },
+        "GWF_MANSION_001": {
+          "score": 2,
+          "hit_terms": [
+            "恭王府",
+            "王府"
+          ]
+        }
+      },
+      "order": [
+        "GWF_MANSION_001",
+        "GWF_MANSION_002"
+      ],
+      "expected_first": "GWF_MANSION_001",
+      "pass": true
+    },
+    {
+      "question": "恭王府的第一位主人是谁？",
+      "category": "补充·002具体人物",
+      "expected": "002优先",
+      "s1": 2,
+      "s2": 3,
+      "detail": {
+        "GWF_MANSION_002": {
+          "score": 3,
+          "hit_terms": [
+            "主人",
+            "恭王府",
+            "王府"
+          ]
+        },
+        "GWF_MANSION_001": {
+          "score": 2,
+          "hit_terms": [
+            "恭王府",
+            "王府"
+          ]
+        }
+      },
+      "order": [
+        "GWF_MANSION_002",
+        "GWF_MANSION_001"
+      ],
+      "expected_first": "GWF_MANSION_002",
+      "pass": true
+    },
+    {
+      "question": "恭王府为什么被称为半部清代史？",
+      "category": "补充·002具体史实",
+      "expected": "002优先",
+      "s1": 2,
+      "s2": 3,
+      "detail": {
+        "GWF_MANSION_002": {
+          "score": 3,
+          "hit_terms": [
+            "半部清代史",
+            "恭王府",
+            "王府"
+          ]
+        },
+        "GWF_MANSION_001": {
+          "score": 2,
+          "hit_terms": [
+            "恭王府",
+            "王府"
+          ]
+        }
+      },
+      "order": [
+        "GWF_MANSION_002",
+        "GWF_MANSION_001"
+      ],
+      "expected_first": "GWF_MANSION_002",
+      "pass": true
+    }
+  ]
+}

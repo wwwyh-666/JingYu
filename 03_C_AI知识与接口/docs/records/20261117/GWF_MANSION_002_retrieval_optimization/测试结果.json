@@ -1,0 +1,21 @@
+{
+  "command": "python -m pytest tests -p no:cacheprovider --basetemp=<新临时目录> -q",
+  "env": {
+    "MODEL_PROVIDER": "disabled"
+  },
+  "provider_api_calls": 0,
+  "result": {
+    "passed": 235,
+    "failed": 0,
+    "warnings": 1,
+    "duration_sec": 17.58
+  },
+  "guard_fixes_verified": [
+    "test_repository_loads_all_eight_spots（守卫1）",
+    "test_all_evidence_hashes_and_whitelists_consistent（守卫2改写）",
+    "test_exact_formal_evidence_inventory_and_hashes（守卫3）",
+    "test_other_data_unchanged（守卫4快照）",
+    "test_natural_question_hits_expected_fact[GWF×2]（002自动恢复，未修改断言）"
+  ],
+  "note": "此前6条守卫型失败全部修复；002两条首位断言在MIN方案下自动恢复，未做无意义修改；无删除、无放宽。"
+}

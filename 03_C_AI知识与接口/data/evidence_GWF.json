@@ -32,5 +32,22 @@
     "review_status": "approved",
     "reviewer": "王宇涵",
     "reviewed_at": "2026-11-15"
+  },
+  {
+    "evidence_id": "GWF_MANSION_001_E01",
+    "fact_id": "GWF_MANSION_001",
+    "spot_id": "GWF",
+    "object_id": "GWF_MANSION",
+    "period": "现代·文保与开放现状（府邸建于清代）",
+    "source_id": "SRC_GWF_PGM_001",
+    "url": "https://www.pgm.org.cn/pgmbhly/bhly/201710/28d8dcde86894ca7989592322bc0142f.shtml",
+    "quote": "恭王府位于北京西城区什刹海西岸的前海西街，是目前北京保存最完整且唯一对社会开放的清代王府建筑群。1982年被列入第二批全国重点文物保护单位。",
+    "locator": "正文第1段第1句及其后“1982年”句",
+    "quote_sha256": "cb5e2827d14fa91df73b8d6cb947afc05bdc53236bc472295a65e150d2d66296",
+    "usage": "answer",
+    "note": "候选，待人工逐字核对；两句中间有“2012年5A”“2017年一级博物馆”等句，quote按句摘录拼接，人工核对时按locator确认；【2026-11-17 正式入库】方案A保留原始单条，quote与quote_sha256逐字未改（2026-11-17官网核查两句连续、逐字一致）。“向公众开放”仅指该2017年发布的历史介绍文章中的描述，不代表2026年实时开放状态。2026-11-17王宇涵批准。",
+    "review_status": "approved",
+    "reviewer": "王宇涵",
+    "reviewed_at": "2026-11-17"
   }
 ]

@@ -56,6 +56,7 @@ EIGHT_SPOT_EVIDENCE = {
     'ZGL_TOWER_001_E01', 'ZGL_TOWER_002_E01',
     'YHY_PARK_001_E01', 'YHY_FXF_001_E01',
     'JS_PARK_001_E01', 'JS_WCT_001_E01',
+    'GWF_MANSION_001_E01',
     'GWF_MANSION_002_E01', 'GWF_MANSION_002_E02',
     'YHG_TEMPLE_001_E01', 'YHG_TEMPLE_002_E01',
     'ZYM_GATE_001_E01', 'ZYM_GATE_001_E02', 'ZYM_GATE_002_E01', 'ZYM_GATE_002_E02',
@@ -68,7 +69,7 @@ def test_exact_formal_evidence_inventory_and_hashes():
     tt_rows = [e for e in repo.evidence if e.spot_id == 'TT']
     assert len(tt_rows) == 9
     assert {e.evidence_id for e in tt_rows} == tt_expected
-    assert len(repo.evidence) == 25
+    assert len(repo.evidence) == 26
     assert {e.evidence_id for e in repo.evidence} == tt_expected | EIGHT_SPOT_EVIDENCE
     approved = {'TT_QND_003_E01', 'TT_QND_005_E01', 'TT_QND_004_E01', 'TT_QND_004_E02'} | EIGHT_SPOT_EVIDENCE
     assert {e.evidence_id for e in repo.evidence if e.review_status == 'approved'} == approved

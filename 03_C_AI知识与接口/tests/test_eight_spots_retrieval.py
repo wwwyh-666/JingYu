@@ -44,11 +44,11 @@ def fact(repo, fact_id):
 def test_repository_loads_all_eight_spots():
     repo = Repository()
     assert {s.spot_id for s in repo.spots} == {'TT', 'GG', 'ZGL', 'YHY', 'JS', 'GWF', 'YHG', 'ZYM'}
-    assert len(repo.facts) == 18 and len(repo.evidence) == 25 and len(repo.sources) == 16
+    assert len(repo.facts) == 19 and len(repo.evidence) == 26 and len(repo.sources) == 16
     counts = {}
     for f in repo.facts:
         counts[f.spot_id] = counts.get(f.spot_id, 0) + 1
-    assert counts == {'TT': 5, 'GG': 2, 'ZGL': 2, 'YHY': 2, 'JS': 2, 'GWF': 1, 'YHG': 2, 'ZYM': 2}
+    assert counts == {'TT': 5, 'GG': 2, 'ZGL': 2, 'YHY': 2, 'JS': 2, 'GWF': 2, 'YHG': 2, 'ZYM': 2}
 
 
 @pytest.mark.parametrize('spot_id,query,expected', RETRIEVAL_CASES)
@@ -114,5 +114,7 @@ def test_all_evidence_hashes_and_whitelists_consistent():
                 row = next(x for x in repo.evidence if x.evidence_id == eid)
                 assert row.source_id == s.source_id
                 assert repo.evidence_is_publishable(row, fact(repo, row.fact_id))
-    # GWF_MANSION_001 暂缓：不存在于正式数据
-    assert all(f.fact_id != 'GWF_MANSION_001' for f in repo.facts)
+    # GWF_MANSION_001 已于2026-11-17经王宇涵批准正式入库（单条E01、方案A）。
+    f001 = fact(repo, 'GWF_MANSION_001')
+    assert f001.review_status == 'approved'
+    assert [row.evidence_id for row in repo.publishable_evidence(f001)] == ['GWF_MANSION_001_E01']

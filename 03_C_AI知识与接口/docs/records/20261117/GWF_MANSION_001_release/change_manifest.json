@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-17",
+  "action": "GWF_MANSION_001 formal entry (plan A, single E01)",
+  "approved_by": "王宇涵",
+  "approved_at": "2026-11-17",
+  "files_changed": {
+    "data/facts_GWF.json": "append GWF_MANSION_001 (+38 lines, additions only)",
+    "data/evidence_GWF.json": "append GWF_MANSION_001_E01 (+17 lines, additions only)",
+    "data/sources.json": "SRC_GWF_PGM_001.approved_evidence_ids += GWF_MANSION_001_E01 (+2/-1; -1 is comma-only format on E02 line)",
+    "data/reviews_GWF_MANSION_001.json": "new independent review record",
+    "docs/records/20261117/GWF_MANSION_001_release/": "report + manifest + validation + pytest result"
+  },
+  "untouched": [
+    "GWF_MANSION_002",
+    "other 7 spots data",
+    "business code",
+    "retrieval logic",
+    "prompts",
+    "test baselines",
+    ".env",
+    "C-class preserved files",
+    "history candidate packs"
+  ]
+}

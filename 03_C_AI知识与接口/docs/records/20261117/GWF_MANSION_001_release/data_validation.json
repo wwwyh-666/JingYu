@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-17",
+  "counts": {
+    "facts": "18->19",
+    "approved_facts": "16->17",
+    "evidence": "25->26",
+    "approved_evidence": "20->21",
+    "sources": "16->16",
+    "reviews": "16->17"
+  },
+  "e01_quote_sha256_recomputed": "cb5e2827d14fa91df73b8d6cb947afc05bdc53236bc472295a65e150d2d66296",
+  "quote_verbatim": true,
+  "locator_verbatim": true,
+  "checks_passed": [
+    "all data JSON parse",
+    "fact/evidence bidirectional link",
+    "whitelist append without duplication",
+    "3 query_aliases verbatim",
+    "reviewer/date consistent across fact/evidence/review",
+    "pause history note preserved",
+    "002 fact+2 evidences unchanged",
+    "statement narrowed version kept",
+    "evidence_is_publishable(E01)=True (gate passes)"
+  ],
+  "retrieval": {
+    "001 three query_aliases hit GWF_MANSION_001": true,
+    "002 queries now hit [001,002]": "same-spot multi-hit pattern already present in HEAD baseline (14 instances)",
+    "cross-spot behavior unchanged vs HEAD": true
+  },
+  "automated_model_calls": 0
+}

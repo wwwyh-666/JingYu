@@ -1,0 +1,75 @@
+{
+  "all_isolated": true,
+  "cases": [
+    {
+      "requested_spot_id": "TT",
+      "question": "恭王府在哪里？",
+      "results": [],
+      "cross_spot_leak": [],
+      "note": null
+    },
+    {
+      "requested_spot_id": "GG",
+      "question": "恭王府有哪些著名历史人物？",
+      "results": [],
+      "cross_spot_leak": [],
+      "note": null
+    },
+    {
+      "requested_spot_id": "ZGL",
+      "question": "介绍一下恭王府。",
+      "results": [],
+      "cross_spot_leak": [],
+      "note": null
+    },
+    {
+      "requested_spot_id": "YHY",
+      "question": "恭王府住过哪些人？",
+      "results": [],
+      "cross_spot_leak": [],
+      "note": null
+    },
+    {
+      "requested_spot_id": "JS",
+      "question": "谁曾经居住在恭王府？",
+      "results": [],
+      "cross_spot_leak": [],
+      "note": null
+    },
+    {
+      "requested_spot_id": "GWF",
+      "question": "恭王府在哪里？",
+      "results": [
+        {
+          "fact_id": "GWF_MANSION_001",
+          "spot_id": "GWF"
+        },
+        {
+          "fact_id": "GWF_MANSION_002",
+          "spot_id": "GWF"
+        }
+      ],
+      "cross_spot_leak": [],
+      "note": null
+    },
+    {
+      "requested_spot_id": "YHG",
+      "question": "介绍一下恭王府。",
+      "results": [
+        {
+          "fact_id": "YHG_TEMPLE_001",
+          "spot_id": "YHG"
+        }
+      ],
+      "cross_spot_leak": [],
+      "note": "YHG行为: 介绍一下恭王府。命中YHG_TEMPLE_001的'王府'keyword——属YHG自身范围内同景点召回，非跨景点"
+    },
+    {
+      "requested_spot_id": "ZYM",
+      "question": "恭王府有什么历史？",
+      "results": [],
+      "cross_spot_leak": [],
+      "note": null
+    }
+  ]
+}
